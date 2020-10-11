@@ -1,0 +1,150 @@
+/*Betű stílusok*/
+@font-face{
+  font-family: "Great Vibes";
+  src: url('../../resources/fonts/GreatVibes-Regular.ttf')
+}
+
+@font-face{
+  font-family: "Montserrat";
+  src: url('../../resources/fonts/Montserrat-BoldItalic.ttf')
+}
+
+@font-face{
+  font-family: "Marck Script";
+  src: url('../../resources/fonts/MarckScript-Regular.ttf')
+}
+
+body, html {
+  height: 100%
+}
+
+/*Háttérképek*/
+.bgimg1 {
+  background-image: url('../../resources/images/HomePageImages/HomePageCover.png');
+  background-repeat: no-repeat;
+  min-height: 100%;
+  width: auto;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bgimg2 {
+  background-image: url('../../resources/images/HomePageImages/AboutUsPageCover.png');
+  background-repeat: no-repeat;
+  min-height: 100%;
+  width: auto;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bgimg3 {
+  background-image: url('../../resources/images/HomePageImages/ServicesPageCover.png');
+  background-repeat: no-repeat;
+  min-height: 100%;
+  width: auto;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bgimg4 {
+  background-image: url('../../resources/images/HomePageImages/GaleryPageCover.png');
+  background-repeat: no-repeat;
+  min-height: 100%;
+  width: auto;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bgimg5 {
+  background-image: url('../../resources/images/HomePageImages/ConnectionPageCover.png');
+  background-repeat: no-repeat;
+  min-height: 100%;
+  width: auto;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*Címek*/
+.title1{
+  font-family: "Great Vibes";
+  color: rgb(10, 10, 10);
+  text-shadow: 1px 3px 0  rgba(234, 159, 68, 1), 1px 13px 5px rgba(234, 159, 68, 1);
+  text-align: center;
+  font-size: 11rem;
+  -webkit-text-stroke: 4px black;
+}
+
+.title2{
+  font-family: "Marck Script";
+  font-size: 10rem;
+  color: #fdfafa;
+  text-shadow: 1px 3px 0 #000000, 1px 13px 5px #000000;
+  -webkit-text-stroke: 1.5px black;
+  cursor: pointer;
+}
+
+.title2:hover{
+  font-size: 13rem;
+}
+
+/*Bejelentkezés*/
+.login{
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #fdfafa;
+  -webkit-text-stroke: 1px black;
+  text-shadow: 1px 3px 0 #000000, 1px 8px 5px #000000;
+}
+
+.login:hover{
+  font-size: 1.7rem;
+}
+
+/*Responzivitás*/
+@media only screen and (max-width: 1024px){
+  .title2{
+    font-size: 7rem;
+  }
+  .title2:hover{
+    font-size: 10rem;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .title1{
+    font-size: 9rem;
+  }
+  .title2{
+    font-size: 7rem;
+  }
+  .title2:hover{
+    font-size: 8.5rem;
+  }
+  .login{
+    font-size: 1.2rem;
+  }
+  .login:hover{
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .title1{
+      font-size: 7rem;
+  }
+  .data{
+      font-size: 1.8rem;
+  }
+  .title2{
+    font-size: 5rem;
+  }
+  .title2:hover{
+    font-size: 5.5rem;
+  }
+}
