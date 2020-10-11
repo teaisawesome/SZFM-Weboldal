@@ -1,0 +1,98 @@
+/*Betűstílusok*/
+@font-face{
+    font-family: "Italianno";
+    src: url('../../resources/fonts/Italianno-Regular.ttf')
+}
+
+/*Oldal beállítások*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #EFEAE5;
+}
+
+/*Animáció*/
+.animate-opacity{
+    animation: opac 0.8s;
+}
+.animate-top{
+    position: relative;
+    animation-duration: 0.4s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+/*Pozíciók*/
+.position{
+    width: 50%;
+    float: left;
+}
+.middle{
+    position: relative;
+}
+
+/*Cím stílus*/
+h1{
+    font-family: "Italianno";
+    font-size: 10rem;
+    text-align: center;
+    color: #fdfafa;
+    -webkit-text-stroke: 1.5px black;
+    text-shadow: 1px 3px 0 #000000, 1px 13px 5px #000000
+}
+
+/*Címek*/
+.title{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    cursor: pointer;
+    transform: translate(-50%,-50%);
+}
+.title:hover{
+    font-size: 12rem;
+}
+
+/*Responzivitás*/
+@media only screen and (max-width: 1250px){
+    /*body{
+        display: none;
+    }*/
+    h1{
+        font-size: 8rem;
+    }
+    .title:hover{
+        font-size: 10rem;
+    }
+}
+@media only screen and (max-width: 1024px){
+    h1{
+        font-size: 6rem;
+    }
+    .title:hover{
+        font-size: 8rem;
+    }
+}
+@media only screen and (max-width: 767px){
+    h1{
+        font-size: 5rem;
+    }
+    .title:hover{
+        font-size: 7rem;
+    }
+}
+  
+@media screen and (max-width: 520px){
+    h1{
+        font-size: 4rem;
+    }
+    .title:hover{
+        font-size: 5rem;
+    }
+}
+    
