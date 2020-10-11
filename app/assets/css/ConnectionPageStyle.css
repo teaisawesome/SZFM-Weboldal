@@ -1,0 +1,96 @@
+/*Betűstílusok*/
+@font-face{
+    font-family: "Italianno";
+    src: url('../../resources/fonts/Italianno-Regular.ttf')
+}
+@font-face{
+    font-family: "Montserrat";
+    src: url('../../resources/fonts/Montserrat-BoldItalic.ttf')
+} 
+@font-face{
+    font-family: "Rochester";
+    src: url('../../resources/fonts/Rochester-Regular.ttf')
+} 
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%
+}
+
+/*Borítókép*/
+.bgimg {
+  background-image: url('../../resources/images/ConnectionPageImages/ConnectionCoverPhoto.png');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+/*Kezdőlap*/
+.home{
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fdfafa;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 1px 3px 0 #000000, 1px 8px 5px #000000;
+}
+.home:hover{
+    font-size: 1.7rem;
+}
+
+/*Cím*/
+.middle{
+    position: absolute;
+    top: 12em;
+    left: 5em;
+}
+.title{
+    font-family: "Italianno";
+    font-size: 10rem;
+    text-align: center;
+    color: #fdfafa;
+    -webkit-text-stroke: 1.5px black;
+    text-shadow: 1px 3px 0 #000000, 1px 13px 5px #000000
+}
+
+/*Adatok*/
+.data{
+    font-family: "Rochester";
+    font-size: 2.2rem;
+    padding: 5rem;
+    background-color: #EFEAE5;
+}
+table {
+    background-color: #EFEAE5;
+}
+#title2{
+    text-decoration: underline;
+    font-weight: bold;
+    padding-right: 1em;
+}
+p{
+    padding-bottom: 1em;
+}
+
+/*Responzivitás*/
+@media screen and (max-width: 767px) {
+    .title{
+        font-size: 8rem;
+    }
+    .data{
+        font-size: 1.9rem;
+    }
+
+}
+@media screen and (max-width: 520px) {
+    .title{
+        font-size: 7rem;
+    }
+    .data{
+        font-size: 1.8rem;
+    }
+}
