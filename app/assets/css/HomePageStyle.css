@@ -75,13 +75,13 @@ body, html {
   color: rgb(10, 10, 10);
   text-shadow: 1px 3px 0  rgba(234, 159, 68, 1), 1px 13px 5px rgba(234, 159, 68, 1);
   text-align: center;
-  font-size: 11rem;
+  font-size: 15vw !important;
   -webkit-text-stroke: 4px black;
 }
 
 .title2{
   font-family: "Marck Script";
-  font-size: 10rem;
+  font-size: 13vw !important;
   color: #fdfafa;
   text-shadow: 1px 3px 0 #000000, 1px 13px 5px #000000;
   -webkit-text-stroke: 1.5px black;
@@ -89,13 +89,13 @@ body, html {
 }
 
 .title2:hover{
-  font-size: 13rem;
+  font-size: 15vw !important;
 }
 
 /*Bejelentkezés*/
 .login{
   font-family: "Montserrat";
-  font-size: 1.5rem;
+  font-size: 3vw !important;
   cursor: pointer;
   color: #fdfafa;
   -webkit-text-stroke: 1px black;
@@ -103,20 +103,55 @@ body, html {
 }
 
 .login:hover{
-  font-size: 1.7rem;
+  font-size: 5vw !important;
 }
 
 /*Responzivitás*/
-@media only screen and (max-width: 1024px){
-  .title2{
+@media only screen and (max-width: 400px){
+  .login{
+    font-size: 0.7rem !important;
+    color: black;
+    -webkit-text-stroke: none;
+    text-shadow: none;
+  }
+  .login:hover{
+    font-size: 0.8rem !important;
+  }
+}
+
+
+@media only screen and (min-width: 650px) and (min-height: 400px){
+  
+  .title1{
+    font-size: 7rem !important;
+  }
+  .title1:hover{
+    font-size: 8rem !important;
+  }
+  .login{
+    font-size: 1.5rem;
+  }
+  .login:hover{
+    font-size: 1.7rem;
+  }
+  /* .title2{
     font-size: 7rem;
   }
   .title2:hover{
     font-size: 10rem;
-  }
+  } */
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (min-width: 650px) and (max-height: 400px){
+  .title1{
+    font-size: 3rem !important;
+    letter-spacing: 4px !important;
+  }
+  .title1:hover{
+    font-size: 3.2rem !important;
+  }
+}
+/* @media only screen and (max-width: 767px){
   .title1{
     font-size: 9rem;
   }
@@ -147,4 +182,4 @@ body, html {
   .title2:hover{
     font-size: 5.5rem;
   }
-}
+} */
