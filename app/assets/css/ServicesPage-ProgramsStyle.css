@@ -1,0 +1,185 @@
+/*Betű stílusok*/
+@font-face{
+    font-family: "Italianno";
+    src: url('../../resources/fonts/Italianno-Regular.ttf')
+}
+@font-face{
+    font-family: "Montserrat";
+    src: url('../../resources/fonts/Montserrat-BoldItalic.ttf')
+} 
+@font-face{
+    font-family: "Rochester";
+    src: url('../../resources/fonts/Rochester-Regular.ttf')
+}   
+
+/*Oldalbeállítások*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    height: 100%
+    
+}
+
+/*Borítókép*/
+.bgimg {
+  background-image: url('../../resources/images/ServicesPage-ProgramsImages/Services-ProgramsCover.png');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+/*Kezdőlap gomb*/
+.home{
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fdfafa;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 1px 3px 0 #000000, 1px 8px 5px #000000;
+}
+.home:hover{
+    font-size: 1.7rem;
+}
+
+/*Cím elhelyezése*/
+.middle{
+    position: absolute;
+    left: 8em;
+    bottom: 25em;
+}
+
+/*Cím*/
+h1{
+    font-family: "Italianno";
+    font-size: 10rem;
+    text-align: center;
+    color: #fdfafa;
+    -webkit-text-stroke: 1.5px black;
+    text-shadow: 1px 3px 0 #000000, 1px 13px 5px #000000
+}
+
+/*Háttérszín*/
+.main{
+    background-color: #EFEAE5;
+}
+
+/*Szöveg*/
+.text{
+    font-family: "Rochester";
+    font-size: 1.9rem;
+}
+
+/*Alcím*/
+h2{
+    font-family: "Rochester";
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
+
+/*Kép beállításai*/
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.image2{
+    margin-top: 12em;
+}
+
+/*Flexbox-contanie beállításai*/
+.felxbox-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5em;
+}
+
+/*A konténerek méretei*/
+.container1{
+    width: 70%;
+}
+.container{
+    margin: 5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container2{
+    width: 20%;
+}
+.container3{
+    width: 25%;
+}
+.container4{
+    width: 20%;
+    
+}
+
+/*Reszponzivitás*/
+@media only screen and (max-width: 1024px){
+    .felxbox-container{
+        display: block;
+        flex-wrap: wrap;
+    }
+    .container1{
+        width: 100%; 
+    }
+    .container2{
+        width: 40%;
+    }
+    .container3{
+        width: 45%;
+    }
+    .container4{
+        width: 40%;
+    }
+    .image2{
+        margin-top: 0;
+    }
+    
+
+}
+@media only screen and (max-width: 767px){
+    h1{
+        font-size: 7rem;
+    }
+    .container2{
+        width: 50%;
+    }
+    .container3{
+        width: 55%;
+    }
+    .container4{
+        width: 50%;
+    }
+    .middle{
+        left: 4em;
+    }
+}
+@media screen and (max-width: 530px) {
+    h1{
+        font-size: 6rem;
+    }
+    .text{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    .middle{
+        left: 6em;
+    }
+    .container2{
+        width: 80%;
+    }
+    .container3{
+        width: 85%;
+    }
+    .container4{
+        width: 80%;
+    }
+}
+    
