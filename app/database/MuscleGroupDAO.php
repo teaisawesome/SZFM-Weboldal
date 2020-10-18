@@ -1,6 +1,6 @@
 <?php
 
-require("Database.php");
+require_once "Database.php";
 
 class MuscleGroupDAO
 {
@@ -29,9 +29,9 @@ class MuscleGroupDAO
     }
 }
 
-$dao = new MuscleGroupDAO();
+// $dao = new MuscleGroupDAO();
 
-echo "<pre>";
-print_r($dao->getMuscleGroupIdFromName("ABS"));
+// echo "<pre>";
+// print_r($dao->getMuscleGroupIdFromName("ABS"));
 
 ?>

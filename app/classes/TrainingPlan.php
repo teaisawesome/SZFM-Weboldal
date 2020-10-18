@@ -54,22 +54,22 @@ class TrainingPlan
 
 	//Builder pattern-szerűség
 
-	public function Id()
+	public function Id($id)
 	{
 		$this->id = $id;
 		return $this;
 	}
-	public function UserID()
+	public function UserID($userID)
 	{
 		$this->userID = $userID;
 		return $this;
 	}
-	public function PlanName()
+	public function PlanName($planName)
 	{
 		$this->planName = $planName;
 		return $this;
 	}
-	public function Excercises()
+	public function Excercises($excercises)
 	{
 		$this->excercises = $excercises;
 		return $this;

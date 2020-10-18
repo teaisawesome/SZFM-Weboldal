@@ -44,17 +44,17 @@ class Excercise
 
 	//Builder pattern-szerűség
 
-	public function Id()
+	public function Id($id)
 	{
 		$this->id = $id;
 		return $this;
 	}
-	public function MuscleGroupID()
+	public function MuscleGroupID($muscleGroupID)
 	{
 		$this->muscleGroupID = $muscleGroupID;
 		return $this;
 	}
-	public function Name()
+	public function Name($name)
 	{
 		$this->name = $name;
 		return $this;
