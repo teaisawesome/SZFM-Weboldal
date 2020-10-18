@@ -17,7 +17,7 @@
 }
 
 body {
-    background-image: url("./img/belepes.jpg");
+    background-image: url("../../resources/images/BelepesImg/belepes.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
