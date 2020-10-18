@@ -1,0 +1,498 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: PopLight;
+    src: url(../Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: PopRegular;
+    src: url(../Poppins/Poppins-Regular.ttf);
+}
+
+
+/*Body*/
+
+body {
+    background-image: url("./img/teknos.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+}
+
+
+/*Rácssszerkezet*/
+
+form {
+    display: grid;
+    margin: 0;
+    height: 100%;
+    grid-template-columns: 33% auto 33%;
+    /* grid-template-columns: 33% auto 33%; az eredeti  */
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "header header header" "sect1 sect2 sect3" "main main main";
+}
+
+
+/*Regisztráció header szerkesztése*/
+
+.content {
+    display: grid;
+    grid-area: header;
+    justify-self: center;
+    align-self: center;
+}
+
+.content h1 {
+    display: grid;
+    grid-area: header;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.content h1:nth-child(1) {
+    display: grid;
+    grid-area: header;
+    color: transparent;
+    -webkit-text-stroke: 2px black;
+}
+
+.content h1:nth-child(2) {
+    display: grid;
+    grid-area: header;
+    color: black;
+    text-shadow: 12px 0px 5px;
+    animation: animate 4s ease-in-out infinite;
+}
+
+section:nth-of-type(1) {
+    grid-area: sect1;
+}
+
+section:nth-of-type(2) {
+    display: grid;
+    justify-content: center;
+    grid-area: sect2;
+}
+
+section:nth-of-type(3) {
+    grid-area: sect3;
+}
+
+main {
+    display: grid;
+    grid-area: main;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Button meganimálása*/
+
+#veglegesit {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    /*saját*/
+    background: transparent;
+    border: 0;
+    font-family: PoppinRegular;
+    cursor: pointer;
+}
+
+#veglegesit:hover {
+    color: black;
+    box-shadow: 0 0 10px white, 0 0 40px white, 0 0 80px white;
+    background-color: white;
+    transition-delay: 0.8s;
+}
+
+#veglegesit span {
+    position: absolute;
+    display: block;
+}
+
+#veglegesit span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, white);
+}
+
+#veglegesit:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+#veglegesit span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(270deg, transparent, white);
+}
+
+#veglegesit:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0s;
+}
+
+#veglegesit span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, white);
+}
+
+#veglegesit:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+#veglegesit span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, white);
+}
+
+#veglegesit:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+
+/*Button meganimálásának a vége*/
+
+.regisztracio-form-control {
+    position: relative;
+    /*placeholderek közötti hely*/
+    margin: 20px 0;
+    width: 100%;
+    /*500px eredeti*/
+    padding-bottom: 20px;
+}
+
+
+/*placeholder config az inside rész*/
+
+.regisztracio-form-control input {
+    border: 0;
+    border-bottom: 4px solid #333333;
+    /*border-bottom alá helyezem*/
+    display: block;
+    font-family: PopRegular;
+    font-size: 18px;
+    padding: 10px 0px;
+    width: 100%;
+    transition: 0.3s ease-in;
+    opacity: 0.5;
+}
+
+
+/*focus-> amikopr az inputba kattint*/
+
+.regisztracio-form-control input:focus,
+.regisztracio-form-control input:valid {
+    border-bottom-color: rgb(0, 235, 252);
+    outline: none;
+}
+
+
+/*Az inputban lévő szöveget helyezem el*/
+
+.regisztracio-form-control label {
+    font-size: 18px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    opacity: 1;
+    /*text-shadow: 5px 0px 4px;*/
+}
+
+
+/*Itt ugrasztom fel*/
+
+.regisztracio-form-control input:focus+label span,
+
+/*Ott tartom amíg active az input mező ( required miatt )*/
+
+.regisztracio-form-control input:valid+label span {
+    color: white;
+    transform: translateY(-30px);
+}
+
+.regisztracio-form-control label span {
+    display: inline-block;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    /*ease is lehetne :) csak szerintem ez jobb volt */
+    /*A space miatt */
+    min-width: 5px;
+    font-size: 20px;
+}
+
+
+/*type file input*/
+
+section:nth-of-type(3) {
+    display: grid;
+    grid-area: sect3;
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+}
+
+.image-preview {
+    width: 300px;
+    min-height: 100px;
+    border: 2px solid white;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    color: black;
+    /* text-shadow: 3px 0 5px; */
+}
+
+.image-preview__image {
+    display: none;
+    width: 100%;
+}
+
+input#inpFile {
+    display: none;
+}
+
+#browse {
+    position: relative;
+    display: grid;
+    align-items: center;
+    padding: 0px 5px;
+    color: black;
+    /*text-shadow: 4px 0px 14px;*/
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    overflow: hidden;
+    transition: 0.2s;
+    background: transparent;
+    text-align: center;
+    border: 0;
+    font-family: PoppinRegular;
+    width: 100%;
+    height: 15%;
+    cursor: pointer;
+    border-radius: 9px;
+}
+
+#browse:hover {
+    color: black;
+    box-shadow: 0 0 10px white, 0 0 40px white, 0 0 80px white;
+    background: white;
+    transition-delay: 0.8s;
+    opacity: 0.9;
+}
+
+#browse span {
+    position: absolute;
+    display: block;
+}
+
+#browse span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, white);
+}
+
+#browse:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+#browse span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(270deg, transparent, white);
+}
+
+#browse:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5;
+}
+
+#browse span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, white);
+}
+
+#browse:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25;
+}
+
+#browse span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, white);
+}
+
+#browse:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75;
+}
+
+
+/*file input vége*/
+
+
+/*Checkbox design kezdet*/
+
+section:nth-of-type(1) {
+    display: grid;
+    grid-area: sect1;
+    position: relative;
+    align-self: center;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+.elofizet p {
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#checkboxLabel {
+    position: relative;
+    left: 30%;
+}
+
+.elofizet .regisztracio-form-control {
+    width: 100%;
+    justify-content: center;
+}
+
+.elofizet #checkboxLabel input {
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+.elofizet #checkboxLabel .fa {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: #091921;
+    line-height: 40px;
+    text-align: center;
+    margin: 10px 4px;
+    color: #6f6f6f;
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1), 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.elofizet #checkboxLabel .fa:hover {
+    box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1), 2px 2px 6px rgba(0, 0, 0, 0.8), inset -2px -2px 10px rgba(255, 255, 255, 0.05), inset 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.elofizet #checkboxLabel input:checked~.fa {
+    color: white;
+    box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.1), inset 2px 2px 6px rgba(0, 0, 0, 1);
+    text-shadow: 0 0 5px white, 0 0 20px white;
+}
+
+
+/*Checkbox vége*/
+
+@keyframes animate {
+    0%,
+    100% {
+        clip-path: polygon(1% 55%, 9% 55%, 16% 57%, 22% 61%, 28% 66%, 34% 70%, 40% 71%, 46% 71%, 51% 70%, 62% 63%, 67% 59%, 74% 56%, 81% 54%, 91% 53%, 100% 58%, 100% 100%, 0% 100%);
+    }
+    50% {
+        clip-path: polygon(0 80%, 9% 74%, 19% 67%, 31% 61%, 40% 58%, 50% 58%, 60% 59%, 66% 61%, 73% 61%, 75% 59%, 80% 57%, 89% 59%, 93% 61%, 95% 63%, 100% 68%, 100% 100%, 0% 100%);
+    }
+}
+
+
+/*Reszponzivitás*/
+
+@media only screen and (max-width: 1024px) {
+    body {
+        background-image: url("./img/teknos.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    form {
+        font-family: PopLight;
+        display: grid;
+        /* Itt lehet a szazalekkal jatszani majd */
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(auto, 6);
+        grid-template-areas: "header" "sect2" "sect3" "sect1" "main" "footer";
+        height: 100%;
+    }
+    .content h1 {
+        font-size: 3.5rem;
+    }
+    .regisztracio-form-control {
+        width: 100%;
+    }
+    #veglegesit {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .elofizet p {
+        width: 100%;
+    }
+    .elofizet .regisztracio-form-control {
+        width: 74.275%;
+        left: 11%;
+        margin: 0px;
+    }
+    .image-preview__image {
+        height: 100%;
+        width: 100%;
+    }
+    .image-preview {
+        margin-bottom: 20px;
+    }
+}
