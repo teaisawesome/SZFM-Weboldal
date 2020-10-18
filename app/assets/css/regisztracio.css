@@ -8,19 +8,19 @@
 
 @font-face {
     font-family: PopLight;
-    src: url(../Poppins/Poppins-Light.ttf);
+    src: url(../../resources/fonts/Poppins-Light.ttf);
 }
 
 @font-face {
     font-family: PopRegular;
-    src: url(../Poppins/Poppins-Regular.ttf);
+    src: url(../../resources/fonts/Poppins-Regular.ttf);
 }
 
 
 /*Body*/
 
 body {
-    background-image: url("./img/teknos.jpg");
+    background-image: url("../../resources/images/RegisztracioImg/teknos.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
