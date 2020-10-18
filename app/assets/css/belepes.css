@@ -1,0 +1,255 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: PopLight;
+    src: url(../Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: PopRegular;
+    src: url(../Poppins/Poppins-Regular.ttf);
+}
+
+body {
+    background-image: url("./img/belepes.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%;
+}
+
+form {
+    display: grid;
+    margin: 0;
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 20vh auto 40vh;
+    grid-template-areas: "header" "section" "footer";
+    grid-gap: 4rem;
+}
+
+.content {
+    display: grid;
+    grid-area: header;
+    justify-self: center;
+    align-self: center;
+    height: 10vh;
+}
+
+.content h1 {
+    display: grid;
+    grid-area: header;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.content h1:nth-child(1) {
+    display: grid;
+    grid-area: header;
+    color: transparent;
+    -webkit-text-stroke: 2px black;
+}
+
+.content h1:nth-child(2) {
+    display: grid;
+    grid-area: header;
+    color: black;
+    text-shadow: 12px 0px 5px;
+    animation: animate 4s ease-in-out infinite;
+}
+
+section {
+    display: grid;
+    justify-content: center;
+    grid-area: section;
+}
+
+.belepes-form-control {
+    position: relative;
+    margin: 50px 0;
+    height: 70%;
+    width: 100%;
+    padding-bottom: 0;
+}
+
+.belepes-form-control input {
+    border: 0;
+    border-bottom: 4px solid #333333;
+    display: block;
+    font-family: PopRegular;
+    font-size: 18px;
+    padding: 10px 0px;
+    width: 100%;
+    transition: 0.3s ease-in;
+    opacity: 0.5;
+}
+
+.belepes-form-control input:focus,
+.belepes-form-control input:valid {
+    border-bottom-color: rgb(0, 235, 252);
+    outline: none;
+}
+
+.belepes-form-control label {
+    font-size: 18px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    opacity: 1;
+}
+
+.belepes-form-control input:focus+label span,
+.belepes-form-control input:valid+label span {
+    color: white;
+    transform: translateY(-30px);
+}
+
+.belepes-form-control label span {
+    display: inline-block;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    min-width: 5px;
+    font-size: 20px;
+}
+
+footer {
+    display: grid;
+    grid-area: footer;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+#belep {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    background: transparent;
+    border: 0;
+    font-family: PoppinRegular;
+    cursor: pointer;
+}
+
+#belep:hover {
+    color: black;
+    box-shadow: 0 0 10px white, 0 0 40px white, 0 0 80px white;
+    background-color: white;
+    transition-delay: 0.8s;
+}
+
+#belep span {
+    position: absolute;
+    display: block;
+}
+
+#belep span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, white);
+}
+
+#belep:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+#belep span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(270deg, transparent, white);
+}
+
+#belep:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0s;
+}
+
+#belep span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, white);
+}
+
+#belep:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+#belep span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, white);
+}
+
+#belep:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+#errorMessage {
+    display: grid;
+    text-align: center;
+    color: red;
+    font-size: 18px;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    bottom: 90%;
+}
+
+@keyframes animate {
+    0%,
+    100% {
+        clip-path: polygon(1% 55%, 9% 55%, 16% 57%, 22% 61%, 28% 66%, 34% 70%, 40% 71%, 46% 71%, 51% 70%, 62% 63%, 67% 59%, 74% 56%, 81% 54%, 91% 53%, 100% 58%, 100% 100%, 0% 100%);
+    }
+    50% {
+        clip-path: polygon(0 80%, 9% 74%, 19% 67%, 31% 61%, 40% 58%, 50% 58%, 60% 59%, 66% 61%, 73% 61%, 75% 59%, 80% 57%, 89% 59%, 93% 61%, 95% 63%, 100% 68%, 100% 100%, 0% 100%);
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        background-image: url("./img/teknos.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        height: 100%;
+    }
+    form {
+        font-family: PopLight;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(auto, 3);
+        grid-template-areas: "header" "section" "footer";
+        height: 100%;
+        grid-gap: 2.5rem;
+    }
+    #errorMessage {
+        padding-top: 15px;
+        font-size: 18px;
+    }
+}
