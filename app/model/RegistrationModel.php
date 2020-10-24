@@ -34,53 +34,19 @@
         {
             $valid = true; $registErrors = array();
 
-            if(empty($inputs['name']))
-            {
-                $valid = false;
-
-                $registErrors['nameErrorMessage'] = "Név mező kitöltése kötelező!"; 
-            }
-
-            if(empty($inputs['address']))
-            {
-                $valid = false;
-
-                $registErrors['addressErrorMessage'] = "Lakcím mező kitöltése kötelező!"; 
-            }
-
-            if(empty($inputs['email']))
-            {
-                $valid = false;
-
-                $registErrors['emailErrorMessage'] = "Email mező kitöltése kötelező!"; 
-            }
-            else if(!$this->emailValidation($inputs['email']))
+            if(!$this->emailValidation($inputs['email']))
             {
                 $valid = false;
 
                 $registErrors['emailErrorMessage'] = "Email formátum kötelező!"; 
             }
 
-            if(empty($inputs['phone']))
-            {
-                $valid = false;
-
-                $registErrors['phoneErrorMessage'] = "Telefon mező kitöltése kötelező!"; 
-            }
-            else if(!$this->phoneNumberValidation($inputs['phone']))
+            if(!$this->phoneNumberValidation($inputs['phone']))
             {
                 $valid = false;
 
                 $registErrors['phoneErrorMessage'] = "Telefonszám formátum kötelező!"; 
             }
-
-            if(empty($inputs['password']))
-            {
-                $valid = false;
-
-                $registErrors['passwordErrorMessage'] = "Jelszó mező kitöltése kötelező!"; 
-            }
-
 
             if($valid)
             {
@@ -89,13 +55,13 @@
                     $newUser = new User();
                     $newUser->Email($inputs['email'])
                     ->Password($inputs['password'])
-                    ->Card(NULL)
+                    ->Card(empty($inputs['card']) ? NULL : $inputs['card'])
                     ->Phone($inputs['phone'])
                     ->Name($inputs['name'])
                     ->Address($inputs['address'])
                     ->Rank(1)
-                    ->IsPremiumMember(0)
-                    ->Image(NULL);
+                    ->IsPremiumMember(empty($inputs['card']) ? NULL : 1)
+                    ->Image($inputs['picture']);
 
                     var_dump($this->userDao->createUser($newUser));
 

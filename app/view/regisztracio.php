@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <form>
+    <form action="/SZFM-Weboldal/app/registrationservice" method="post" enctype="multipart/form-data">
         <header class="content">
             <h1>Regisztráció</h1>
             <h1>Regisztráció</h1>
@@ -28,7 +28,7 @@
                     <i class="fa fa-times" aria-hidden="true"></i>
                 </label>
                     <div id="bankszam" class="regisztracio-form-control">
-                        <input type="text" required>
+                        <input type="text" name="card">
                         <label for="">Bankkártyaszám</label>
                     </div>
                 </div>
@@ -36,15 +36,15 @@
         </section>
         <section>
             <div class="regisztracio-form-control">
-                <input type="text" name="vezeteknev" required>
+                <input type="text" name="lastname" required>
                 <label for="">*Vezetéknév</label>
             </div>
             <div class="regisztracio-form-control">
-                <input type="text" name="keresztnev" required>
+                <input type="text" name="firstname" required>
                 <label for="">*Keresztnév</label>
             </div>
             <div class="regisztracio-form-control">
-                <input type="password" name="jelszo" required>
+                <input type="password" name="password" required>
                 <label for="">*Jelszó</label>
             </div>
             <div class="regisztracio-form-control">
@@ -52,18 +52,18 @@
                 <label for="">*E-mail cím</label>
             </div>
             <div class="regisztracio-form-control">
-                <input type="text" name="lakcim" required>
+                <input type="text" name="address" required>
                 <label for="">*Lakcím</label>
             </div>
             <div class="regisztracio-form-control">
-                <input type="text" name="telefonszam" required>
+                <input type="text" name="phone" required>
                 <label for="">*Telefonszám</label>
             </div>
         </section>
         <section>
             <div class="feltoltes">
 
-                <input type="file" name="inpFile" id="inpFile">
+                <input type="file" name="picture" id="inpFile">
                 <label for="inpFile" id="browse">
                 <span></span>
                 <span></span>

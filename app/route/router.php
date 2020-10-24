@@ -36,7 +36,7 @@ class Router
                                     $_POST['address'],
                                     $_POST['phone'],
                                     $_POST['card'],
-                                    $_POST['picture']
+                                    $_FILES['picture']
                                 ];
         }
         /**
