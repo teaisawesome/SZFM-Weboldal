@@ -75,7 +75,7 @@ body, html {
   color: rgb(10, 10, 10) !important;
   text-shadow: 1px 3px 0  rgba(234, 159, 68, 1), 1px 13px 5px rgba(234, 159, 68, 1);
   text-align: center;
-  font-size: 4rem !important;
+  font-size: 5rem !important;
   letter-spacing: 0.5rem !important;
   -webkit-text-stroke: 4px black;
 }
@@ -83,7 +83,7 @@ body, html {
 
 .title2{
   font-family: "Marck Script";
-  font-size: 4rem !important;
+  font-size: 5rem !important;
   color: #fdfafa;
   text-shadow: 1px 3px 0 #000000, 1px 13px 5px #000000;
   -webkit-text-stroke: 1.5px black;
@@ -91,13 +91,13 @@ body, html {
 }
 
 .title2:hover{
-  font-size: 4.5rem !important;
+  font-size: 5.5rem !important;
 }
 
 /*Bejelentkezés*/
 .login{
   font-family: "Montserrat";
-  font-size: 1rem !important;
+  font-size: 1.5rem !important;
   cursor: pointer;
   color: #fdfafa;
   -webkit-text-stroke: 1px black;
@@ -105,7 +105,7 @@ body, html {
 }
 
 .login:hover{
-  font-size: 1.1rem !important;
+  font-size: 1.6rem !important;
 }
 
 /*Responzivitás*/

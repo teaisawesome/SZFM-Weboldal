@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="../assets/css/HomePageStyle.css">
+      <link rel="stylesheet" href="assets/css/HomePageStyle.css">
       <title>SZFM</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   </head>
-  
   <body>
     <div class="bgimg1 w3-display-container w3-animate-opacity w3-text-white">
       <div class="w3-display-topleft w3-padding-large w3-xlarge">
