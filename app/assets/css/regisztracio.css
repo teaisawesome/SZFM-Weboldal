@@ -455,7 +455,7 @@ section:nth-of-type(1) {
 
 @media only screen and (max-width: 1024px) {
     body {
-        background-image: url("./img/teknos.jpg");
+        background-image: url("../../resources/images/RegisztracioImg/teknos.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;

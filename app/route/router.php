@@ -17,6 +17,13 @@ class Router
             $request->params = "data";
         }
 
+        if($url == $domain . "registration")
+        {
+            $request->controller = "Registration";
+            $request->action = "index";
+            $request->params = "data";
+        }
+
         /**
          *   Login routing
          * 

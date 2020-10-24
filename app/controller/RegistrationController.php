@@ -7,7 +7,7 @@ class RegistrationController extends Controller
 {
     public function index()
     {
-        $this->view('registration');
+        $this->view('regisztracio');
     }
 
     public function registration($inputs)
