@@ -29,8 +29,8 @@ class Router
             $request->controller = "Registration";
             $request->action = "registration";
             $request->params = [
-                                    $_POST['firstname'], 
                                     $_POST['lastname'], 
+                                    $_POST['firstname'], 
                                     $_POST['password'], 
                                     $_POST['email'], 
                                     $_POST['address'],

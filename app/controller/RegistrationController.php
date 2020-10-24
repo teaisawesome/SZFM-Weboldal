@@ -13,11 +13,13 @@ class RegistrationController extends Controller
     public function registration($inputs)
     {
         $formInputs = array(
-            'name' => $inputs[0],
-            'address' => $inputs[1],
-            'email' => $inputs[2],
-            'phone' => $inputs[3],
-            'password' => $inputs[4]
+            'name' => $inputs[0] . " " . $inputs[1],
+            'password' => $inputs[2],
+            'email' => $inputs[3],
+            'address' => $inputs[4],
+            'phone' => $inputs[5],
+            'card' => $inputs[6],
+            'picture' => $inputs[7]
         );
 
         $registModel = new RegistrationModel();
