@@ -95,7 +95,7 @@ body, html {
 /*Bejelentkezés*/
 .login{
   font-family: "Montserrat";
-  font-size: 3vw !important;
+  font-size: 2rem !important;
   cursor: pointer;
   color: #fdfafa;
   -webkit-text-stroke: 1px black;
@@ -103,7 +103,7 @@ body, html {
 }
 
 .login:hover{
-  font-size: 5vw !important;
+  font-size: 2.1rem !important;
 }
 
 /*Responzivitás*/
