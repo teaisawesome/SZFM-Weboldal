@@ -55,19 +55,19 @@
                     $newUser = new User();
                     $newUser->Email($inputs['email'])
                     ->Password($inputs['password'])
-                    ->Card(empty($inputs['card']) ? NULL : $inputs['card'])
+                    ->Card($inputs['card'])
                     ->Phone($inputs['phone'])
                     ->Name($inputs['name'])
                     ->Address($inputs['address'])
                     ->Rank(1)
-                    ->IsPremiumMember(empty($inputs['card']) ? NULL : 1)
+                    ->IsPremiumMember(is_null($inputs['card']) ? 0 : 1)
                     ->Image($inputs['picture']);
 
                     var_dump($this->userDao->createUser($newUser));
 
                     unset($_SESSION['regist_errors']);
 
-                    header("Location: http://localhost/SZFM_2020_10_SZFM-Weboldal/app");
+                    header("Location: http://localhost/SZFM-Weboldal/app");
                 }
                 catch(Exception $e)
                 {
@@ -78,7 +78,7 @@
             {
                 $_SESSION['regist_errors'] = $registErrors;
 
-                header("Location: http://localhost/SZFM_2020_10_SZFM-Weboldal/app");
+                header("Location: http://localhost/SZFM-Weboldal/app");
             }
         }
     }

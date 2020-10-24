@@ -18,8 +18,8 @@ class RegistrationController extends Controller
             'email' => $inputs[3],
             'address' => $inputs[4],
             'phone' => $inputs[5],
-            'card' => $inputs[6],
-            'picture' => $inputs[7]['name']
+            'card' => empty($inputs[6]) ? NULL : $inputs[6],
+            'picture' => getimagesize($inputs[7]["tmp_name"]) !== false ? $inputs[7]['name'] : "app-default-user-picture.png"
         );
 
         $target_dir = ROOT . "datas/pictures/";
@@ -38,6 +38,7 @@ class RegistrationController extends Controller
         $registModel = new RegistrationModel();
 
         $registModel->registration($formInputs);
+
     }
 }
 ?>
