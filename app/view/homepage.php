@@ -16,6 +16,9 @@
       <div class="login w3-display-topright w3-padding-large">
         Bejelentkezés
       </div>
+      <div class="registration w3-display-topright w3-padding-large">
+        Regisztráció
+      </div>
       <div class="w3-display-middle">
         <h1 class="title1 w3-animate-top">SZFM Wellness Centrum</h1>
       </div>
