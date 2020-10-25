@@ -55,7 +55,7 @@ class Router
         {
             $request->controller = "Login";
             $request->action = "authentication";
-            $request->params = [$_POST['email'], $_POST['pwd']];
+            $request->params = [$_POST['email'], $_POST['password']];
         }
     }
 }

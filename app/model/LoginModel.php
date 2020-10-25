@@ -21,16 +21,6 @@
             return true;
         }
 
-        public function passwordValidation($password)
-        {
-            if (empty($password))
-            {
-                return false;
-            }   
-
-            return true;
-        }
-
         public function authentication($email, $password)
         {
             $valid = true; $loginErrors = array();
@@ -38,12 +28,6 @@
             if(!$this->emailValidation($email))
             {
                 $loginErrors['emailErrorMessage'] = 'Kérlek e-mail formátumot adj meg!';
-                $valid = false;
-            }
-
-            if(!$this->passwordValidation($password))
-            {
-                $loginErrors['passwordErrorMessage'] = 'A jelszó mező kitöltése kötelező!';
                 $valid = false;
             }
 
@@ -57,7 +41,7 @@
                         $_SESSION['user'] = $email;
                         unset($_SESSION['login_errors']);
 
-                        header("Location: http://localhost/SZFM_2020_10_SZFM-Weboldal/app/");
+                        header("Location: http://localhost/SZFM-Weboldal/app/");
                     }
                     else
                     {
@@ -65,7 +49,7 @@
 
                         $_SESSION['login_errors'] = $loginErrors;
 
-                        header("Location: http://localhost/SZFM_2020_10_SZFM-Weboldal/app/login");
+                        header("Location: http://localhost/SZFM-Weboldal/app/login");
 
                     }
                 }
@@ -78,7 +62,7 @@
             {
                 $_SESSION['login_errors'] = $loginErrors;
                 
-                header("Location: http://localhost/SZFM_2020_10_SZFM-Weboldal/app/login");
+                header("Location: http://localhost/SZFM-Weboldal/app/login");
             }
         }
     }

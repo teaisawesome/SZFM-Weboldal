@@ -209,15 +209,9 @@ footer {
     transition-delay: 0.25s;
 }
 
-#errorMessage {
-    display: grid;
+.errorMessage {
     text-align: center;
     color: red;
-    font-size: 18px;
-    overflow: hidden;
-    position: relative;
-    justify-content: center;
-    bottom: 90%;
 }
 
 @keyframes animate {
@@ -248,7 +242,7 @@ footer {
         height: 100%;
         grid-gap: 2.5rem;
     }
-    #errorMessage {
+    .errorMessage {
         padding-top: 15px;
         font-size: 18px;
     }
