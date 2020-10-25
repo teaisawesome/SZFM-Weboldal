@@ -78,7 +78,7 @@
             {
                 $_SESSION['regist_errors'] = $registErrors;
 
-                header("Location: http://localhost/SZFM-Weboldal/app");
+                header("Location: http://localhost/SZFM-Weboldal/app/registration");
             }
         }
     }
