@@ -100,8 +100,9 @@ body, html {
   font-size: 1.5rem !important;
   cursor: pointer;
   color: #fdfafa;
+  text-shadow: 1px 3px 0 #000000, 1px 6px 5px #000000;
+  text-decoration: none ;
   -webkit-text-stroke: 1px black;
-  text-shadow: 1px 2px 0 #000000, 1px 6px 5px #000000;
 }
 
 .login:hover{
@@ -110,13 +111,17 @@ body, html {
 
 .registration
 {
-    margin-top: 2.5rem;
     font-family: "Montserrat";
     font-size: 1.5rem !important;
     cursor: pointer;
     color: #fdfafa;
-    -webkit-text-stroke: 1px black;
     text-shadow: 1px 2px 0 #000000, 1px 6px 5px #000000;
+    text-decoration: none ;
+    -webkit-text-stroke: 1px black;
+}
+.registration-position
+{
+    margin-top: 2.5rem;
 }
 
 .registration:hover

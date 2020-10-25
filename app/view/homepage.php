@@ -13,11 +13,11 @@
       <div class="w3-display-topleft w3-padding-large w3-xlarge">
         Logo
       </div>
-      <div class="login w3-display-topright w3-padding-large">
-        Bejelentkezés
+      <div class="w3-display-topright w3-padding-large">
+        <a class="login" href="login">Bejelentkezés</a>
       </div>
-      <div class="registration w3-display-topright w3-padding-large">
-        <a href="registration" style="text-decoration: none">Regisztráció</a>
+      <div class="registration-position w3-display-topright w3-padding-large">
+        <a class="registration" href="registration">Regisztráció</a>
       </div>
       <div class="w3-display-middle">
         <h1 class="title1 w3-animate-top">SZFM Wellness Centrum</h1>

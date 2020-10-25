@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/belepes.css">
+    <link rel="stylesheet" href="assets/css/belepes.css">
     <title>Belépés</title>
 </head>
 
@@ -36,9 +36,7 @@
     </form>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-    <script src="../assets/js/anime.min.js"></script>
-    <script src="../assets/js/bel.js"></script>
-
+    <script src="assets/js/anime.min.js"></script>
+    <script src="assets/js/bel.js"></script>
 </body>
-
 </html>
