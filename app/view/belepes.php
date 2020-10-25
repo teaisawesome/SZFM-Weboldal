@@ -9,18 +9,34 @@
 </head>
 
 <body>
-    <form>
+    <form method="post" action="/SZFM-Weboldal/app/loginservice">
         <header class="content">
             <h1>Belépés</h1>
             <h1>Belépés</h1>
         </header>
         <section>
+            <h2 class="errorMessage">
+            <?php 
+                if(isset($_SESSION['login_errors']['loginErrorMessage']))
+                {
+                    echo $_SESSION['login_errors']['loginErrorMessage'];
+                }
+            ?>
+            </h2>
             <div class="belepes-form-control">
                 <input type="text" name="email" required>
                 <label for="">E-mail cím</label>
+                <h3 class="errorMessage">
+                <?php 
+                    if(isset($_SESSION['login_errors']['emailErrorMessage']))
+                    {
+                        echo $_SESSION['login_errors']['emailErrorMessage'];
+                    }
+                ?>
+                </h3>
             </div>
             <div class="belepes-form-control">
-                <input type="password" name="jelszo" required>
+                <input type="password" name="password" required>
                 <label for="">Jelszó</label>
             </div>
         </section>
@@ -31,7 +47,6 @@
             <span></span>
             <span></span>Belépés
         </button>
-            <h5 id="errorMessage">Hibás e-mail / jelszó</h5>
         </footer>
     </form>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js"></script>
