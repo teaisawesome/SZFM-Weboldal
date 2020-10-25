@@ -50,6 +50,14 @@
             <div class="regisztracio-form-control">
                 <input type="text" name="email" required>
                 <label for="">*E-mail cím</label>
+                <span class="error-msg">
+                    <?php 
+                        if(isset($_SESSION['regist_errors']['emailErrorMessage']))
+                        {
+                            echo $_SESSION['regist_errors']['emailErrorMessage'];
+                        }
+                    ?>
+                </span>
             </div>
             <div class="regisztracio-form-control">
                 <input type="text" name="address" required>
@@ -58,6 +66,14 @@
             <div class="regisztracio-form-control">
                 <input type="text" name="phone" required>
                 <label for="">*Telefonszám</label>
+                <span class="error-msg">
+                    <?php 
+                        if(isset($_SESSION['regist_errors']['phoneErrorMessage']))
+                        {
+                            echo $_SESSION['regist_errors']['phoneErrorMessage'];
+                        }
+                    ?>
+                </span>
             </div>
         </section>
         <section>

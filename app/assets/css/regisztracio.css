@@ -437,6 +437,13 @@ section:nth-of-type(1) {
     text-shadow: 0 0 5px white, 0 0 20px white;
 }
 
+.error-msg
+{
+    color: crimson;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0 0 5px gray;
+}
 
 /*Checkbox vége*/
 
