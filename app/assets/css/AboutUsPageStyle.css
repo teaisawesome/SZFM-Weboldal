@@ -224,3 +224,32 @@ img{
         font-size: 1.5rem;
     }
 }
+@media only screen and (max-width: 320px){
+    .felxbox-container{
+        padding: 1em;
+    }
+    .container1{
+        padding-top: 2em;
+    }
+    .middle{
+        position: absolute;
+        top: 20%;
+        left: 10%;
+    }
+    h1{
+        font-size: 6rem;
+    }
+    .text{
+        font-size: 1rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .image1{
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    .image2{
+        padding-top: 2em;
+    }
+}
