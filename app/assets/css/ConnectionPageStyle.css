@@ -168,11 +168,22 @@ p{
         font-size: 1.5rem;
     }
 }
-@media screen and (max-width: 520px) {
+@media only screen and (max-width: 375px){
     .title{
-        font-size: 7rem;
+        font-size: 3.5rem;
+    }
+    .middle{
+        top: 10em;
+        left: 1.5em;
     }
     .data{
-        font-size: 1.8rem;
+        font-size: 1rem;
     }
+    .home{
+        font-size: 1rem;
+    }
+    .home:hover{
+        font-size: 1.5rem;
+    }
+
 }
