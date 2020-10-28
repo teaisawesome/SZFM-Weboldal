@@ -59,6 +59,15 @@ h1{
 }
 
 /*Responzivitás*/
+@media only screen and (max-width: 2560px){
+    h1{
+        font-size: 16rem;
+    }
+    .title:hover{
+        font-size: 18rem;
+    }
+    
+}
 @media only screen and (max-width: 1250px){
     /*body{
         display: none;
