@@ -77,15 +77,12 @@ h1{
     }
     
 }
-@media only screen and (max-width: 1250px){
-    /*body{
-        display: none;
-    }*/
+@media only screen and (max-width: 1024px){
     h1{
-        font-size: 8rem;
+        font-size: 12rem;
     }
     .title:hover{
-        font-size: 10rem;
+        font-size: 13rem;
     }
 }
 @media only screen and (max-width: 1024px){
