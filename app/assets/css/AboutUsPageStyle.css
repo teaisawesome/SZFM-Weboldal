@@ -200,9 +200,20 @@ img{
     }
 
 }
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 768px){
     h1{
-        font-size: 8rem;
+        font-size: 6rem;
+    }
+    .text{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    .middle{
+        position: absolute;
+        top: 30%; 
+        left: 10%;
     }
 }
 @media screen and (max-width: 530px) {
