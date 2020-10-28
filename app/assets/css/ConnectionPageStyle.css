@@ -185,5 +185,23 @@ p{
     .home:hover{
         font-size: 1.5rem;
     }
+}
+@media only screen and (max-width: 320px){
+    .title{
+        font-size: 3.5rem;
+    }
+    .middle{
+        top: 10em;
+        left: 1.5em;
+    }
+    .data{
+        font-size: 1rem;
+    }
+    .home{
+        font-size: 1rem;
+    }
+    .home:hover{
+        font-size: 1.5rem;
+    }
 
 }
