@@ -85,12 +85,15 @@ h1{
         font-size: 13rem;
     }
 }
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 768px){
     h1{
-        font-size: 6rem;
+        font-size: 10rem;
     }
     .title:hover{
-        font-size: 8rem;
+        font-size: 12rem;
+    }
+    .position{
+        width: 100%;
     }
 }
 @media only screen and (max-width: 767px){
