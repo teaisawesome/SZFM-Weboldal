@@ -112,4 +112,12 @@ h1{
         font-size: 8rem;
     }
 }
-    
+@media only screen and (max-width: 320px){
+    h1{
+        font-size: 5rem;
+    }
+    .title:hover{
+        font-size: 6rem;
+    }
+}
+
