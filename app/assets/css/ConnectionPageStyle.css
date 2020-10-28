@@ -131,14 +131,23 @@ p{
         font-size: 2rem;
     }
 }
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 768px){
     .title{
-        font-size: 8rem;
+        font-size: 6rem;
+    }
+    .middle{
+        top: 10em;
+        left: 6em;
     }
     .data{
-        font-size: 1.9rem;
+        font-size: 1.8rem;
     }
-
+    .home{
+        font-size: 1.5rem;
+    }
+    .home:hover{
+        font-size: 2rem;
+    }
 }
 @media screen and (max-width: 520px) {
     .title{
