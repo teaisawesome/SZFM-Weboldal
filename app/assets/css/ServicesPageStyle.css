@@ -104,13 +104,12 @@ h1{
         font-size: 7rem;
     }
 }
-  
-@media screen and (max-width: 520px){
+@media screen and (max-width: 375px) {
     h1{
-        font-size: 4rem;
+        font-size: 6rem;
     }
     .title:hover{
-        font-size: 5rem;
+        font-size: 8rem;
     }
 }
     
