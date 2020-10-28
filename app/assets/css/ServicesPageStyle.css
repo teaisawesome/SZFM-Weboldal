@@ -96,9 +96,9 @@ h1{
         width: 100%;
     }
 }
-@media only screen and (max-width: 767px){
+@media screen and (max-width: 425px) {
     h1{
-        font-size: 5rem;
+        font-size: 6rem;
     }
     .title:hover{
         font-size: 7rem;
