@@ -113,6 +113,24 @@ p{
         font-size: 3rem;
     }
 }
+@media only screen and (max-width: 1024px){
+    .title{
+        font-size: 8rem;
+    }
+    .middle{
+        top: 10em;
+        left: 10em;
+    }
+    .data{
+        font-size: 2rem;
+    }
+    .home{
+        font-size: 1.5rem;
+    }
+    .home:hover{
+        font-size: 2rem;
+    }
+}
 @media screen and (max-width: 767px) {
     .title{
         font-size: 8rem;
