@@ -68,6 +68,15 @@ h1{
     }
     
 }
+@media only screen and (max-width: 1440px){
+    h1{
+        font-size: 12rem;
+    }
+    .title:hover{
+        font-size: 13rem;
+    }
+    
+}
 @media only screen and (max-width: 1250px){
     /*body{
         display: none;
