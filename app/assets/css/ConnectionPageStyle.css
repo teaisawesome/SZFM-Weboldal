@@ -95,6 +95,24 @@ p{
         font-size: 4rem;
     }
 }
+@media only screen and (max-width: 1440px){
+    .title{
+        font-size: 10rem;
+    }
+    .middle{
+        top: 10em;
+        left: 10em;
+    }
+    .data{
+        font-size: 3rem;
+    }
+    .home{
+        font-size: 2rem;
+    }
+    .home:hover{
+        font-size: 3rem;
+    }
+}
 @media screen and (max-width: 767px) {
     .title{
         font-size: 8rem;
