@@ -225,17 +225,27 @@ h2:hover{
         font-size: 2rem;
     }
 }
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 425px) {
     h1{
-        font-size: 8rem;
+        font-size: 6rem;
+    }
+    .middle{
+        left: 10em;
+    }
+    .text{
+        font-size: 1rem;
+        padding: 2em;
     }
     h2{
         font-size: 6rem;
     }
     h2:hover{
-        font-size: 8rem;
+        font-size: 7rem;
     }
-    .middle{
-        left: 10em;
+    .home{
+        font-size: 1.5rem;
+    }
+    .home:hover{
+        font-size: 2rem;
     }
 }
