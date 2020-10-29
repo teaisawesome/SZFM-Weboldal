@@ -124,6 +124,26 @@ h2:hover{
 }
 
 /*Reszponzivitás*/
+@media only screen and (max-width: 2560px){
+    h1{
+        font-size: 23rem;
+    }
+    .text{
+        font-size: 5rem;
+    }
+    h2{
+        font-size: 12rem;
+    }
+    h2:hover{
+        font-size: 14rem;
+    }
+    .home{
+        font-size: 4rem;
+    }
+    .home:hover{
+        font-size: 5rem;
+    }
+}
 @media only screen and (max-width: 1024px){
     .felxbox-container{
         display: block;
