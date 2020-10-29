@@ -201,9 +201,16 @@ h2:hover{
     }
 
 }
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 768px){
     h1{
         font-size: 8rem;
+    }
+    .middle{
+        left: 15em;
+    }
+    .text{
+        font-size: 2rem;
+        padding: 2em;
     }
     h2{
         font-size: 8rem;
@@ -211,8 +218,11 @@ h2:hover{
     h2:hover{
         font-size: 10rem;
     }
-    .middle{
-        left: 20em;
+    .home{
+        font-size: 1.5rem;
+    }
+    .home:hover{
+        font-size: 2rem;
     }
 }
 @media screen and (max-width: 530px) {
