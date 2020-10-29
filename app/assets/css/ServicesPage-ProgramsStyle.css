@@ -142,6 +142,29 @@ img{
         width: 30%;
     }
 }
+@media only screen and (max-width: 1440px){
+    h1{
+        font-size: 15rem;
+    }
+    .text{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 10rem;
+    }
+    h2:hover{
+        font-size: 12rem;
+    }
+    .home{
+        font-size: 2rem;
+    }
+    .home:hover{
+        font-size: 3rem;
+    }
+    .image2{
+        margin-top: 6em;
+    }
+}
 @media only screen and (max-width: 1024px){
     .felxbox-container{
         display: block;
