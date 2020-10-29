@@ -198,21 +198,22 @@ img{
         left: 12em;
     }
 }
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 768px){
     h1{
-        font-size: 7rem;
+        font-size: 8rem;
     }
-    .container2{
-        width: 50%;
+    .text{
+        font-size: 2rem;
+        padding: 1em;
+    }
+    .home{
+        font-size: 1.5rem;
+    }
+    .home:hover{
+        font-size: 2rem;
     }
     .container3{
-        width: 55%;
-    }
-    .container4{
-        width: 50%;
-    }
-    .middle{
-        left: 4em;
+        width: 40%;
     }
 }
 @media screen and (max-width: 530px) {
