@@ -218,24 +218,32 @@ img{
         width: 40%;
     }
 }
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 425px) {
     h1{
         font-size: 6rem;
     }
+    .middle{
+        left: 13em;
+        bottom: 24em;
+    }
     .text{
+        font-size: 1rem;
+    }
+    .home{
+        font-size: 1.5rem;
+    }
+    .home:hover{
         font-size: 2rem;
     }
-    h2{
-        font-size: 2rem;
+    .felxbox-container{
+        padding: 2em;
+        flex-wrap: wrap;
     }
-    .container2{
-        width: 80%;
+    .container1{
+        width: 100%; 
     }
-    .container3{
-        width: 85%;
-    }
-    .container4{
-        width: 80%;
+    .image2{
+        margin-top: 2em;
     }
 }
     
