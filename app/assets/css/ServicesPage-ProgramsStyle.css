@@ -216,27 +216,32 @@ img{
         width: 40%;
     }
 }
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 425px) {
     h1{
         font-size: 6rem;
     }
-    .text{
-        font-size: 2rem;
-    }
-    h2{
-        font-size: 2rem;
-    }
     .middle{
-        left: 6em;
+        left: 1.5em;
+        bottom: 24em;
     }
-    .container2{
-        width: 80%;
+    .text{
+        font-size: 1rem;
     }
-    .container3{
-        width: 85%;
+    .home{
+        font-size: 1.5rem;
     }
-    .container4{
-        width: 80%;
+    .home:hover{
+        font-size: 2rem;
+    }
+    .felxbox-container{
+        padding: 2em;
+        flex-wrap: wrap;
+    }
+    .container1{
+        width: 100%; 
+    }
+    .image2{
+        margin-top: 2em;
     }
 }
     
