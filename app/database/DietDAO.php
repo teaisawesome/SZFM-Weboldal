@@ -51,13 +51,13 @@ class DietDAO
     }
 }
 
-$dao = new DietDAO();
+// $dao = new DietDAO();
 
-$diet_entry = new Diet(null,1,100,"Dió");
+// $diet_entry = new Diet(null,1,100,"Dió");
 
-// $dao->insertDiet($diet_entry);
+// // $dao->insertDiet($diet_entry);
 
-echo "<pre>";
-print_r($dao->selectDiet(1));
+// echo "<pre>";
+// print_r($dao->selectDiet(1));
 
 ?>
