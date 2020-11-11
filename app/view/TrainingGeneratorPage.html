@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="TryStyle.css">
+
+    <body>
+        <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+            <div class="home w3-display-topleft w3-padding-large">
+              Kezdőlap
+            </div>
+            <div class="middle">
+              <h1 class="w3-animate-top">Edzésterv Generátor</h1>
+            </div>
+        </div>
+        <div class="main">
+
+            <div class="felxbox-container">
+
+                <div class="container1">
+                    <div class="Table">
+                        <h2>Gyakorlatok izomcsoportok szerint</h2>
+                        <div class="tabContainer">
+                            <div class="buttonContainer">
+                                <button id="FirstButton" onclick="showPanel(0,'#696969')">Mell</button>
+                                <button onclick="showPanel(1,'#696969')">Váll</button>
+                                <button onclick="showPanel(2,'#696969')">Láb</button>
+                                <button onclick="showPanel(3,'#696969')">Hát</button>
+                                <button onclick="showPanel(4,'#696969')">Has</button>
+                                <button onclick="showPanel(5,'#696969')">Bicepsz</button>
+                                <button onclick="showPanel(6,'#696969')">Tricepsz</button>
+                                <button onclick="showPanel(7,'#696969')">Egyéb</button>
+                            </div>
+                            <div class="tabPanel">
+                                <ul class="list">
+                                    <li id="FirstRow">Fekvenyomás</li>
+                                    <li>Tárogatás</li>
+                                    <li>Fekvőtámasz</li>
+                                    <li>Összehúzás</li>
+                                </ul>
+                            </div>
+                            <div class="tabPanel">
+                                <ul class="list">
+                                    <li id="FirstRow">Fejfölé nyomás</li>
+                                    <li>Oldalemelés</li>
+                                    <li>Csuklya</li>
+                                    <li>Előre emelés</li>
+                                </ul>
+                            </div>
+                            <div class="tabPanel">
+                                <ul class="list">
+                                    <li id="FirstRow">Guggolás</li>
+                                    <li>Kitörés hátrafele</li>
+                                    <li>Támadó járás</li>
+                                    <li>Széles guggolás</li>
+                                </ul>
+                            </div>
+                            <div class="tabPanel">
+                                <ul class="list">
+                                    <li id="FirstRow">Felhúzás</li>
+                                    <li>Mellhez húzás</li>
+                                    <li>Fűrészelés</li>
+                                    <li>Húzódzkodás</li>
+                                </ul>
+                            </div>
+                            <div class="tabPanel">
+                                <ul class="list">
+                                    <li id="FirstRow">Plafon érintés függeszkedve</li>
+                                    <li>Plank</li>
+                                    <li>Hasprés labdán</li>
+                                    <li>Törzsforgatás medicin labdával ülve</li>
+                                </ul>
+                            </div>
+                            <div class="tabPanel">
+                                <ul class="list">
+                                    <li id="FirstRow">Állva egyenes rúd</li>
+                                    <li>Kalapács</li>
+                                    <li>Váltottkezes</li>
+                                    <li>Egyenes rúd madárfogás</li>
+                                </ul>
+                            </div>
+                            <div class="tabPanel">
+                                <ul class="list">
+                                    <li id="FirstRow">Szűk fekvenyomás</li>
+                                    <li>Kötél lehúzás</li>
+                                    <li>Tolódzkodás</li>
+                                    <li>Egykezes letolás</li>
+                                </ul>
+                            </div>
+                            <div class="tabPanel">
+                                <ul class="list">
+                                    <li id="FirstRow">Alkar kézisúlyzóval</li>
+                                    <li>Kötélmászás</li>
+                                    <li>Cross kötél</li>
+                                    <li>Gumiabroncs görgetés</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container container2">
+                    <div class="Generator"> 
+                        <h2>Edzésterv típus</h2>
+                        <select name="Gyakorlatok" id="Gyakorlatok">
+                            <option value="Mell">Mell</option>
+                            <option value="Váll">Váll</option>
+                            <option value="Láb">Láb</option>
+                            <option value="Hát">Hát</option>
+                            <option value="Has">Has</option>
+                            <option value="Bicepsz">Bicepsz</option>
+                            <option value="Tricepsz">Tricepsz</option>
+                            <option value="Egyéb">Egyéb</option>
+                        </select>
+                        <br>
+                        <h2>Gyakorlatok száma</h2>
+                        <input type="text" placeholder="maximum hat gyakorlat">
+                        <br>
+                        <br>
+                        <button id="GenerateButton">Edzésterv generálás</button>
+                    </div>
+                </div>
+                <div class="container container4">
+                    <div class="NewPlan">
+                        <h2>Generált edzésterv</h2>
+                        <ul class="list">
+                            <li>Alkar kézisúlyzóval</li>
+                            <li>Kötélmászás</li>
+                            <li>Cross kötél</li>
+                            <li>Gumiabroncs görgetés</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="TrainingGeneratorScript.js"></script>
+    </body>
+</html>
