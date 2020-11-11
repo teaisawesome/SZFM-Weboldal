@@ -5,7 +5,7 @@ class Router
     {
         $url = trim($url);
 
-        $domain = "/SZFM-Weboldal/app/";
+        $domain = "/SZFM-WEBOLDAL/app/";
 
         /**
          * /mvcpattern/ - fő mappára át kell írni
