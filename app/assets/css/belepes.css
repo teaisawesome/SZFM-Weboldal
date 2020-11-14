@@ -220,6 +220,10 @@ footer {
     bottom: 90%;
 }
 
+#errorMessage {
+    color: blue;
+}
+
 @keyframes animate {
     0%,
     100% {
