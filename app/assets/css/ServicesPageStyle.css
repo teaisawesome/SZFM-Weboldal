@@ -59,18 +59,52 @@ h1{
 }
 
 /*Responzivitás*/
-@media only screen and (max-width: 1250px){
-    /*body{
-        display: none;
-    }*/
+@media only screen and (max-width: 2560px){
     h1{
-        font-size: 8rem;
+        font-size: 16rem;
     }
     .title:hover{
-        font-size: 10rem;
+        font-size: 18rem;
     }
+    
+}
+@media only screen and (max-width: 1440px){
+    h1{
+        font-size: 12rem;
+    }
+    .title:hover{
+        font-size: 13rem;
+    }
+    
 }
 @media only screen and (max-width: 1024px){
+    h1{
+        font-size: 12rem;
+    }
+    .title:hover{
+        font-size: 13rem;
+    }
+}
+@media only screen and (max-width: 768px){
+    h1{
+        font-size: 10rem;
+    }
+    .title:hover{
+        font-size: 12rem;
+    }
+    .position{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 425px) {
+    h1{
+        font-size: 6rem;
+    }
+    .title:hover{
+        font-size: 7rem;
+    }
+}
+@media screen and (max-width: 375px) {
     h1{
         font-size: 6rem;
     }
@@ -78,21 +112,12 @@ h1{
         font-size: 8rem;
     }
 }
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 320px){
     h1{
         font-size: 5rem;
     }
     .title:hover{
-        font-size: 7rem;
+        font-size: 6rem;
     }
 }
-  
-@media screen and (max-width: 520px){
-    h1{
-        font-size: 4rem;
-    }
-    .title:hover{
-        font-size: 5rem;
-    }
-}
-    
+

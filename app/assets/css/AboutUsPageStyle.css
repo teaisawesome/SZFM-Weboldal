@@ -113,45 +113,143 @@ img{
 }
 
 /*Reszponzivitás*/
+@media only screen and (max-width: 2560px){
+    h1{
+        font-size: 15rem;
+    }
+    .text{
+        font-size: 4rem;
+    }
+    h2{
+        font-size: 6rem;
+    }
+    .image2{
+        padding-top: 25rem;
+    }
+    .home{
+        font-size: 3rem;
+    }
+    .home:hover{
+        font-size: 4rem;
+    }
+}
+@media only screen and (max-width: 1440px){
+    h1{
+        font-size: 12rem;
+    }
+    .text{
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 4rem;
+    }
+    .home{
+        font-size: 2rem;
+    }
+    .home:hover{
+        font-size: 3rem;
+    }
+}
 @media only screen and (max-width: 1024px){
     .felxbox-container{
         display: block;
         flex-wrap: wrap;
+        padding: 5em;
     }
     .container1{
         width: 100%; 
     }
     .container2{
-        width: 100%;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .container3{
         width: 100%;
     }
     .container4{
-        width: 100%;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .middle{
+        position: absolute;
+        top: 30%; 
     }
     .image1{
         padding-top: 5em;
         padding-bottom: 5em;
     }
-
-}
-@media only screen and (max-width: 767px){
     h1{
         font-size: 8rem;
     }
+    .text{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    .home{
+        font-size: 1.5rem;
+    }
+    .home:hover{
+        font-size: 2rem;
+    }
+    .image2{
+        padding-top: 5em;
+    }
+
 }
-@media screen and (max-width: 530px) {
-    /*body{
-        display: none;
-    }*/
+@media only screen and (max-width: 768px){
     h1{
         font-size: 6rem;
     }
     .text{
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     h2{
-        font-size: 2rem;
+        font-size: 3rem;
+    }
+    .middle{
+        position: absolute;
+        top: 30%; 
+        left: 10%;
+    }
+}
+@media screen and (max-width: 425px) {
+    .home{
+        font-size: 1rem;
+    }
+    .home:hover{
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width: 320px){
+    .felxbox-container{
+        padding: 1em;
+    }
+    .container1{
+        padding-top: 2em;
+    }
+    .middle{
+        position: absolute;
+        top: 20%;
+        left: 10%;
+    }
+    h1{
+        font-size: 6rem;
+    }
+    .text{
+        font-size: 1rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .image1{
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    .image2{
+        padding-top: 2em;
     }
 }
