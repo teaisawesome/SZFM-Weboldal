@@ -1,5 +1,5 @@
-<header class="borito">
-        <div class="borito-img">
+<header class="borito-fasz">
+        <div class="borito-img-fasz">
             <nav>
                 <div class="topmenu">
                     <div class="logo">
@@ -10,13 +10,12 @@
                     </label>
                     <input class="csekk" type="checkbox" id="btn">
                     <ul>
-                        <li><a href="">Forum</a></li>
-                        <li><a href="">Galeria</a></li>
+                        <li><a href="">Fórum</a></li>
                         <li><a href="">Kapcsolat</a></li>
-                        <li><a href="">Szolgaltatasok</a></li>
-                        <li><a href="">Rolunk</a></li>
-                        <li><a href="">Belepes</a></li>
-                        <li><a href="">Regisztracio</a></li>
+                        <li><a href="">Szolgáltatások</a></li>
+                        <li><a href="">Rólunk</a></li>
+                        <li><a href="login">Belépes</a></li>
+                        <li><a href="registration">Regisztráció</a></li>
                     </ul>
                 </div>
             </nav>

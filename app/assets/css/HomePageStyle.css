@@ -20,13 +20,12 @@ body, html {
 
 /*Háttérképek*/
 .bgimg1 {
-  background-image: url('../../resources/images/HomePageImages/HomePageCover.png');
+  background-image: url('../../resources/images/bg.jpg');
   background-repeat: no-repeat;
   min-height: 100%;
   width: auto;
-  background-position: center center;
+  background-position: center;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 .bgimg2 {
