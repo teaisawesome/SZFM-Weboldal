@@ -1,10 +1,10 @@
 <?php
 
-require(ROOT . "/database/Database.php");
-require(ROOT . "/classes/Calorie.php");
+//require(ROOT . "/database/Database.php");
+//require(ROOT . "/classes/Calorie.php");
 
-//require("../database/Database.php");
-//require("../classes/ForumComment.php");
+require("../database/Database.php");
+require("../classes/ForumComment.php");
 
 class ForumDAO
 {
