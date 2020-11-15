@@ -17,7 +17,7 @@
                     <?php 
                         if(isset($_SESSION['logged']))
                         {
-                            echo "<li id='nav-email'><a href=''>" . $_SESSION['user'] . "</a></li>";
+                            echo "<li id='nav-email'><a href='profil'>" . $_SESSION['user'] . "</a></li>";
                         }
                         else
                         {
