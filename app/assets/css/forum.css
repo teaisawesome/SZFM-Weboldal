@@ -1,0 +1,39 @@
+html, body{
+    width: 100%;
+    background-color: #ccc;
+}
+
+span{
+    font-size: 2em;
+}
+
+#content{
+    width: 50%;
+    margin: auto;
+}
+
+.ratings{
+    width: 100%;
+    border-bottom: 1px solid black;
+
+}
+
+.comment{
+    background-color: #fff;;
+    margin-top: 10px;
+    border: 1px solid black;
+    padding: 1em;
+    box-shadow: -2px 5px #aaa;
+}
+
+.message{
+    width: 100%;
+    margin-top: 1em;
+}
+
+@media screen and (max-width: 600px)
+{
+    span{
+        font-size: 1em;
+    }
+}
