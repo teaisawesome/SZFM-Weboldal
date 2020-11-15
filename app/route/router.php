@@ -57,6 +57,16 @@ class Router
             $request->action = "authentication";
             $request->params = [$_POST['email'], $_POST['password']];
         }
+
+        /**
+         *   Profile routing
+         */
+        if($url == $domain . 'profile')
+        {
+            $request->controller = "Profile";
+            $request->action = "index";
+            $request->params = "data";
+        }
     }
 }
 ?>
