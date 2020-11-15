@@ -1,15 +1,15 @@
 /*Betű stílusok*/
 @font-face{
     font-family: "Italianno";
-    src: url('../Fonts/Italianno-Regular.ttf')
+    src: url('../../resources/fonts/Italianno-Regular.ttf')
 }
 @font-face{
     font-family: "Montserrat";
-    src: url('../Fonts/Montserrat-BoldItalic.ttf')
+    src: url('../../resources/fonts/Montserrat-BoldItalic.ttf')
 } 
 @font-face{
     font-family: "Rochester";
-    src: url('../Fonts/Rochester-Regular.ttf')
+    src: url(../../resources/fonts/Rochester-Regular.ttf')
 }   
 
 /*Oldalbeállítások*/
