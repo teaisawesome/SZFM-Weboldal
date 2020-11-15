@@ -4,12 +4,19 @@ html, body{
 }
 
 span{
-    font-size: 2em;
+    font-size: 2rem;
+}
+
+.avg{
+    margin-left: 2em;
+}
+
+#rating{
+    font-size: 1rem;
 }
 
 #content{
-    width: 50%;
-    margin: auto;
+    width: 100%;
 }
 
 .ratings{
@@ -19,6 +26,8 @@ span{
 }
 
 .comment{
+    width: 50%;
+    margin: auto;
     background-color: #fff;;
     margin-top: 10px;
     border: 1px solid black;
@@ -31,9 +40,42 @@ span{
     margin-top: 1em;
 }
 
+#new-comment-form{
+    width: 50%;
+    margin: auto;
+    padding: 0;
+}
+
+#ta-comment{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    resize: none;
+}
+
+#greeting{
+    display: block;
+    width: fit-content;
+    margin: auto;
+}
+
 @media screen and (max-width: 600px)
 {
-    span{
-        font-size: 1em;
+    
+
+    .comment{
+        width: 300px;
+    }
+
+    #new-comment-form{
+        width: 300px;
     }
 }
+
+@media screen and (max-width: 1024px)
+{
+    span{
+        font-size: 1rem;
+    }
+}
+

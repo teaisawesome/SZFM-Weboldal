@@ -1,6 +1,6 @@
 <?php
 
-require(ROOT . "/classes/User.php");
+require("../classes/User.php");
 
 class UserDAO
 {
@@ -10,6 +10,7 @@ class UserDAO
     private $deleteUserString;
     private $getUserByIdString;
     private $getAllUserString;
+    private $getUserByEmailStatement;
     private $auth;
 
     public function __construct()
@@ -25,6 +26,8 @@ class UserDAO
         $this->getUserByIdString = $this->con->prepare("SELECT * FROM `USERS` WHERE `ID` = :id;");
 
         $this->getAllUserString = $this->con->prepare("SELECT * FROM `USERS`;");
+
+        $this->getUserByEmailStatement = $this->con->prepare("SELECT * FROM `USERS` WHERE `EMAIL` = ? ;");
 
         $this->auth = $this->con->prepare("SELECT * FROM `USERS` WHERE `EMAIL`=:email AND `PASSWORD`=:password;");
     }
@@ -51,7 +54,7 @@ class UserDAO
         $this->getUserByIdString->execute([":id" => $id]);
         $fetched = $this->getUserByIdString->fetchAll();
         $user = new User();
-        $user->Id($fetched[0][0])->Name($fetched[0][1])->Password($fetched[0][2])->Address($fetched[0][3])->Email($fetched[0][4])->Phone($fetched[0][5])->Rank($fetched[0][6])->IsPremiumMember($fetched[0][7])->Image($fetched[0][8])->Card($fetched[0][8]);
+        $user->Id($fetched[0][0])->Name($fetched[0][1])->Password($fetched[0][2])->Address($fetched[0][4])->Email($fetched[0][5])->Phone($fetched[0][6])->Rank($fetched[0][7])->IsPremiumMember($fetched[0][8])->Image($fetched[0][9])->Card($fetched[0][3]);
         return $user;
     }
 
@@ -68,6 +71,17 @@ class UserDAO
         }
 
         return $users;
+    }
+
+    public function getUserByEmail($email)
+    {
+        $this->getUserByEmailStatement->execute([$email]);
+
+        $fetched = $this->getUserByEmailStatement->fetchAll();
+        $user = new User();
+        $user->Id($fetched[0][0])->Name($fetched[0][1])->Password($fetched[0][2])->Address($fetched[0][4])->Email($fetched[0][5])->Phone($fetched[0][6])->Rank($fetched[0][7])->IsPremiumMember($fetched[0][8])->Image($fetched[0][9])->Card($fetched[0][3]);
+        return $user;
+
     }
 
     public function auth($email, $pwd)
