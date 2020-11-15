@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.row {
+    align-items: center;
+}
+
+.col-xl-12 {
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
+
+.logo a {
+    font-size: 25px;
+    /* text-transform: uppercase; */
+    color: white;
+    font-weight: bold;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 14px 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+}
+
+.single-slide-szauna {
+    background-image: url(../../../resources/images/szolgaltatasok_osszessege_images/szauna.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.single-slide-sobarlang {
+    background-image: url(../../../resources/images/szolgaltatasok_osszessege_images/sobarlang.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.single-slide-halpedikur {
+    background-image: url(../../../resources/images/szolgaltatasok_osszessege_images/halpedikur.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.single-slide-szauna:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(73, 73, 73);
+    opacity: 0.4;
+}
+
+.slide-content-szauna {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    opacity: 0;
+    margin-left: 200px;
+    transition: 1.2s all ease;
+}
+
+.slide-content-szauna h4 {
+    text-transform: capitalize;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 20px;
+    transition: 0.5s;
+}
+
+.slide-content-szauna h4:after {
+    content: "";
+    height: 4px;
+    width: 80px;
+    background: white;
+    box-shadow: 0px 0px 10px 5px rgb(122, 192, 157);
+    left: 0px;
+    top: 40px;
+    display: block;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.slide-content-szauna h2 {
+    text-transform: capitalize;
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.slide-content-szauna p {
+    color: white;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    max-width: 500px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.slide-content-szauna .szaunaref {
+    background: rgb(122, 192, 157);
+    border-radius: 50px;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-weight: bolder;
+    position: relative;
+    top: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.slide-content-szauna .szaunaref:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 340px;
+    top: 15px;
+    left: 120px;
+    height: 4px;
+    background: white;
+    box-shadow: 0px 0px 10px 5px rgb(122, 192, 157);
+}
+
+.single-slide-sobarlang:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(80, 80, 80);
+    opacity: 0.4;
+}
+
+.slide-content-sobarlang {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    opacity: 0;
+    margin-left: 200px;
+    transition: 1.2s all ease;
+}
+
+.slide-content-sobarlang h4 {
+    text-transform: capitalize;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 20px;
+    transition: 0.5s;
+}
+
+.slide-content-sobarlang h4:after {
+    content: "";
+    height: 4px;
+    width: 70px;
+    background: white;
+    box-shadow: 0px 0px 10px 5px #07859e;
+    left: 0px;
+    top: 40px;
+    display: block;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.slide-content-sobarlang h2 {
+    text-transform: capitalize;
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.slide-content-sobarlang p {
+    color: white;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    max-width: 500px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.slide-content-sobarlang .sobarlangref {
+    background: #07859e;
+    border-radius: 50px;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-weight: bolder;
+    position: relative;
+    top: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.slide-content-sobarlang .sobarlangref:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 340px;
+    top: 15px;
+    left: 120px;
+    height: 4px;
+    background: white;
+    box-shadow: 0px 0px 10px 5px #07859e;
+}
+
+.single-slide-halpedikur:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(104, 104, 104);
+    opacity: 0.4;
+}
+
+.slide-content-halpedikur {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    opacity: 0;
+    margin-left: 200px;
+    transition: 1.2s all ease;
+}
+
+.slide-content-halpedikur h4 {
+    text-transform: capitalize;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 20px;
+    transition: 0.5s;
+}
+
+.slide-content-halpedikur h4:after {
+    content: "";
+    height: 4px;
+    width: 105px;
+    background: white;
+    box-shadow: 0px 0px 10px 5px #9c63e7;
+    left: 0px;
+    top: 40px;
+    display: block;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.slide-content-halpedikur h2 {
+    text-transform: capitalize;
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.slide-content-halpedikur p {
+    color: white;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    max-width: 500px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.slide-content-halpedikur .halpedikurref {
+    background: #9c63e7;
+    border-radius: 50px;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-weight: bolder;
+    position: relative;
+    top: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.slide-content-halpedikur .halpedikurref:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 375px;
+    top: 15px;
+    left: 120px;
+    height: 4px;
+    background: white;
+    box-shadow: 0px 0px 10px 5px #9c63e7;
+}
+
+.owl-item.active .slide-content-sobarlang {
+    margin-left: 0;
+    opacity: 1;
+}
+
+.owl-item.active .slide-content-szauna {
+    margin-left: 0;
+    opacity: 1;
+}
+
+.owl-item.active .slide-content-halpedikur {
+    margin-left: 0;
+    opacity: 1;
+}
+
+.nav-area {
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    top: 0;
+    padding: 20px 0px;
+}
+
+.slider-area.owl-carousel .owl-nav button {
+    opacity: 0.4;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    outline: none;
+    left: 0;
+}
+
+.slider-area.owl-carousel .owl-nav button.owl-next {
+    right: 0;
+    left: auto;
+}
+
+.slider-area.owl-carousel .owl-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-20%);
+    color: transparent;
+}
+
+@media all and (max-width: 1200px) {
+    .nav-area {
+        padding-right: 35px;
+    }
+    .menu {
+        padding-left: 0px;
+        width: fit-content;
+    }
+    .logo {
+        padding-left: 4px;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu ul li a {
+        padding: 5px;
+    }
+}
+
+@media all and (max-width:768px) {
+    .menu {
+        padding-left: 0px;
+        width: fit-content;
+    }
+    .logo {
+        padding-left: 4px;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu ul li a {
+        padding: 0px;
+    }
+    .slide-content-szauna h4 {
+        font-size: 15px;
+        padding-bottom: 5px;
+    }
+    .slide-content-szauna h4:after {
+        top: 25px;
+        width: 52px;
+    }
+    .slide-content-sobarlang h4 {
+        font-size: 15px;
+        padding-bottom: 5px;
+    }
+    .slide-content-sobarlang h4:after {
+        top: 25px;
+        width: 45px;
+    }
+    .slide-content-halpedikur h4 {
+        font-size: 15px;
+        padding-bottom: 5px;
+    }
+    .slide-content-halpedikur h4:after {
+        top: 25px;
+        width: 68px;
+    }
+    .slide-content-szauna h2 {
+        font-size: 25px;
+    }
+    .slide-content-sobarlang h2 {
+        font-size: 25px;
+    }
+    .slide-content-halpedikur h2 {
+        font-size: 25px;
+    }
+    .slide-content-szauna p {
+        font-size: 10px;
+        max-width: 250px;
+        margin-top: 1px;
+        line-height: 15px;
+        margin-bottom: 8px;
+    }
+    .slide-content-sobarlang p {
+        font-size: 10px;
+        max-width: 250px;
+        margin-top: 1px;
+        line-height: 15px;
+        margin-bottom: 8px;
+    }
+    .slide-content-halpedikur p {
+        font-size: 10px;
+        max-width: 250px;
+        margin-top: 1px;
+        line-height: 15px;
+        margin-bottom: 8px;
+    }
+    .slide-content-szauna .szaunaref {
+        font-size: 10px;
+        top: 0px;
+        padding: 6px 10px;
+    }
+    .slide-content-szauna .szaunaref:after {
+        width: 150px;
+        top: 12px;
+        left: 90px;
+    }
+    .slide-content-sobarlang .sobarlangref {
+        font-size: 10px;
+        top: 0px;
+        padding: 6px 10px;
+    }
+    .slide-content-sobarlang .sobarlangref:after {
+        width: 160px;
+        top: 12px;
+        left: 90px;
+    }
+    .slide-content-halpedikur .halpedikurref {
+        font-size: 10px;
+        top: 0px;
+        padding: 6px 10px;
+    }
+    .slide-content-halpedikur .halpedikurref:after {
+        width: 160px;
+        top: 12px;
+        left: 90px;
+    }
+    .col-xl-12 {
+        padding-top: 250px;
+    }
+}
+
+
+/* @media all and (max-width: 768px) {
+    .menu {
+        padding-left: 30px;
+        width: fit-content;
+    }
+    .logo {
+        padding-left: 33px;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu ul li a {
+        padding: 1px;
+    }
+    .slide-content {
+        padding-left: 5px;
+        padding-top: 50px;
+    }
+    .slide-content h2 {
+        padding-top: 20px;
+        font-size: 20px;
+        transition: 0.5s;
+    }
+    .slide-content h4 {
+        font-size: 15px;
+        transition: 0.5s;
+    }
+    .slide-content p {
+        font-size: 10px;
+        max-width: 200px;
+        transition: 0.5s;
+        line-height: 15px;
+    }
+    .slide-content a {
+        font-size: 8px;
+        transition: 0.5s;
+        top: 1px;
+    }
+    .slide-content a:after {
+        width: 70px;
+        transition: 0.5s;
+    }
+} */
