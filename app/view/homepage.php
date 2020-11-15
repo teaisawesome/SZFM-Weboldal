@@ -79,7 +79,6 @@
                 <i class="fas fa-door-open">
                     <p>06:00 - 22:00</p>
                 </i>
-
             </div>
         </section>
         <section class="about-container">
