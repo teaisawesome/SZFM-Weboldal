@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: rgb(204, 186, 153);
+}
+
+.borito {
+    display: grid;
+    height: 50vh;
+    transition: 0.5s;
+    width: 100%;
+    position: relative;
+    background-image: url("../../../resources/images/szolgaltatas_oldalak_images/szauna.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.borito-img>.cim h1 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    text-align: center;
+    font-size: 90px;
+    font-weight: 1000;
+    background: linear-gradient(to right, white, rgb(240, 213, 198));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Header Salutem cim*/
+
+.borito-img>.cim h3 {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    text-align: center;
+    font-size: 50px;
+    font-weight: 1000;
+    background: linear-gradient(to right, white, rgb(240, 213, 198));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Header menu-area */
+
+
+/* .borito>nav .topmenu {
+    position: relative;
+    width: 100%;
+} */
+
+
+/* Egyenletes clear mindkét oldalon */
+
+
+/* Nem feltétlen kell */
+
+nav .topmenu:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+
+/* Header menu-rendezés */
+
+nav .topmenu {
+    overflow: hidden;
+    width: 100%;
+}
+
+
+/* Header menu ul rendezés */
+
+nav .topmenu ul {
+    position: relative;
+    margin-right: 40px;
+    float: right;
+    list-style: none;
+}
+
+
+/* Header menu lista rendezés */
+
+.topmenu ul li {
+    display: inline-block;
+    float: left;
+    background: transparent;
+    margin: 0 5px;
+    /* padding-left: 60px; */
+}
+
+
+/* Header menu hivatkozás rendezés */
+
+.topmenu ul li a {
+    position: relative;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 0px 15px;
+    font-weight: 800;
+    z-index: 1;
+    letter-spacing: 1.5px;
+    transition: 0.5s;
+    overflow: hidden;
+    border-radius: 50%
+}
+
+
+/* Header menu logo */
+
+.topmenu .logo {
+    font-weight: bolder;
+    font-size: 25px;
+    padding-left: 60px;
+    line-height: 70px;
+    color: white;
+    float: left;
+}
+
+
+/* Menu hover anim */
+
+.topmenu ul:hover li a {
+    opacity: 0.4;
+}
+
+.topmenu ul li:hover:before {
+    opacity: 0.3;
+    letter-spacing: 0px;
+}
+
+.topmenu ul li a:hover {
+    transform: scale(1.2);
+    z-index: 1000;
+    opacity: 1;
+    color: #f2f2f2;
+}
+
+.topmenu ul li a:before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: -100px;
+    width: 80px;
+    height: 30px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+    transform: skewX(35deg);
+    transition: 0s;
+}
+
+.topmenu ul li a:hover:before {
+    left: calc(100% + 100px);
+    transition: 0.5s;
+    transition-delay: 0.2s;
+}
+
+
+/* Hamburger */
+
+.icon,
+.csekk {
+    display: none;
+}
