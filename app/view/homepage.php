@@ -7,18 +7,20 @@
       <title>SZFM</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="assets/css/navtemp.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+      <style>
+        body
+        {
+          background-color: black;
+        }
+      </style>
   </head>
   <body>
     <div class="bgimg1 w3-display-container w3-animate-opacity w3-text-white">
-      <div class="w3-display-topleft w3-padding-large w3-xlarge">
-        Logo
-      </div>
-      <div class="w3-display-topright w3-padding-large">
-        <a class="login" href="login">Bejelentkezés</a>
-      </div>
-      <div class="registration-position w3-display-topright w3-padding-large">
-        <a class="registration" href="registration">Regisztráció</a>
-      </div>
+    <?php 
+      require "template/navtemp.php";
+    ?>
       <div class="w3-display-middle">
         <h1 class="title1 w3-animate-top">SZFM Wellness Centrum</h1>
       </div>

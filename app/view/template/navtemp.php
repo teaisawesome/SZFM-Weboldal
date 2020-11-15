@@ -2,7 +2,9 @@
         <div class="borito-img">
             <nav>
                 <div class="topmenu">
-                    <div class="logo">Logo</div>
+                    <div class="logo">
+                        <img src="datas/pictures/logo.png" alt="" width="80" height="80">
+                    </div>
                     <label for="btn" class="icon">
                         <span class="fa fa-bars"></span>
                     </label>
@@ -18,9 +20,5 @@
                     </ul>
                 </div>
             </nav>
-            <div class="cim">
-                <h1>Szauna</h1>
-                <h3>Salutem</h3>
-            </div>
         </div>
     </header>

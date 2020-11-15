@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="assets/css/belepes.css">
     <title>Belépés</title>
 </head>
-
 <body>
     <form method="post" action="/SZFM-Weboldal/app/loginservice">
         <header class="content">
