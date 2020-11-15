@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: rgb(204, 186, 153);
+}
+
+
+/* HEADER */
+
+
+/* BORÍTÓ KÉP */
+
+.borito {
+    display: grid;
+    height: 50vh;
+    transition: 0.5s;
+    width: 100%;
+    position: relative;
+    background-image: url("../../../resources/images/szolgaltatas_oldalak_images/szauna.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* BORÍTÓ SZAUNA */
+
+.borito-img>.cim h1 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    text-align: center;
+    font-size: 90px;
+    font-weight: 1000;
+    background: linear-gradient(to right, white, rgb(240, 213, 198));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* BORÍTÓ SALUTEM */
+
+.borito-img>.cim h3 {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    text-align: center;
+    font-size: 50px;
+    font-weight: 1000;
+    background: linear-gradient(to right, white, rgb(240, 213, 198));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* NAV BOX CLEAR */
+
+nav .topmenu:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+
+/* NAV BOX SZÉLESSÉG / EFFEKT-HIDDEN  */
+
+nav .topmenu {
+    overflow: hidden;
+    width: 100%;
+}
+
+
+/* NAV MENU ELEMEK RENDEZÉSE */
+
+nav .topmenu ul {
+    position: relative;
+    margin-right: 40px;
+    float: right;
+    list-style: none;
+}
+
+
+/* NAV MENU LISTA RENDEZÉSE */
+
+.topmenu ul li {
+    display: inline-block;
+    float: left;
+    background: transparent;
+    margin: 0 5px;
+    /* padding-left: 60px; */
+}
+
+
+/* NAV MENU HIVATKOZÁSOK RENDEZÉSE */
+
+.topmenu ul li a {
+    position: relative;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 0px 15px;
+    font-weight: 800;
+    z-index: 1;
+    letter-spacing: 1.5px;
+    transition: 0.5s;
+    overflow: hidden;
+    border-radius: 50%
+}
+
+
+/* NAV LOGO RENDEZÉSE*/
+
+.topmenu .logo {
+    font-weight: bolder;
+    font-size: 25px;
+    padding-left: 60px;
+    line-height: 70px;
+    color: white;
+    float: left;
+}
+
+
+/* NAV HIVATKOZÁS HOVER EFFEKT */
+
+.topmenu ul:hover li a {
+    opacity: 0.4;
+}
+
+
+/* NAV MENU LISTA BEFORE CONTENT */
+
+.topmenu ul li:hover:before {
+    opacity: 0.3;
+    letter-spacing: 0px;
+}
+
+
+/* HIVATKOZAS HOVER EFFEKT */
+
+.topmenu ul li a:hover {
+    transform: scale(1.2);
+    z-index: 1000;
+    opacity: 1;
+    color: #f2f2f2;
+}
+
+
+/* HIVATKOZAS HOVER EFFEKT BEFORE CONTENT */
+
+.topmenu ul li a:before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: -100px;
+    width: 80px;
+    height: 30px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+    transform: skewX(35deg);
+    transition: 0s;
+}
+
+
+/* HIVATKOZÁS BEFORE CONTENT SZÉLESSÉGÉNEK BEÁLLÍTÁSA */
+
+.topmenu ul li a:hover:before {
+    left: calc(100% + 100px);
+    transition: 0.5s;
+    transition-delay: 0.2s;
+}
+
+
+/* HAMBURGER ICON MEGJELENÉSE */
+
+.icon,
+.csekk {
+    display: none;
+}
+
+
+/* MAIN SZERKESZTÉSE */
+
+
+/* INFORMATÍV SZÖVEG BEÁLLÍTÁSOK */
+
+.szovegresz {
+    background: rgb(204, 186, 153);
+    position: relative;
+    width: 100%;
+    padding: 50px;
+}
+
+
+/* BAL KÉP BEÁLLÍTÁSA*/
+
+.kor {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/*BAL KÉP DOBOZ */
+
+.kor.kor1 {
+    width: 500px;
+    height: 500px;
+    float: left;
+    border-radius: 50%;
+    margin: 20px;
+    shape-outside: circle();
+    transition: 0.2s;
+}
+
+
+/* JOBB KÉP DOBOZ */
+
+.kor.kor2 {
+    width: 300px;
+    height: 300px;
+    float: right;
+    border-radius: 50%;
+    margin: 20px;
+    shape-outside: circle();
+    transition: 0.2s;
+}
+
+
+/* BAL KÉP ILLESZTÉS*/
+
+.kor.kor1 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* JOBB KÖR ILLESZTÉS */
+
+.kor.kor2 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* INFORMATÍV SZÖVEG CÍME */
+
+.szovegresz .tartalom h2 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    transition: 0.2s;
+    font-weight: bolder;
+    text-shadow: 0px 1px 4px;
+}
+
+
+/* INFORMATÍV SZÖVEG TARTALOM */
+
+.szovegresz .tartalom p {
+    color: #fff;
+    transition: 0.2s;
+}
+
+.page-wrapper .post-slider {
+    position: relative;
+    border-width: 0.5rem;
+    border-top-style: ridge;
+    border-top-color: rgb(204, 170, 153);
+    border-radius: 5px;
+}
+
+.page-wrapper .post-slider .slider-title {
+    text-align: center;
+    margin: 30px auto;
+    font-weight: bolder;
+    font-size: 40px;
+    text-shadow: 0px 1px 4px;
+    color: white;
+}
+
+.post-slider .prev {
+    position: absolute;
+    top: 60%;
+    left: 30px;
+    font-size: 2em;
+    cursor: pointer;
+    color: rgb(161, 121, 100);
+}
+
+.post-slider .next {
+    position: absolute;
+    top: 60%;
+    right: 30px;
+    font-size: 2em;
+    cursor: pointer;
+    color: rgb(161, 121, 100);
+}
+
+.post-slider .post-wrapper {
+    width: 84%;
+    height: 350px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 5px;
+    padding: 10px 0px 10px 0px;
+}
+
+.post-slider .post-wrapper .post {
+    display: inline-block;
+    width: 300px;
+    margin: 0px 10px;
+    height: 330px;
+    border-radius: 50px;
+    box-shadow: 1rem 3rem 1rem -1rem rgb(161, 121, 100);
+}
+
+.post-slider .post-wrapper .post .slider-image {
+    width: 100%;
+    height: 350px;
+    border-radius: 5px;
+}
