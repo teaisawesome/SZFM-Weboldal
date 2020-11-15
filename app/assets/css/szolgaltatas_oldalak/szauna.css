@@ -10,6 +10,12 @@ body {
     background: rgb(204, 186, 153);
 }
 
+
+/* HEADER */
+
+
+/* BORÍTÓ KÉP */
+
 .borito {
     display: grid;
     height: 50vh;
@@ -21,6 +27,9 @@ body {
     background-position: center;
     background-size: cover;
 }
+
+
+/* BORÍTÓ SZAUNA */
 
 .borito-img>.cim h1 {
     position: absolute;
@@ -36,7 +45,7 @@ body {
 }
 
 
-/* Header Salutem cim*/
+/* BORÍTÓ SALUTEM */
 
 .borito-img>.cim h3 {
     position: absolute;
@@ -52,19 +61,7 @@ body {
 }
 
 
-/* Header menu-area */
-
-
-/* .borito>nav .topmenu {
-    position: relative;
-    width: 100%;
-} */
-
-
-/* Egyenletes clear mindkét oldalon */
-
-
-/* Nem feltétlen kell */
+/* NAV BOX CLEAR */
 
 nav .topmenu:after {
     content: '';
@@ -73,7 +70,7 @@ nav .topmenu:after {
 }
 
 
-/* Header menu-rendezés */
+/* NAV BOX SZÉLESSÉG / EFFEKT-HIDDEN  */
 
 nav .topmenu {
     overflow: hidden;
@@ -81,7 +78,7 @@ nav .topmenu {
 }
 
 
-/* Header menu ul rendezés */
+/* NAV MENU ELEMEK RENDEZÉSE */
 
 nav .topmenu ul {
     position: relative;
@@ -91,7 +88,7 @@ nav .topmenu ul {
 }
 
 
-/* Header menu lista rendezés */
+/* NAV MENU LISTA RENDEZÉSE */
 
 .topmenu ul li {
     display: inline-block;
@@ -102,7 +99,7 @@ nav .topmenu ul {
 }
 
 
-/* Header menu hivatkozás rendezés */
+/* NAV MENU HIVATKOZÁSOK RENDEZÉSE */
 
 .topmenu ul li a {
     position: relative;
@@ -121,7 +118,7 @@ nav .topmenu ul {
 }
 
 
-/* Header menu logo */
+/* NAV LOGO RENDEZÉSE*/
 
 .topmenu .logo {
     font-weight: bolder;
@@ -133,16 +130,22 @@ nav .topmenu ul {
 }
 
 
-/* Menu hover anim */
+/* NAV HIVATKOZÁS HOVER EFFEKT */
 
 .topmenu ul:hover li a {
     opacity: 0.4;
 }
 
+
+/* NAV MENU LISTA BEFORE CONTENT */
+
 .topmenu ul li:hover:before {
     opacity: 0.3;
     letter-spacing: 0px;
 }
+
+
+/* HIVATKOZAS HOVER EFFEKT */
 
 .topmenu ul li a:hover {
     transform: scale(1.2);
@@ -150,6 +153,9 @@ nav .topmenu ul {
     opacity: 1;
     color: #f2f2f2;
 }
+
+
+/* HIVATKOZAS HOVER EFFEKT BEFORE CONTENT */
 
 .topmenu ul li a:before {
     content: '';
@@ -163,6 +169,9 @@ nav .topmenu ul {
     transition: 0s;
 }
 
+
+/* HIVATKOZÁS BEFORE CONTENT SZÉLESSÉGÉNEK BEÁLLÍTÁSA */
+
 .topmenu ul li a:hover:before {
     left: calc(100% + 100px);
     transition: 0.5s;
@@ -170,7 +179,7 @@ nav .topmenu ul {
 }
 
 
-/* Hamburger */
+/* HAMBURGER ICON MEGJELENÉSE */
 
 .icon,
 .csekk {
