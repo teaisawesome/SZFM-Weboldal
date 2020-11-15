@@ -8,7 +8,15 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/forum.css">
 </head>
 <body>
+    <div id="new-comment-form">
+        <form action="../ajax/forum_ajax.php" method="post">
+            <span id="greeting">Értékeld az [insert Company Name]-et!</span>
+            <textarea name="comment" id="ta-comment" rows="10" ></textarea>
+            <input type="submit" name="submit" value="submit">
+        </form>
+    </div>
     <div id="content"></div>
     <script src="../assets/js/forum.js"></script>
 </body>
 </html>
+
