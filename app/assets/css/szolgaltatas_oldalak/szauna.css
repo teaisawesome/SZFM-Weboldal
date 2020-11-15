@@ -329,7 +329,7 @@ nav .topmenu ul {
 
 .post-slider .post-wrapper {
     width: 84%;
-    height: 350px;
+    height: 330px;
     margin: 20px auto;
     overflow: hidden;
     border-radius: 5px;
@@ -924,4 +924,221 @@ footer {
     font-size: 30px;
     font-weight: bolder;
     text-shadow: 0px 1px 4px;
+}
+
+
+/* RESZPONZIVITÁS */
+
+
+/* 1200 PIXELES HATÁSOK */
+
+@media all and (max-width: 1200px) {
+    /* MENU LISTA*/
+    .topmenu ul {
+        margin-right: 0px;
+        float: left;
+    }
+    /* LOGO */
+    .topmenu .logo {
+        padding-left: 13px;
+        width: 100%;
+        transition: 0.5s;
+    }
+    /* MENU LISTA ELEM */
+    .topmenu ul li {
+        display: block;
+        padding-right: 62px;
+        width: 100%;
+    }
+    /* HAMBURGER LABEL */
+    .icon {
+        display: block;
+        color: white;
+        position: absolute;
+        right: 40px;
+        line-height: 70px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    /* LISTA TARTALOM */
+    .topmenu ul li a {
+        line-height: 25px;
+        padding: 0 10px;
+    }
+    /* SZAUNA CÍM */
+    .borito-img>.cim h1 {
+        font-size: 80px;
+    }
+    /* SALUTEM CIM*/
+    .borito-img>.cim h2 {
+        font-size: 40px;
+    }
+    /* LISTA MUTATASA */
+    .topmenu a,
+    ul {
+        display: none;
+    }
+    /* LISTA MEGJELENÍTÉSE CHECKRE*/
+    [id^=btn]:checked+ul {
+        display: block;
+    }
+    /* BAL KÉP  */
+    .kor.kor1 {
+        width: 400px;
+        height: 400px;
+        margin: 10px;
+        transition: 0.5s;
+    }
+    /* JOBB KÉP */
+    .kor.kor2 {
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        transition: 0.5s;
+    }
+    /* FOOTER RÁCS SZERKEZET */
+    footer {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat (auto, 6);
+        grid-template-areas: "info" "about" "message" "efekt" "social" "term";
+        height: 100%;
+    }
+    /* SOCIAL LINKEK MÉRETEZÉSE */
+    .social-container>ul li {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+    }
+    /* ELÉRHETŐSÉGEK RENDEZÉSE */
+    .info-container {
+        justify-content: center;
+    }
+}
+
+
+/* 1000 PIXELES HATÁSOK */
+
+@media all and (max-width: 1000px) {
+    /* BAL KÉP */
+    .kor.kor1 {
+        width: 300px;
+        height: 300px;
+        margin: 10px;
+        transition: 0.5s;
+    }
+    /* JOBB KÉP */
+    .kor.kor2 {
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+        transition: 0.5s;
+    }
+    /* RIZSA */
+    .szovegresz {
+        padding: 40px;
+    }
+    /* BORÍTÓ MAGASSÁGA */
+    .borito {
+        height: 60vh;
+        transition: 1s;
+    }
+    /* HIVATKOZÁSOK NAVON BELÜLI RENDEZÉSE */
+    .topmenu ul li a {
+        line-height: 25px;
+    }
+}
+
+
+/* 800 PIXELES HATÁSOK */
+
+@media all and (max-width:800px) {
+    /* MENU LISTA */
+    .topmenu ul {
+        margin-right: 0px;
+        float: left;
+    }
+    /* LOGO */
+    .topmenu .logo {
+        padding-left: 13px;
+        width: 100%;
+    }
+    /* MENU LISTA ELEM*/
+    .topmenu ul li {
+        display: block;
+        width: 100%;
+    }
+    /* HAMBURGER LABEL */
+    .icon {
+        display: block;
+        color: white;
+        position: absolute;
+        right: 40px;
+        line-height: 70px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    /* LISTA TARTALOM */
+    .topmenu ul li a {
+        padding: 0 10px;
+        line-height: 25px;
+    }
+    /* BORÍTÓ MAGASSÁGA */
+    .borito {
+        height: 70vh;
+        transition: 1s;
+    }
+    /* SZAUNA CIM */
+    .borito-img>.cim h1 {
+        font-size: 80px;
+    }
+    /* SALUTEM CIM */
+    .borito-img>.cim h2 {
+        font-size: 40px;
+    }
+    /* LISTA MUTATÁSA */
+    .topmenu a,
+    ul {
+        display: none;
+    }
+    /* LISTA MEGJELENÍTÉSE CHECKRE */
+    [id^=btn]:checked+ul {
+        display: block;
+    }
+    /* BAL KÉP */
+    .kor.kor1 {
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+        transition: 0.5s;
+    }
+    /* JOBB KÉP */
+    .kor.kor2 {
+        width: 130px;
+        height: 130px;
+        margin: 40px;
+        transition: 0.5s;
+    }
+    /* RIZSA */
+    .szovegresz {
+        padding: 30px;
+    }
+    /* FA ICON GALERIA SLIDER */
+    .post-slider .prev {
+        left: 0px;
+    }
+    .post-slider .next {
+        right: 0px;
+    }
+    /* SLIDER BOX */
+    .post-slider .post-wrapper {
+        width: 84%;
+        height: 290px;
+    }
+    /* SLIDER BOX KÉP */
+    .post-slider .post-wrapper .post .slider-image {
+        width: 100%;
+        height: 290px;
+        border-radius: 5px;
+    }
 }
