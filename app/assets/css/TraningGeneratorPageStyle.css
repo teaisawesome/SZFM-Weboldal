@@ -1,0 +1,377 @@
+/*Betű stílusok*/
+@font-face{
+    font-family: "Italianno";
+    src: url('../Fonts/Italianno-Regular.ttf')
+}
+@font-face{
+    font-family: "Montserrat";
+    src: url('../Fonts/Montserrat-BoldItalic.ttf')
+} 
+@font-face{
+    font-family: "Rochester";
+    src: url('../Fonts/Rochester-Regular.ttf')
+}   
+
+/*Oldalbeállítások*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    height: 100%
+    
+}
+
+/*Borítókép*/
+.bgimg {
+  background-image: url('../../resources/images/TrainingGeneratorPageImages/EdzéstervGaneratorCover.png');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+/*Kezdőlap gomb*/
+.home{
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fdfafa;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 1px 3px 0 #000000, 1px 8px 5px #000000;
+}
+.home:hover{
+    font-size: 1.7rem;
+}
+
+/*Cím elhelyezése*/
+.middle{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/*Cím*/
+h1{
+    font-family: "Italianno";
+    font-size: 10rem;
+    text-align: center;
+    color: #fdfafa;
+    -webkit-text-stroke: 1.5px black;
+    text-shadow: 1px 3px 0 #000000, 1px 13px 5px #000000
+    
+}
+
+/*Háttérszín*/
+.main{
+    background-color: #EFEAE5;
+    background-image: url('../../resources/images/TrainingGeneratorPageImages/TrainingGeneratorBackground.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/*Szöveg*/
+.text{
+    font-family: "Rochester";
+    font-size: 1.9rem;
+}
+
+/*Alcím*/
+h2{
+    font-family: "Rochester";
+    font-size: 2.5rem;
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
+/*Flexbox-contanie beállításai*/
+.felxbox-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5em;
+}
+
+/*A konténerek méretei*/
+.container1{
+    height: 100%;
+    width: 70%;
+
+}
+.container{
+    margin: 5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container2{
+    height: 100%;
+    width: 20%;
+}
+.container4{
+    height: 100%;
+    width: 20%;
+}
+
+/*Gyakorlatok izomcsoportok szerinti táblázat*/
+.tabContainer{
+    width: 100%;
+}
+.tabPanel{
+    color: white;
+    width: 43%;
+}
+
+button{
+    font-family: Impact;
+    font-style: italic;
+    font-size: 1.2em;
+    float: left;
+    cursor: pointer;
+    outline:none;
+    padding: 0.6em;
+    border: none;
+    background-color: black;
+    color: black;
+    letter-spacing: 1px;
+    background-color: white;
+    border-right: 2px solid #2c2b2b;
+    border-top: 2px solid #2c2b2b;
+    border-bottom: 2px solid #2c2b2b;
+}
+#FirstButton{
+    border-left: 2px solid #2c2b2b;
+}
+#FirstRow{
+    padding-top: 4em;
+}
+
+/*Edzésterv generáló gomb*/
+#GenerateButton {
+    font-family: Impact;
+    font-style: italic;
+    font-size: 1.3em;
+    background-color: white;
+    border: 2px solid #2c2b2b;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+    margin-left: 2.5em;
+} 
+#GenerateButton:hover {
+    background-color: #4e4848;
+    color: white;
+}
+
+/*Edzésterv Generátor Izomcsoport kiválasztója*/
+select{
+    font-family: Impact;
+    font-style: italic;
+    font-size: 1.3em;
+    background-color: white;
+    border: 2px solid #2c2b2b;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+select:hover{
+    background-color: #4e4848;
+    color: white;
+}
+option{
+    background-color: #4e4848;
+}
+
+/*Listák*/
+ul {
+    font-family: "Montserrat";
+    list-style-type: none;
+    padding: 0;
+    border: 1px solid #ddd;
+} 
+ul li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+} 
+ul li:last-child {
+    border-bottom: none
+}
+
+.Generator{
+    text-align: center;
+}
+.list{
+    background-color: #696969;
+    color: white;
+}
+
+/*Input mező*/
+input{
+    font-family: Impact;
+    font-style: italic;
+    font-size: 1em;
+    background-color: white;
+    border: 2px solid #2c2b2b;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+}
+
+/*Reszponzivitás*/
+@media only screen and (max-width: 2560px){
+    h1{
+        font-size: 23rem;
+    }
+    .text{
+        font-size: 5rem;
+    }
+    .home{
+        font-size: 4rem;
+    }
+    .home:hover{
+        font-size: 5rem;
+    }
+    .container2{
+        width: 30%;
+    }
+    .container4{
+        width: 30%;
+    }
+}
+@media only screen and (width: 1440px){
+    h1{
+        font-size: 15rem;
+    }
+    .text{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 10rem;
+    }
+    h2:hover{
+        font-size: 12rem;
+    }
+    .home{
+        font-size: 2rem;
+    }
+    .home:hover{
+        font-size: 3rem;
+    }
+    .image2{
+        margin-top: 6em;
+    }
+}
+@media only screen and (width: 1024px){
+    .container1{
+        width: 70%; 
+    }
+    .container2{
+        width: 30%;
+    }
+    .container3{
+        width: 35%;
+    }
+    .container4{
+        width: 30%;
+    }
+    h1{
+        font-size: 10rem;
+    }
+    .middle{
+        left: 35em;
+        bottom:15em;
+    }
+    .text{
+        font-size: 2rem;
+    }
+    .home{
+        font-size: 2rem;
+    }
+    .home:hover{
+        font-size: 3rem;
+    }
+}
+@media only screen and (width: 768px){
+    h1{
+        font-size: 8rem;
+    }
+    .middle{
+        left: 25em;
+    }
+    .text{
+        font-size: 2rem;
+        padding: 1em;
+    }
+    .home{
+        font-size: 1.5rem;
+    }
+    .home:hover{
+        font-size: 2rem;
+    }
+    .container3{
+        width: 40%;
+    }
+}
+@media screen and (width: 425px) {
+    h1{
+        font-size: 6rem;
+    }
+    .middle{
+        left: 13em;
+        bottom: 24em;
+    }
+    .text{
+        font-size: 1rem;
+    }
+    .home{
+        font-size: 1.5rem;
+    }
+    .home:hover{
+        font-size: 2rem;
+    }
+    .felxbox-container{
+        padding: 2em;
+        flex-wrap: wrap;
+    }
+    .container1{
+        width: 100%; 
+    }
+    .image2{
+        margin-top: 2em;
+    }
+}
+@media only screen and (width: 320px){
+    .felxbox-container{
+        padding: 1em;
+    }
+    h1{
+        font-size: 6rem;
+    }
+    .middle{
+        left: 10em;
+    }
+    .text{
+        font-size: 1rem;
+    }
+    .home{
+        font-size: 1.5rem;
+    }
+    .home:hover{
+        font-size: 2rem;
+    }
+}
+    
