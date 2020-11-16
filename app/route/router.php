@@ -77,6 +77,16 @@ class Router
             $request->action = "index";
             $request->params = "data";
         }
+
+        /**
+         *   Services routing
+         */
+        if($url == $domain . 'services')
+        {
+            $request->controller = "Service";
+            $request->action = "index";
+            $request->params = "data";
+        }
     }
 }
 ?>
