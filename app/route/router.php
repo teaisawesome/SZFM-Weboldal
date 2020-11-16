@@ -67,6 +67,16 @@ class Router
             $request->action = "index";
             $request->params = "data";
         }
+
+        /**
+         *   Contact routing
+         */
+        if($url == $domain . 'contact')
+        {
+            $request->controller = "Contact";
+            $request->action = "index";
+            $request->params = "data";
+        }
     }
 }
 ?>
