@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    font-family: tahoma;
+    background: radial-gradient(white, rgb(143, 143, 143));
+}
+
+.contact .content h3 {
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: rgb(145, 145, 145);
+    margin-top: 0px;
+}
+
+.pb-10 {
+    color: rgb(145, 145, 145);
+    font-weight: bolder;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+p {
+    color: rgb(145, 145, 145);
+    font-weight: bolder;
+    font-size: 17px;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style: none;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(145, 145, 145);
+}
+
+.sub-title {
+    margin-top: 0px;
+}
+
+.value {
+    float: right;
+    color: rgb(145, 145, 145);
+    font-size: 20px;
+}
+
+.contact .content .sub-title {
+    color: rgb(145, 145, 145);
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.contact .feature-box {
+    position: relative;
+    padding-left: 70px;
+    margin: 10px 0;
+}
+
+.contact .feature-box i {
+    font-size: 28px;
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    line-height: 50px;
+    color: white;
+    background: #7195c5;
+}
+
+.contact .feature-box h5 {
+    color: #343434;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0 0 1px;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+}
+
+.social-icon .fa {
+    background: #7195c5;
+    color: white;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 30px;
+    border-image: 50px;
+    border-radius: 50%;
+}
+
+.btn {
+    padding: 15px 50px;
+    border: 0;
+    margin-top: 40px;
+    background: #7195c5;
+    border: 0;
+    border-radius: 50px;
+}
+
+nav .topmenu:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+
+/* NAV BOX SZÉLESSÉG / EFFEKT-HIDDEN  */
+
+nav .topmenu {
+    overflow: hidden;
+    width: 100%;
+}
+
+
+/* NAV MENU ELEMEK RENDEZÉSE */
+
+nav .topmenu ul {
+    position: relative;
+    margin-right: 40px;
+    float: right;
+    list-style: none;
+}
+
+
+/* NAV MENU LISTA RENDEZÉSE */
+
+.topmenu ul li {
+    display: inline-block;
+    float: left;
+    background: transparent;
+    margin: 0 5px;
+    /* padding-left: 60px; */
+}
+
+
+/* NAV MENU HIVATKOZÁSOK RENDEZÉSE */
+
+.topmenu ul li a {
+    position: relative;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 0px 15px;
+    font-weight: 800;
+    z-index: 1;
+    letter-spacing: 1.5px;
+    transition: 0.5s;
+    overflow: hidden;
+    border-radius: 50%
+}
+
+
+/* NAV LOGO RENDEZÉSE*/
+
+.topmenu .logo {
+    font-weight: bolder;
+    font-size: 25px;
+    padding-left: 60px;
+    line-height: 70px;
+    color: white;
+    float: left;
+}
+
+
+/* NAV HIVATKOZÁS HOVER EFFEKT */
+
+.topmenu ul:hover li a {
+    opacity: 0.4;
+}
+
+
+/* NAV MENU LISTA BEFORE CONTENT */
+
+.topmenu ul li:hover:before {
+    opacity: 0.3;
+    letter-spacing: 0px;
+}
+
+
+/* HIVATKOZAS HOVER EFFEKT */
+
+.topmenu ul li a:hover {
+    transform: scale(1.2);
+    z-index: 1000;
+    opacity: 1;
+    color: #f2f2f2;
+}
+
+
+/* HIVATKOZAS HOVER EFFEKT BEFORE CONTENT */
+
+.topmenu ul li a:before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: -100px;
+    width: 80px;
+    height: 30px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+    transform: skewX(35deg);
+    transition: 0s;
+}
+
+
+/* HIVATKOZÁS BEFORE CONTENT SZÉLESSÉGÉNEK BEÁLLÍTÁSA */
+
+.topmenu ul li a:hover:before {
+    left: calc(100% + 100px);
+    transition: 0.5s;
+    transition-delay: 0.2s;
+}
+
+
+/* HAMBURGER ICON MEGJELENÉSE */
+
+.icon,
+.csekk {
+    display: none;
+}
+
+nav {
+    margin-bottom: 50px;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 620px;
+    width: 450px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none!important;
+    height: 620px;
+    width: 450px;
+}
