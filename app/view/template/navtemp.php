@@ -13,7 +13,7 @@
                     <li><a href="">Fórum</a></li>
                     <li><a href="contact">Kapcsolat</a></li>
                     <li><a href="services">Szolgáltatások</a></li>
-                    <li><a href="">Rólunk</a></li>
+                    <li><a href="about">Rólunk</a></li>
                     <?php 
                         if(isset($_SESSION['logged']))
                         {

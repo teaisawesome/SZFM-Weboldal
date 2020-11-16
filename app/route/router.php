@@ -87,6 +87,16 @@ class Router
             $request->action = "index";
             $request->params = "data";
         }
+
+        /**
+         *   About routing
+         */
+        if($url == $domain . 'about')
+        {
+            $request->controller = "About";
+            $request->action = "index";
+            $request->params = "data";
+        }
     }
 }
 ?>
