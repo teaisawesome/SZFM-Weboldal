@@ -6,9 +6,17 @@ require(ROOT . "model/ProfileModel.php");
 
 class ProfileController extends Controller
 {
+    public $user;
+
     public function index()
     {
-        $this->view('profil');
+        $profil = new ProfileModel();
+        
+        $datas = $profil->getDatas($_SESSION['userId']);
+
+        $this->user = $datas;
+
+        $this->view('profile');
     }
 }
 

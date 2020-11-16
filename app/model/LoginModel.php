@@ -39,6 +39,7 @@
                     {
                         $_SESSION['logged'] = true;
                         $_SESSION['user'] = $email;
+                        $_SESSION['userId'] = $this->userDao->getUserByEmail($email)->getId();
                         unset($_SESSION['login_errors']);
 
                         header("Location: http://localhost/SZFM-Weboldal/app/");
