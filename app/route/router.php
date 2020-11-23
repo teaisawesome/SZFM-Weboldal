@@ -88,6 +88,25 @@ class Router
             $request->params = "data";
         }
 
+        if($url == $domain . 'services/szauna')
+        {
+            $request->controller = "Service";
+            $request->action = "szauna";
+            $request->params = "data";
+        }
+        if($url == $domain . 'services/sobarlang')
+        {
+            $request->controller = "Service";
+            $request->action = "sobarlang";
+            $request->params = "data";
+        }
+        if($url == $domain . 'services/halpedikur')
+        {
+            $request->controller = "Service";
+            $request->action = "halpedikur";
+            $request->params = "data";
+        }
+
         /**
          *   About routing
          */
