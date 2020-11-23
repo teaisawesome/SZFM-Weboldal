@@ -52,6 +52,30 @@
     width: 100%;
 }
 
+.single-slide-uszoda {
+    background-image: url(../../../resources/images/szolgaltatasok_osszessege_images/uszoda.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.single-slide-terem {
+    background-image: url(../../../resources/images/szolgaltatasok_osszessege_images/terem.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
 .single-slide-sobarlang {
     background-image: url(../../../resources/images/szolgaltatasok_osszessege_images/sobarlang.jpg);
     background-size: cover;
@@ -64,8 +88,32 @@
     width: 100%;
 }
 
+.single-slide-buvar {
+    background-image: url(../../../resources/images/szolgaltatasok_osszessege_images/buvar.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
 .single-slide-halpedikur {
     background-image: url(../../../resources/images/szolgaltatasok_osszessege_images/halpedikur.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.single-slide-teknos {
+    background-image: url(../../../resources/images/szolgaltatasok_osszessege_images/teknos.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -352,7 +400,385 @@
     box-shadow: 0px 0px 10px 5px #9c63e7;
 }
 
+.single-slide-buvar:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(73, 73, 73);
+    opacity: 0.4;
+}
+
+.slide-content-buvar {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    opacity: 0;
+    margin-left: 200px;
+    transition: 1.2s all ease;
+}
+
+.slide-content-buvar h4 {
+    text-transform: capitalize;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 20px;
+    transition: 0.5s;
+}
+
+.slide-content-buvar h4:after {
+    content: "";
+    height: 4px;
+    width: 115px;
+    background: white;
+    box-shadow: 0px 0px 10px 5px#60aae2;
+    left: 0px;
+    top: 40px;
+    display: block;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.slide-content-buvar h2 {
+    text-transform: capitalize;
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.slide-content-buvar p {
+    color: white;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    max-width: 500px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.slide-content-buvar .buvarref {
+    background: #60aae2;
+    border-radius: 50px;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-weight: bolder;
+    position: relative;
+    top: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.slide-content-buvar .buvarref:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 340px;
+    top: 15px;
+    left: 120px;
+    height: 4px;
+    background: white;
+    box-shadow: 0px 0px 10px 5px #60aae2;
+}
+
+.single-slide-teknos:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(73, 73, 73);
+    opacity: 0.4;
+}
+
+.slide-content-teknos {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    opacity: 0;
+    margin-left: 200px;
+    transition: 1.2s all ease;
+}
+
+.slide-content-teknos h4 {
+    text-transform: capitalize;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 20px;
+    transition: 0.5s;
+}
+
+.slide-content-teknos h4:after {
+    content: "";
+    height: 4px;
+    width: 185px;
+    background: white;
+    box-shadow: 0px 0px 10px 5px #635a5a;
+    left: 0px;
+    top: 40px;
+    display: block;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.slide-content-teknos h2 {
+    text-transform: capitalize;
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.slide-content-teknos p {
+    color: white;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    max-width: 500px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.slide-content-teknos .teknosref {
+    background: #635a5a;
+    border-radius: 50px;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-weight: bolder;
+    position: relative;
+    top: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.slide-content-teknos .teknosref:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 340px;
+    top: 15px;
+    left: 120px;
+    height: 4px;
+    background: white;
+    box-shadow: 0px 0px 10px 5px #635a5a;
+}
+
+.single-slide-terem:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(73, 73, 73);
+    opacity: 0.4;
+}
+
+.slide-content-terem {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    opacity: 0;
+    margin-left: 200px;
+    transition: 1.2s all ease;
+}
+
+.slide-content-terem h4 {
+    text-transform: capitalize;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 20px;
+    transition: 0.5s;
+}
+
+.slide-content-terem h4:after {
+    content: "";
+    height: 4px;
+    width: 50px;
+    background: white;
+    box-shadow: 0px 0px 10px 5px #a5a5a0;
+    left: 0px;
+    top: 40px;
+    display: block;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.slide-content-terem h2 {
+    text-transform: capitalize;
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.slide-content-terem p {
+    color: white;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    max-width: 500px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.slide-content-terem .teremref {
+    background: #a5a5a0;
+    border-radius: 50px;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-weight: bolder;
+    position: relative;
+    top: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.slide-content-terem .teremref:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 340px;
+    top: 15px;
+    left: 120px;
+    height: 4px;
+    background: white;
+    box-shadow: 0px 0px 10px 5px #a5a5a0;
+}
+
+.single-slide-uszoda:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(73, 73, 73);
+    opacity: 0.4;
+}
+
+.slide-content-uszoda {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    opacity: 0;
+    margin-left: 200px;
+    transition: 1.2s all ease;
+}
+
+.slide-content-uszoda h4 {
+    text-transform: capitalize;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 20px;
+    transition: 0.5s;
+}
+
+.slide-content-uszoda h4:after {
+    content: "";
+    height: 4px;
+    width: 145px;
+    background: white;
+    box-shadow: 0px 0px 10px 5px #3d8794;
+    left: 0px;
+    top: 40px;
+    display: block;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.slide-content-uszoda h2 {
+    text-transform: capitalize;
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.slide-content-uszoda p {
+    color: white;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    max-width: 500px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.slide-content-uszoda .uszodaref {
+    background: #3d8794;
+    border-radius: 50px;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-weight: bolder;
+    position: relative;
+    top: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.slide-content-uszoda .uszodaref:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 340px;
+    top: 15px;
+    left: 120px;
+    height: 4px;
+    background: white;
+    box-shadow: 0px 0px 10px 5px #3d8794;
+}
+
 .owl-item.active .slide-content-sobarlang {
+    margin-left: 0;
+    opacity: 1;
+}
+
+.owl-item.active .slide-content-uszoda {
+    margin-left: 0;
+    opacity: 1;
+}
+
+.owl-item.active .slide-content-teknos {
     margin-left: 0;
     opacity: 1;
 }
@@ -363,6 +789,16 @@
 }
 
 .owl-item.active .slide-content-halpedikur {
+    margin-left: 0;
+    opacity: 1;
+}
+
+.owl-item.active .slide-content-buvar {
+    margin-left: 0;
+    opacity: 1;
+}
+
+.owl-item.active .slide-content-terem {
     margin-left: 0;
     opacity: 1;
 }
@@ -462,6 +898,38 @@
         top: 25px;
         width: 52px;
     }
+    .slide-content-uszoda h4 {
+        font-size: 15px;
+        padding-bottom: 5px;
+    }
+    .slide-content-uszoda h4:after {
+        top: 25px;
+        width: 95px;
+    }
+    .slide-content-terem h4 {
+        font-size: 15px;
+        padding-bottom: 5px;
+    }
+    .slide-content-terem h4:after {
+        top: 25px;
+        width: 31px;
+    }
+    .slide-content-teknos h4 {
+        font-size: 15px;
+        padding-bottom: 5px;
+    }
+    .slide-content-teknos h4:after {
+        top: 25px;
+        width: 120px;
+    }
+    .slide-content-buvar h4 {
+        font-size: 14px;
+        padding-bottom: 5px;
+    }
+    .slide-content-buvar h4:after {
+        top: 25px;
+        width: 75px;
+    }
     .slide-content-sobarlang h4 {
         font-size: 15px;
         padding-bottom: 5px;
@@ -481,6 +949,18 @@
     .slide-content-szauna h2 {
         font-size: 25px;
     }
+    .slide-content-uszoda h2 {
+        font-size: 25px;
+    }
+    .slide-content-terem h2 {
+        font-size: 25px;
+    }
+    .slide-content-teknos h2 {
+        font-size: 25px;
+    }
+    .slide-content-buvar h2 {
+        font-size: 25px;
+    }
     .slide-content-sobarlang h2 {
         font-size: 25px;
     }
@@ -488,6 +968,34 @@
         font-size: 25px;
     }
     .slide-content-szauna p {
+        font-size: 10px;
+        max-width: 250px;
+        margin-top: 1px;
+        line-height: 15px;
+        margin-bottom: 8px;
+    }
+    .slide-content-uszoda p {
+        font-size: 10px;
+        max-width: 250px;
+        margin-top: 1px;
+        line-height: 15px;
+        margin-bottom: 8px;
+    }
+    .slide-content-terem p {
+        font-size: 10px;
+        max-width: 250px;
+        margin-top: 1px;
+        line-height: 15px;
+        margin-bottom: 8px;
+    }
+    .slide-content-teknos p {
+        font-size: 10px;
+        max-width: 250px;
+        margin-top: 1px;
+        line-height: 15px;
+        margin-bottom: 8px;
+    }
+    .slide-content-buvar p {
         font-size: 10px;
         max-width: 250px;
         margin-top: 1px;
@@ -518,6 +1026,46 @@
         top: 12px;
         left: 90px;
     }
+    .slide-content-uszoda .uszodaref {
+        font-size: 10px;
+        top: 0px;
+        padding: 6px 10px;
+    }
+    .slide-content-uszoda .uszodaref:after {
+        width: 150px;
+        top: 12px;
+        left: 90px;
+    }
+    .slide-content-terem .teremaref {
+        font-size: 10px;
+        top: 0px;
+        padding: 6px 10px;
+    }
+    .slide-content-terem .terem:after {
+        width: 150px;
+        top: 12px;
+        left: 90px;
+    }
+    .slide-content-teknos .teknosref {
+        font-size: 10px;
+        top: 0px;
+        padding: 6px 10px;
+    }
+    .slide-content-teknos .teknosref:after {
+        width: 150px;
+        top: 12px;
+        left: 90px;
+    }
+    .slide-content-buvar .buvarref {
+        font-size: 10px;
+        top: 0px;
+        padding: 6px 10px;
+    }
+    .slide-content-buvar .buvarref:after {
+        width: 150px;
+        top: 12px;
+        left: 90px;
+    }
     .slide-content-sobarlang .sobarlangref {
         font-size: 10px;
         top: 0px;
@@ -542,3 +1090,48 @@
         padding-top: 250px;
     }
 }
+
+
+/* @media all and (max-width: 768px) {
+    .menu {
+        padding-left: 30px;
+        width: fit-content;
+    }
+    .logo {
+        padding-left: 33px;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu ul li a {
+        padding: 1px;
+    }
+    .slide-content {
+        padding-left: 5px;
+        padding-top: 50px;
+    }
+    .slide-content h2 {
+        padding-top: 20px;
+        font-size: 20px;
+        transition: 0.5s;
+    }
+    .slide-content h4 {
+        font-size: 15px;
+        transition: 0.5s;
+    }
+    .slide-content p {
+        font-size: 10px;
+        max-width: 200px;
+        transition: 0.5s;
+        line-height: 15px;
+    }
+    .slide-content a {
+        font-size: 8px;
+        transition: 0.5s;
+        top: 1px;
+    }
+    .slide-content a:after {
+        width: 70px;
+        transition: 0.5s;
+    }
+} */
