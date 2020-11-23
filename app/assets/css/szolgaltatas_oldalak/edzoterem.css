@@ -629,13 +629,13 @@ footer {
 }
 
 
-/*  EMAIL - MESSAGE TEXTAREA */
+/*  EMAIL - MESSAGE  #5c4930AREA */
 
 .content form input,
 .content form textarea {
     width: 100%;
     font-size: 1.0625rem;
-    background: #16bce6;
+    background: #5c4930;
     padding-left: 10px;
     border: 1px solid rgb(243, 228, 228);
     border-radius: 5px;
