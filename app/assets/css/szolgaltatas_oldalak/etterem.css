@@ -1,0 +1,1238 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    html,
+    body {
+        background: #1b1e20;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .video-container {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        height: auto;
+    }
+    
+    video {
+        width: 100%;
+        height: auto;
+        /* margin-bottom: 10vw;
+    transform: translate(0, -20%); */
+    }
+    
+    .navbar {
+        position: absolute;
+        top: 0;
+        transform: translateY(0);
+        width: 100%;
+    }
+    
+    .navbar .navbar-container {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .navbar .navbar-container:after {
+        content: '';
+        clear: both;
+        display: table;
+    }
+    
+    .navbar .navbar-container .menu {
+        position: relative;
+        margin-right: 40px;
+        float: right;
+        list-style: none;
+    }
+    
+    .navbar-container .menu .menu-elem {
+        display: inline-block;
+        float: left;
+        background: transparent;
+        margin: 0 5px;
+    }
+    
+    .navbar-container .menu .menu-elem .menu-hivatkozas {
+        position: relative;
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 70px;
+        padding: 0 15px;
+        font-weight: 800;
+        overflow: hidden;
+        letter-spacing: 1.5px;
+        z-index: 1;
+        transition: 0.5s;
+        border-radius: 50%;
+    }
+    
+    .navbar-container .logo {
+        font-weight: bolder;
+        font-size: 25px;
+        padding-left: 60px;
+        line-height: 70px;
+        color: white;
+        float: left;
+    }
+    
+    .navbar-container .menu:hover .menu-elem .menu-hivatkozas {
+        opacity: 0.4;
+    }
+    
+    .navbar-container .menu .menu-elem:hover:before {
+        opacity: 0.3;
+        letter-spacing: 0px;
+    }
+    
+    .navbar-container .menu .menu-elem .menu-hivatkozas:hover {
+        transform: scale(1.2);
+        z-index: 1000;
+        opacity: 1;
+        color: #f2f2f2;
+    }
+    
+    .navbar-container .menu .menu-elem .menu-hivatkozas:before {
+        content: '';
+        position: absolute;
+        top: 30%;
+        left: -100px;
+        width: 80px;
+        height: 30px;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+        transform: skewX(35deg);
+        transition: 0s;
+    }
+    
+    .navbar-container .menu .menu-elem .menu-hivatkozas:hover:before {
+        left: calc(100% + 100px);
+        transition: 0.5s;
+        transition-delay: 0.2s;
+    }
+    
+    .icon,
+    .csekk {
+        display: none;
+    }
+    /* ------------Etlap - Itallap ---------------- */
+    
+    .lap {
+        height: 100%;
+        position: relative;
+        display: flex;
+    }
+    
+    .cover {
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        right: 0;
+        object-fit: cover;
+        object-position: top;
+    }
+    
+    .etlap-itallap {
+        background: white;
+        width: 50%;
+        height: 100px !important;
+        z-index: 2;
+        opacity: 0.7;
+        color: gray;
+        border-bottom: 5px solid black;
+    }
+    
+    .lap-bezarva {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 50%;
+        height: 100px !important;
+        position: absolute;
+        z-index: 2;
+    }
+    
+    .lap-bezarva .ajanlat {
+        display: flex;
+        list-style: none;
+        width: 100%;
+        justify-content: space-around;
+    }
+    
+    .lap-bezarva .ajanlat>button {
+        cursor: pointer;
+        font-size: 25px;
+        font-weight: 800;
+        text-shadow: 0 2px 4px;
+        background: transparent;
+        border: none;
+    }
+    
+    .etlap-button {
+        color: gray;
+    }
+    
+    .itallap-button {
+        color: gray;
+    }
+    
+    .etlap-button:before {
+        content: "";
+        display: block;
+        height: 2px;
+        background: black;
+        left: 10px;
+        top: 50%;
+        width: 70%;
+        position: absolute;
+        z-index: -2;
+    }
+    
+    .etlap-button:after {
+        content: "";
+        display: block;
+        height: 2px;
+        background: black;
+        right: 10px;
+        top: 50%;
+        position: absolute;
+        z-index: -2;
+        width: 0%
+    }
+    
+    .itallap-button:before {
+        content: "";
+        display: block;
+        height: 2px;
+        background: black;
+        left: 10px;
+        top: 50%;
+        width: 0%;
+        position: absolute;
+        z-index: -2;
+    }
+    
+    .itallap-button:after {
+        content: "";
+        display: block;
+        height: 2px;
+        background: black;
+        right: 0px;
+        top: 50%;
+        position: absolute;
+        z-index: -2;
+        width: 50%
+    }
+    
+    .ajanlat>.etlap-button>span {
+        padding: 0 10px;
+        background: white;
+    }
+    
+    .ajanlat>.itallap-button>span {
+        padding: 0 10px;
+        background: white;
+    }
+    
+    .lap-nyitva {
+        position: absolute;
+        width: 50%;
+        height: 80%;
+        top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        opacity: 0;
+        pointer-events: none;
+        overflow-y: scroll;
+    }
+    
+    .sertes {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .marha {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .eger {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .csulok {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .lap-nyitva2 {
+        position: absolute;
+        width: 50%;
+        height: 80%;
+        top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        opacity: 0;
+        pointer-events: none;
+        overflow-y: scroll;
+    }
+    
+    .etelek {
+        /* display: flex;
+    justify-content: space-around; */
+        align-items: center;
+        padding-bottom: 10px;
+        width: 100%;
+        font-size: 1vw;
+    }
+    
+    .szezonalis {
+        background: white;
+        width: 50%;
+        height: 100px;
+        z-index: 2;
+        opacity: 0.7;
+        color: gray;
+        border-bottom: 5px solid black;
+        position: absolute;
+        left: 50%;
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+    }
+    
+    .szezonalis>p {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        text-shadow: 0 2px 4px;
+        top: 34%;
+        font-weight: 800;
+        width: 100%;
+        justify-content: space-around;
+    }
+    
+    .szezonalis>p:before {
+        content: "";
+        display: block;
+        height: 2px;
+        background: black;
+        left: 0px;
+        top: 47%;
+        width: 35%;
+        position: absolute;
+        z-index: -2;
+    }
+    
+    .szezonalis>p:after {
+        content: "";
+        display: block;
+        height: 2px;
+        background: black;
+        right: 10px;
+        top: 47%;
+        width: 35%;
+        position: absolute;
+        z-index: -2;
+    }
+    
+    .szezonalis>p>span {
+        padding: 0 10px;
+        background: white;
+    }
+    
+    .szezonalis>.szezonalis-szoveg>p {
+        position: absolute;
+        top: 160%;
+        color: black;
+        background: white;
+        opacity: 1 !important;
+        font-size: 23px;
+        text-shadow: 0 2px 10px;
+        font-weight: 900;
+        display: flex;
+        justify-content: center;
+        vertical-align: middle;
+        text-align: center;
+        line-height: 23px;
+        border-radius: 10px;
+        right: 0%;
+    }
+    
+    footer {
+        border-top-style: ridge;
+        border-top-color: #5a6166;
+        border-width: 0.5rem;
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        grid-template-rows: repeat(auto, 4);
+        grid-template-areas: "info about message" "efekt efekt efekt" "social social social" "term term term";
+        height: 100%;
+        padding-top: 3%;
+    }
+    /* INFO BOX */
+    
+    .info-container {
+        display: grid;
+        grid-area: info;
+        width: 100%;
+        position: relative;
+        ;
+    }
+    /* MAGA AZ INFO TARTALOM */
+    
+    .info {
+        position: relative;
+        display: grid;
+    }
+    /*  INFO IKONOK */
+    
+    .info i {
+        padding: 50px 0 0 20%;
+    }
+    /* INFO CÍM */
+    
+    .elerhetoseg {
+        font-size: 30px;
+        text-align: center;
+        font-weight: bolder;
+        text-shadow: 0px 1px 4px;
+        color: white;
+    }
+    /* ICONOK ELRENEZÉSE -> */
+    
+    .fa-map-marker-alt {
+        color: white;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    /* IKON MELLETTI SZÖVEG (P) */
+    
+    .fa-map-marker-alt>p {
+        padding-left: 40px;
+        cursor: default;
+    }
+    
+    .fa-envelope {
+        color: white;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .fa-envelope>p {
+        padding-left: 40px;
+        cursor: default;
+    }
+    
+    .fa-mobile-alt {
+        color: white;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .fa-mobile-alt>p {
+        padding-left: 40px;
+        cursor: default;
+    }
+    
+    .fa-door-open {
+        color: white;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .fa-door-open>p {
+        padding-left: 40px;
+        cursor: default;
+    }
+    /* <- IKONOK ELRENDEZÉSÉNEK VÉGE */
+    /* ABOUT BOX */
+    
+    .about-container {
+        display: grid;
+        grid-area: about;
+    }
+    
+    .about {
+        width: 100%;
+    }
+    /* ROLUNK BOX */
+    
+    .rolunk {
+        font-size: 30px;
+        text-align: center;
+        font-weight: bolder;
+        text-shadow: 0px 1px 4px;
+        color: white;
+        padding: 0px;
+    }
+    /* ROLUNK BOX IGAZÍTÁS SZÖVEG */
+    
+    .rolunkszoveg {
+        padding: 50px 10px 0px 10px;
+        width: 100%;
+        color: white;
+    }
+    /* BŐVEBBEN HIVATKOZÁS BEÁLLÍTÁSOK */
+    
+    .bovebben {
+        padding: 40px 0px 0px 10px;
+        text-align: center;
+    }
+    
+    .bovebben>a {
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        padding: 10px 10px;
+        background: #33383b;
+        border-radius: 10px;
+        color: white;
+        font-size: 18px;
+        z-index: 1;
+        transition: 0.5s;
+        font-weight: 600;
+    }
+    
+    .bovebben>a span {
+        position: absolute;
+        display: block;
+    }
+    
+    .bovebben>a span:nth-child(1) {
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, transparent, rgb(243, 228, 228))
+    }
+    
+    .bovebben>a span:nth-child(2) {
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(-90deg, transparent, rgb(243, 228, 228))
+    }
+    
+    .bovebben>a span:nth-child(3) {
+        bottom: 0;
+        left: -100%;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, transparent, rgb(243, 228, 228))
+    }
+    
+    .bovebben>a span:nth-child(4) {
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(-90deg, transparent, rgb(243, 228, 228))
+    }
+    
+    .bovebben>a:hover span:nth-child(1) {
+        left: -50%;
+        transition: 0.5s;
+    }
+    
+    .bovebben>a:hover span:nth-child(2) {
+        right: -50%;
+        transition: 0.5s;
+    }
+    
+    .bovebben>a:hover span:nth-child(3) {
+        left: -50%;
+        transition: 0.5s;
+    }
+    
+    .bovebben>a:hover span:nth-child(4) {
+        right: -50%;
+        transition: 0.5s;
+    }
+    
+    .bovebben>a:hover {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+    /* HIVATKOZÁS BEÁLLÍTÁSOK VÉGE */
+    /* MESSAGE RÉSZ BEÁLLÍTÁSOK */
+    /* MESSAGE BOX */
+    
+    .message-container {
+        display: grid;
+        grid-area: message;
+        width: 100%;
+        position: relative;
+    }
+    
+    .message {
+        width: 100%;
+    }
+    /* MESSAGE CÍM */
+    
+    .contact {
+        font-size: 30px;
+        text-align: center;
+        font-weight: bolder;
+        text-shadow: 0px 1px 4px;
+        color: white;
+    }
+    
+    .content {
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+    }
+    
+    .content form .msg {
+        margin-top: 10px;
+    }
+    /*  EMAIL - MESSAGE TEXTAREA */
+    
+    .content form input,
+    .content form textarea {
+        width: 100%;
+        font-size: 1.0625rem;
+        background: rgb(243, 228, 228);
+        padding-left: 10px;
+        border: 1px solid rgb(243, 228, 228);
+        border-radius: 5px;
+        color: white;
+        font-weight: bolder;
+    }
+    
+    .content form input {
+        height: 35px;
+    }
+    
+    .content form .level:focus,
+    .content>form .uzenet:focus {
+        outline-color: rgb(163, 111, 111);
+    }
+    
+    .content form .text {
+        font-size: 1.0625rem;
+        margin-bottom: 2px;
+        color: white;
+    }
+    /*  KULDES BUTTON ANIMALASA */
+    
+    .kuldes {
+        padding: 40px 0px 0px 10px;
+        text-align: center;
+    }
+    
+    .kuldes>button {
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        padding: 5px 0px;
+        background: #33383b;
+        border-radius: 5px;
+        color: white;
+        width: 100%;
+        font-size: 18px;
+        z-index: 1;
+        transition: 0.5s;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    
+    .kuldes>button span {
+        position: absolute;
+        display: block;
+    }
+    
+    .kuldes>button span:nth-child(1) {
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, transparent, rgb(243, 228, 228))
+    }
+    
+    .kuldes>button span:nth-child(2) {
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(-90deg, transparent, rgb(243, 228, 228))
+    }
+    
+    .kuldes>button span:nth-child(3) {
+        bottom: 0;
+        left: -100%;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, transparent, rgb(243, 228, 228))
+    }
+    
+    .kuldes>button span:nth-child(4) {
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(-90deg, transparent, rgb(243, 228, 228))
+    }
+    
+    .kuldes>button:hover span:nth-child(1) {
+        left: -50%;
+        transition: 0.5s;
+    }
+    
+    .kuldes>button:hover span:nth-child(2) {
+        right: -50%;
+        transition: 0.5s;
+    }
+    
+    .kuldes>button:hover span:nth-child(3) {
+        left: -50%;
+        transition: 0.5s;
+    }
+    
+    .kuldes>button:hover span:nth-child(4) {
+        right: -50%;
+        transition: 0.5s;
+    }
+    
+    .kuldes>button:hover {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+    /* KULDES BUTTON ANIMALASANAK VEGE */
+    /*  SOCIAL LINKS ELVÁLASZTÓ */
+    
+    .social-text-container {
+        display: flex;
+        grid-area: efekt;
+        width: 100%;
+        position: relative;
+    }
+    
+    .social-effect {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .social-effect p {
+        font-size: 40px;
+        color: white;
+        font-weight: 600;
+        text-shadow: 0px 1px 4px;
+        position: relative;
+        margin-top: 5px;
+    }
+    
+    .social-effect p:before {
+        content: "";
+        display: block;
+        height: 2px;
+        background: #33383b;
+        left: 100px;
+        top: 50%;
+        width: 50%;
+        position: absolute;
+        z-index: -2;
+    }
+    
+    .social-effect p:after {
+        content: "";
+        display: block;
+        height: 2px;
+        background: #33383b;
+        right: 100px;
+        top: 50%;
+        position: absolute;
+        z-index: -2;
+        width: 50%;
+    }
+    
+    .social-effect>p>span {
+        background: #1b1e20;
+        ;
+        padding: 0px 10px;
+    }
+    /*  ELVÁLASZTÓ VÉGE */
+    /* SOCAL LINKEK ELHELYEZÉSE / ANIMÁLÁSA */
+    
+    .social-link-container {
+        display: flex;
+        justify-content: space-around;
+        grid-area: social;
+        width: 100%;
+        position: relative;
+    }
+    
+    .social-container>ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .social-container>ul li {
+        display: flex;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: relative;
+        font-size: 50px;
+        transform: rotate(45deg);
+        overflow: hidden;
+        transition: all .5s ease-in;
+    }
+    
+    .social-container>ul li:before {
+        content: '';
+        display: block;
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        z-index: -2;
+    }
+    
+    .social-container>ul li:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        right: 50%;
+        z-index: -3;
+        transition: all .5s ease-in-out;
+        opacity: 0.5;
+    }
+    
+    .social-container>ul li a {
+        color: white;
+        margin: auto;
+        text-shadow: 0 2px 0 rgb(2, 2, 2);
+        transform: rotate(-45deg);
+        transition: all 0.5s ease-in;
+    }
+    
+    .social-container>ul li:hover {
+        transform: rotate(765deg);
+    }
+    
+    .social-container>ul li:hover:after {
+        right: 0%;
+    }
+    
+    .social-container>ul li:hover a {
+        transform: rotate(-765deg);
+    }
+    
+    .social-container>ul li:nth-of-type(2):before,
+    .social-container>ul li:nth-of-type(2):after {
+        background: red;
+    }
+    
+    .social-container>ul li:nth-of-type(1):before,
+    .social-container>ul li:nth-of-type(1):after {
+        background: rgb(13, 140, 240)
+    }
+    
+    .social-container>ul li:nth-of-type(3):before,
+    .social-container>ul li:nth-of-type(3):after {
+        background: rgb(28, 156, 234)
+    }
+    
+    .social-container>ul li:nth-of-type(4):before,
+    .social-container>ul li:nth-of-type(4):after {
+        background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    }
+    
+    .social-container>ul li:nth-of-type(5):before,
+    .social-container>ul li:nth-of-type(5):after {
+        background: black;
+    }
+    
+    .social-container>ul li:nth-of-type(6):before,
+    .social-container>ul li:nth-of-type(6):after {
+        background: red;
+    }
+    /*  SOCIAL LINKEK ANIMÁLÁSÁNAK VÉGE */
+    /* TEMRS PRIVACY BOX  */
+    
+    .termprivacy-container {
+        display: flex;
+        justify-content: center;
+        grid-area: term;
+        width: 100%;
+        position: relative;
+    }
+    
+    .rule-container p {
+        color: white;
+        font-size: 30px;
+        font-weight: bolder;
+        text-shadow: 0px 1px 4px;
+    }
+    
+    @media screen and (max-width: 1200px) {
+        .navbar-container .menu {
+            margin-right: 0px;
+            float: left;
+        }
+        .navbar-container .logo {
+            padding-left: 13px;
+            width: 100%;
+            transition: 0.5s
+        }
+        .navbar-container .menu .menu-elem {
+            display: block;
+            padding-right: 62px;
+            width: 100%;
+        }
+        .icon {
+            display: block;
+            color: white;
+            position: absolute;
+            right: 40px;
+            line-height: 70px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+        .navbar-container .menu .menu-elem .menu-hivatkozas {
+            line-height: 25px;
+            padding: 0 10px;
+        }
+        .navbar-container .menu-hivatkozas,
+        .menu {
+            display: none;
+        }
+        [id^=btn]:checked+.menu {
+            display: block;
+        }
+        .etelek {
+            width: 100%;
+        }
+        footer {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: repeat (auto, 6);
+            grid-template-areas: "info" "about" "message" "efekt" "social" "term";
+            height: 100%;
+        }
+        /* SOCIAL LINKEK MÉRETEZÉSE */
+        .social-container>ul li {
+            width: 50px;
+            height: 50px;
+            font-size: 25px;
+        }
+        /* ELÉRHETŐSÉGEK RENDEZÉSE */
+        .info-container {
+            justify-content: center;
+        }
+        .szezonalis>.szezonalis-szoveg>p {
+            font-size: 22px;
+            line-height: 25px;
+        }
+        .etelek {
+            font-size: 2vw;
+        }
+    }
+    
+    @media screen and (max-width: 1000px) {
+        .navbar-container .menu .menu-elem .menu-hivatkozas {
+            line-height: 25px;
+        }
+        .szezonalis>.szezonalis-szoveg>p {
+            font-size: 15px;
+            line-height: 20px;
+        }
+        .etelek {
+            font-size: 3vw;
+        }
+        .itallap-button {
+            font-size: 20px;
+        }
+    }
+    
+    @media screen and (max-width: 800px) {
+        .navbar-container .menu {
+            margin-right: 0px;
+            float: left;
+        }
+        .icon {
+            display: block;
+            color: white;
+            position: absolute;
+            right: 40px;
+            line-height: 70px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+        .navbar-container .menu .menu-elem .menu-hivatkozas {
+            padding: 0 10px;
+            line-height: 10px;
+            font-size: 10px;
+        }
+        .etlap-button>span {
+            font-size: 18px;
+            transition: 0.5s;
+        }
+        .itallap-button>span {
+            font-size: 18px;
+            transition: 0.5s;
+        }
+        .szezonalis>p>span {
+            font-size: 19px;
+            transition: 0.5s;
+        }
+        .szezonalis>p {
+            top: 37px;
+            transition: 0.5s;
+        }
+        .szezonalis-szoveg>p {
+            font-size: 20px;
+            line-height: 12px;
+            transition: 0.5s;
+        }
+        .etelek {
+            font-size: 3vw;
+        }
+    }
+    
+    @media screen and (max-width: 780px) {
+        .szezonalis>p>span {
+            font-size: 18px;
+            transition: 0.5s;
+        }
+    }
+    
+    @media screen and (max-width: 770px) {
+        .szezonalis>p>span {
+            font-size: 18px;
+            transition: 0.5s;
+        }
+        .szezonalis>p:before {
+            display: none;
+        }
+        .szezonalis>p:after {
+            display: none;
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        .navbar-container .menu .menu-elem .menu-hivatkozas {
+            line-height: 10px;
+            font-size: 10px;
+        }
+        .szezonalis>p>span {
+            font-size: 13px;
+            transition: 0.5s;
+        }
+        .szezonalis>p {
+            top: 41px;
+        }
+        .etlap-button>span {
+            font-size: 12px;
+            transition: 0.5s;
+        }
+        .itallap-button>span {
+            font-size: 12px;
+            transition: 0.5s;
+        }
+        .etlap-button:before {
+            width: 100;
+        }
+        .etelek {
+            font-size: 3vw;
+        }
+        .szezonalis>.szezonalis-szoveg>p {
+            font-size: 15px;
+            line-height: 20px;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
+        video {
+            /* margin-left: 50vw;
+            transform: translate(-50%); */
+            display: block;
+            height: 100%;
+            margin: auto;
+        }
+        .szezonalis>p>span {
+            font-size: 12px;
+        }
+    }
+    
+    @media screen and (max-width: 400px) {
+        .szezonalis>.szezonalis-szoveg>p {
+            font-size: 13px;
+            line-height: 15px;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
+        video {
+            /* margin-left: 50vw;
+            transform: translate(-50%); */
+            display: block;
+            height: 100%;
+            margin: auto;
+        }
+        .navbar-container .menu {
+            line-height: 15px;
+        }
+        .navbar-container .menu .menu-elem {
+            line-height: 15px;
+            font-size: 15px;
+        }
+    }
+    
+    @media screen and (max-width: 350px) {
+        .szezonalis>.szezonalis-szoveg>p {
+            font-size: 10px;
+            line-height: 13px;
+        }
+        .etlap-button:after {
+            width: 100px;
+        }
+        .ajanlat {
+            height: 45px;
+        }
+    }
+    /* @media screen and (min-height: 80px) {
+        .etelek {
+            font-size: 1px;
+            transition: 0.3s;
+            width: 80%;
+        }
+    }
+    
+    @media screen and (min-height: 100px) {
+        .etelek {
+            font-size: 2px;
+            transition: 0.3s;
+            width: 80%;
+        }
+    }
+    
+    @media screen and (min-height: 200px) {
+        .etelek {
+            font-size: 3px;
+            transition: 0.3s;
+            width: 80%;
+        }
+    }
+    
+    @media screen and (min-height: 300px) {
+        .etelek {
+            font-size: 5px;
+            transition: 0.3s;
+            width: 80%;
+        }
+        .lap {
+            height: 200vh;
+        }
+    }
+    
+    @media screen and (min-height: 400px) {
+        .etelek {
+            font-size: 10px;
+            transition: 0.3s;
+            width: 80%;
+        }
+        .lap {
+            height: 150vh;
+        }
+    }
+    
+    @media screen and (min-height: 500px) {
+        .etelek {
+            font-size: 11px;
+            transition: 0.3s;
+            width: 80%;
+        }
+        .lap {
+            height: 148vh;
+        }
+    }
+    
+    @media screen and (min-height: 600px) {
+        .etelek {
+            font-size: 11px;
+            transition: 0.3s;
+            width: 80%;
+        }
+        .lap {
+            height: 130vh;
+        }
+    }
+    
+    @media screen and (min-height: 700px) {
+        .etelek {
+            font-size: 11px;
+            transition: 0.3s;
+            width: 80%;
+        }
+        .lap {
+            height: 115vh;
+        }
+    }
+    
+    @media screen and (min-height: 800px) {
+        .etelek {
+            font-size: 11px;
+            transition: 0.3s;
+            width: 80%;
+        }
+        .lap {
+            height: 100vh;
+        }
+    }
+    
+    @media screen and (min-height: 860px) {
+        .etelek {
+            font-size: 13px;
+            transition: 0.3s;
+            width: 80%;
+        }
+    }
+    
+    @media screen and (min-height: 885px) {
+        .etelek {
+            font-size: 15px;
+            transition: 0.3s;
+            width: 80%;
+        }
+    }
+    
+    @media screen and (min-height: 900px) {
+        .etelek {
+            font-size: 15.5px;
+            transition: 0.3s;
+            width: 80%;
+        }
+    } */
