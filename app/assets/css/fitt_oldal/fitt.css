@@ -1,0 +1,1144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* HEADER */
+
+/* BORÍTÓ KÉP */
+
+.borito {
+    display: grid;
+    height: 50vh;
+    transition: 0.5s;
+    width: 100%;
+    position: relative;
+    background-image: url("../../../resources/images/fitt_oldal_images/FittCover.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* BORÍTÓ SZAUNA */
+
+.borito-img>.cim h1 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    text-align: center;
+    font-size: 90px;
+    font-weight: 1000;
+    background: linear-gradient(to right, rgb(167, 223, 118), rgb(112, 155, 75));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* BORÍTÓ SALUTEM */
+
+.borito-img>.cim h3 {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    text-align: center;
+    font-size: 50px;
+    font-weight: 1000;
+    background: linear-gradient(to right, white, rgb(240, 213, 198));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* NAV BOX CLEAR */
+
+nav .topmenu:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+
+/* NAV BOX SZÉLESSÉG / EFFEKT-HIDDEN  */
+
+nav .topmenu {
+    overflow: hidden;
+    width: 100%;
+}
+
+
+/* NAV MENU ELEMEK RENDEZÉSE */
+
+nav .topmenu ul {
+    position: relative;
+    margin-right: 40px;
+    float: right;
+    list-style: none;
+}
+
+
+/* NAV MENU LISTA RENDEZÉSE */
+
+.topmenu ul li {
+    display: inline-block;
+    float: left;
+    background: transparent;
+    margin: 0 5px;
+    /* padding-left: 60px; */
+}
+
+
+/* NAV MENU HIVATKOZÁSOK RENDEZÉSE */
+
+.topmenu ul li a {
+    position: relative;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 0px 15px;
+    font-weight: 800;
+    z-index: 1;
+    letter-spacing: 1.5px;
+    transition: 0.5s;
+    overflow: hidden;
+    border-radius: 50%
+}
+
+
+/* NAV LOGO RENDEZÉSE*/
+
+.topmenu .logo {
+    font-weight: bolder;
+    font-size: 25px;
+    padding-left: 60px;
+    line-height: 70px;
+    color: white;
+    float: left;
+}
+
+
+/* NAV HIVATKOZÁS HOVER EFFEKT */
+
+.topmenu ul:hover li a {
+    opacity: 0.4;
+}
+
+
+/* NAV MENU LISTA BEFORE CONTENT */
+
+.topmenu ul li:hover:before {
+    opacity: 0.3;
+    letter-spacing: 0px;
+}
+
+
+/* HIVATKOZAS HOVER EFFEKT */
+
+.topmenu ul li a:hover {
+    transform: scale(1.2);
+    z-index: 1000;
+    opacity: 1;
+    color: #f2f2f2;
+}
+
+
+/* HIVATKOZAS HOVER EFFEKT BEFORE CONTENT */
+
+.topmenu ul li a:before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: -100px;
+    width: 80px;
+    height: 30px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+    transform: skewX(35deg);
+    transition: 0s;
+}
+
+
+/* HIVATKOZÁS BEFORE CONTENT SZÉLESSÉGÉNEK BEÁLLÍTÁSA */
+
+.topmenu ul li a:hover:before {
+    left: calc(100% + 100px);
+    transition: 0.5s;
+    transition-delay: 0.2s;
+}
+
+
+/* HAMBURGER ICON MEGJELENÉSE */
+
+.icon,
+.csekk {
+    display: none;
+}
+
+/* Fitt kalkulátor rész stílus*/
+.main{
+    background-image: url('../../../resources/images/fitt_oldal_images/TrainingGeneratorBackground.jpg');
+    background-repeat: no-repeat;
+    min-height: 100%;
+    width: auto;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.background{
+    background-color: rgba(102, 101, 101, 0.678);
+    width: 50%;
+    margin: 5em auto 0em auto;
+    padding: 5em;
+    text-align: center;
+    border: thin solid black;
+    border-radius: 1%;
+    
+}
+
+.btn {
+    background-color:  rgb(207, 207, 207);
+    border: medium solid #030303;
+    color: black;
+    font-weight: bolder;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.7s;
+    cursor: pointer;
+
+    margin: 1em auto 1em auto;
+
+}
+.active, .btn:hover {
+    background-color: #1f1f1f;
+    color: whitesmoke;
+    border: medium solid rgb(207, 207, 207);
+}
+#difButton{
+    margin-top: 0;
+}
+
+/*Select tag stílusa*/
+select{
+    display: flex;
+    margin: 2em auto 2em auto;
+    padding: 0.5em 1em;
+    border: medium solid #030303;
+    font-weight: bolder;
+    transition-duration: 0.7s;
+    background-color: rgb(207, 207, 207);
+}
+select:hover{
+    background-color: #1f1f1f;
+    color: whitesmoke;
+    border: medium solid rgb(207, 207, 207);
+}
+option{
+    font-weight: bolder; 
+}
+
+/*Vissza és Továbbb Gombok*/
+.BackNext{
+    display: flex;
+    margin-bottom: 5em;
+}
+.Back{
+    opacity: 0.6;
+}
+
+/*Cím stílusok*/
+.title{
+    font-family: Impact;
+    letter-spacing: 0.5px;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+h2{
+    font-family: Impact;
+    letter-spacing: 0.5px;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    margin-bottom: 1em;
+    color: rgb(255, 255, 255);
+    font-size: 2.5em;
+}
+h3{
+    font-weight: bold;
+    padding: 1em;
+    color: whitesmoke;
+    font-size: 1.5em;
+}
+
+/*Checkbox*/
+.labels{
+    padding-top: 1em;
+    display: block;
+    padding: 0.5em;
+    text-align: left;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+    border-bottom: medium solid black;
+    margin: 0em 3em 0em 3em;
+
+}
+
+/*Table*/
+table{
+    text-align: left;
+    border-collapse: collapse;
+}
+td{
+    font-size: 1.5em;
+    color: whitesmoke;
+    border-bottom: medium solid black;
+    padding: 0.5em;
+}
+
+/*PopUp*/
+.popup {
+    margin: 0em 0em 0em -9em;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    color: rgb(0, 0, 0);
+    text-decoration: underline rgb(2, 0, 0);
+    font-weight: bolder;
+}
+  
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: rgb(117, 117, 117);
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 1em;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    right: 110%;
+    margin-left: -80px;
+    border-radius: 15%;
+    border: thin solid black;
+}
+  
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: rgb(117, 117, 117) transparent transparent transparent;
+
+}
+  
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+  
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+  
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+/* FOOTER */
+
+/* FOOTER RÁCS SZERKEZET BEÁLLÍTÁSA */
+
+footer {
+    border-top-style: ridge;
+    border-top-color: rgb(102, 101, 101);
+    border-width: 0.5rem;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: repeat(auto, 4);
+    grid-template-areas: "info about message" "efekt efekt efekt" "social social social" "term term term";
+    height: 100%;
+    padding-top: 3%;
+
+}
+
+
+/* INFO BOX */
+
+.info-container {
+    display: grid;
+    grid-area: info;
+    width: 100%;
+    position: relative;
+    ;
+}
+
+
+/* MAGA AZ INFO TARTALOM */
+
+.info {
+    position: relative;
+    display: grid;
+}
+
+
+/*  INFO IKONOK */
+
+.info i {
+    padding: 50px 0 0 20%;
+}
+
+
+/* INFO CÍM */
+
+.elerhetoseg {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 0px 1px 4px;
+    color: white;
+}
+
+
+/* ICONOK ELRENEZÉSE -> */
+
+.fa-map-marker-alt {
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+/* IKON MELLETTI SZÖVEG (P) */
+
+.fa-map-marker-alt>p {
+    padding-left: 40px;
+    cursor: default;
+}
+
+.fa-envelope {
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fa-envelope>p {
+    padding-left: 40px;
+    cursor: default;
+}
+
+.fa-mobile-alt {
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fa-mobile-alt>p {
+    padding-left: 40px;
+    cursor: default;
+}
+
+.fa-door-open {
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fa-door-open>p {
+    padding-left: 40px;
+    cursor: default;
+}
+
+
+/* <- IKONOK ELRENDEZÉSÉNEK VÉGE */
+
+
+/* ABOUT BOX */
+
+.about-container {
+    display: grid;
+    grid-area: about;
+}
+
+.about {
+    width: 100%;
+}
+
+
+/* ROLUNK BOX */
+
+.rolunk {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 0px 1px 4px;
+    color: white;
+    padding: 0px;
+}
+
+
+/* ROLUNK BOX IGAZÍTÁS SZÖVEG */
+
+.rolunkszoveg {
+    padding: 50px 10px 0px 10px;
+    width: 100%;
+    color: white;
+}
+
+
+/* BŐVEBBEN HIVATKOZÁS BEÁLLÍTÁSOK */
+
+.bovebben {
+    padding: 40px 0px 0px 10px;
+    text-align: center;
+}
+
+.bovebben>a {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    padding: 10px 10px;
+    background: rgb(102, 101, 101);
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    z-index: 1;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+.bovebben>a span {
+    position: absolute;
+    display: block;
+}
+
+.bovebben>a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, rgb(243, 228, 228))
+}
+
+.bovebben>a span:nth-child(2) {
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(-90deg, transparent, rgb(243, 228, 228))
+}
+
+.bovebben>a span:nth-child(3) {
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, rgb(243, 228, 228))
+}
+
+.bovebben>a span:nth-child(4) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(-90deg, transparent, rgb(243, 228, 228))
+}
+
+.bovebben>a:hover span:nth-child(1) {
+    left: -50%;
+    transition: 0.5s;
+}
+
+.bovebben>a:hover span:nth-child(2) {
+    right: -50%;
+    transition: 0.5s;
+}
+
+.bovebben>a:hover span:nth-child(3) {
+    left: -50%;
+    transition: 0.5s;
+}
+
+.bovebben>a:hover span:nth-child(4) {
+    right: -50%;
+    transition: 0.5s;
+}
+
+.bovebben>a:hover {
+    transform: scale(0.9);
+    opacity: 1;
+}
+
+
+/* HIVATKOZÁS BEÁLLÍTÁSOK VÉGE */
+
+
+/* MESSAGE RÉSZ BEÁLLÍTÁSOK */
+
+
+/* MESSAGE BOX */
+
+.message-container {
+    display: grid;
+    grid-area: message;
+    width: 100%;
+    position: relative;
+}
+
+.message {
+    width: 100%;
+}
+
+
+/* MESSAGE CÍM */
+
+.contact {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 0px 1px 4px;
+    color: white;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.content form .msg {
+    margin-top: 10px;
+}
+
+
+/*  EMAIL - MESSAGE  #5c4930AREA */
+
+.content form input,
+.content form textarea {
+    width: 100%;
+    font-size: 1.0625rem;
+    background: rgb(102, 101, 101);
+    padding-left: 10px;
+    border: 1px solid rgb(243, 228, 228);
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+}
+
+.content form input {
+    height: 35px;
+}
+
+.content form .level:focus,
+.content>form .uzenet:focus {
+    outline-color: rgb(0, 0, 0);
+}
+
+.content form .text {
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: white;
+}
+
+
+/*  KULDES BUTTON ANIMALASA */
+
+.kuldes {
+    padding: 40px 0px 0px 10px;
+    text-align: center;
+}
+
+.kuldes>button {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    padding: 5px 0px;
+    background: rgb(102, 101, 101);
+    border-radius: 5px;
+    color: white;
+    width: 100%;
+    font-size: 18px;
+    z-index: 1;
+    transition: 0.5s;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.kuldes>button span {
+    position: absolute;
+    display: block;
+}
+
+.kuldes>button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, rgb(243, 228, 228))
+}
+
+.kuldes>button span:nth-child(2) {
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(-90deg, transparent, rgb(243, 228, 228))
+}
+
+.kuldes>button span:nth-child(3) {
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, rgb(243, 228, 228))
+}
+
+.kuldes>button span:nth-child(4) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(-90deg, transparent, rgb(243, 228, 228))
+}
+
+.kuldes>button:hover span:nth-child(1) {
+    left: -50%;
+    transition: 0.5s;
+}
+
+.kuldes>button:hover span:nth-child(2) {
+    right: -50%;
+    transition: 0.5s;
+}
+
+.kuldes>button:hover span:nth-child(3) {
+    left: -50%;
+    transition: 0.5s;
+}
+
+.kuldes>button:hover span:nth-child(4) {
+    right: -50%;
+    transition: 0.5s;
+}
+
+.kuldes>button:hover {
+    transform: scale(0.9);
+    opacity: 1;
+}
+
+
+/* KULDES BUTTON ANIMALASANAK VEGE */
+
+
+/*  SOCIAL LINKS ELVÁLASZTÓ */
+
+.social-text-container {
+    display: flex;
+    grid-area: efekt;
+    width: 100%;
+    position: relative;
+}
+
+.social-effect {
+    width: 100%;
+    text-align: center;
+}
+
+.social-effect p {
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    text-shadow: 0px 1px 4px;
+    position: relative;
+    margin-top: 5px;
+}
+
+.social-effect p:before {
+    content: "";
+    display: block;
+    height: 2px;
+    background: rgb(102, 101, 101);
+    left: 100px;
+    top: 50%;
+    width: 50%;
+    position: absolute;
+    z-index: -2;
+}
+
+.social-effect p:after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: rgb(102, 101, 101);
+    right: 100px;
+    top: 50%;
+    position: absolute;
+    z-index: -2;
+    width: 50%;
+}
+
+.social-effect>p>span {
+    background: rgb(102, 101, 101);
+    padding: 0px 10px;
+}
+
+
+/*  ELVÁLASZTÓ VÉGE */
+
+
+/* SOCAL LINKEK ELHELYEZÉSE / ANIMÁLÁSA */
+
+.social-link-container {
+    display: flex;
+    justify-content: space-around;
+    grid-area: social;
+    width: 100%;
+    position: relative;
+}
+
+.social-container>ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-container>ul li {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    font-size: 50px;
+    transform: rotate(45deg);
+    overflow: hidden;
+    transition: all .5s ease-in;
+}
+
+.social-container>ul li:before {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    z-index: -2;
+}
+
+.social-container>ul li:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    z-index: -3;
+    transition: all .5s ease-in-out;
+    opacity: 0.5;
+}
+
+.social-container>ul li a {
+    color: white;
+    margin: auto;
+    text-shadow: 0 2px 0 rgb(2, 2, 2);
+    transform: rotate(-45deg);
+    transition: all 0.5s ease-in;
+}
+
+.social-container>ul li:hover {
+    transform: rotate(765deg);
+}
+
+.social-container>ul li:hover:after {
+    right: 0%;
+}
+
+.social-container>ul li:hover a {
+    transform: rotate(-765deg);
+}
+
+.social-container>ul li:nth-of-type(2):before,
+.social-container>ul li:nth-of-type(2):after {
+    background: red;
+}
+
+.social-container>ul li:nth-of-type(1):before,
+.social-container>ul li:nth-of-type(1):after {
+    background: rgb(13, 140, 240)
+}
+
+.social-container>ul li:nth-of-type(3):before,
+.social-container>ul li:nth-of-type(3):after {
+    background: rgb(28, 156, 234)
+}
+
+.social-container>ul li:nth-of-type(4):before,
+.social-container>ul li:nth-of-type(4):after {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.social-container>ul li:nth-of-type(5):before,
+.social-container>ul li:nth-of-type(5):after {
+    background: black;
+}
+
+.social-container>ul li:nth-of-type(6):before,
+.social-container>ul li:nth-of-type(6):after {
+    background: red;
+}
+
+
+/*  SOCIAL LINKEK ANIMÁLÁSÁNAK VÉGE */
+
+
+/* TEMRS PRIVACY BOX  */
+
+.termprivacy-container {
+    display: flex;
+    justify-content: center;
+    grid-area: term;
+    width: 100%;
+    position: relative;
+}
+
+.rule-container p {
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    text-shadow: 0px 1px 4px;
+}
+
+
+/* RESZPONZIVITÁS */
+
+
+/* 1200 PIXELES HATÁSOK */
+
+@media all and (max-width: 1200px) {
+    /* MENU LISTA*/
+    .topmenu ul {
+        margin-right: 0px;
+        float: left;
+    }
+    /* LOGO */
+    .topmenu .logo {
+        padding-left: 13px;
+        width: 100%;
+        transition: 0.5s;
+    }
+    /* MENU LISTA ELEM */
+    .topmenu ul li {
+        display: block;
+        padding-right: 62px;
+        width: 100%;
+    }
+    /* HAMBURGER LABEL */
+    .icon {
+        display: block;
+        color: white;
+        position: absolute;
+        right: 40px;
+        line-height: 70px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    /* LISTA TARTALOM */
+    .topmenu ul li a {
+        line-height: 25px;
+        padding: 0 10px;
+    }
+    /* SZAUNA CÍM */
+    .borito-img>.cim h1 {
+        font-size: 80px;
+    }
+    /* SALUTEM CIM*/
+    .borito-img>.cim h2 {
+        font-size: 40px;
+    }
+    /* LISTA MUTATASA */
+    .topmenu a,
+    ul {
+        display: none;
+    }
+    /* LISTA MEGJELENÍTÉSE CHECKRE*/
+    [id^=btn]:checked+ul {
+        display: block;
+    }
+    /* FOOTER RÁCS SZERKEZET */
+    footer {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat (auto, 6);
+        grid-template-areas: "info" "about" "message" "efekt" "social" "term";
+        height: 100%;
+    }
+    /* SOCIAL LINKEK MÉRETEZÉSE */
+    .social-container>ul li {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+    }
+    /* ELÉRHETŐSÉGEK RENDEZÉSE */
+    .info-container {
+        justify-content: center;
+    }
+}
+
+
+/* 1000 PIXELES HATÁSOK */
+
+@media all and (max-width: 1000px) {
+    /* RIZSA */
+    .szovegresz {
+        padding: 40px;
+    }
+    /* BORÍTÓ MAGASSÁGA */
+    .borito {
+        height: 60vh;
+        transition: 1s;
+    }
+    /* HIVATKOZÁSOK NAVON BELÜLI RENDEZÉSE */
+    .topmenu ul li a {
+        line-height: 25px;
+    }
+    /*Cím stílusok*/
+    .title{
+        font-size: 2.5em;
+    }
+    h2{
+        font-size: 2em;
+    }
+    h3{
+        font-size: 1em;
+    }
+    .labels{
+        font-size: 1.5em;
+        margin: 0em 2em 0em 2em;
+    }
+    td{
+        font-size: 1.5em;
+    }
+    .background{
+        padding: 3em;
+    }
+}
+
+
+/* 800 PIXELES HATÁSOK */
+
+@media all and (max-width:800px) {
+    /* MENU LISTA */
+    .topmenu ul {
+        margin-right: 0px;
+        float: left;
+    }
+    /* LOGO */
+    .topmenu .logo {
+        padding-left: 13px;
+        width: 100%;
+    }
+    /* MENU LISTA ELEM*/
+    .topmenu ul li {
+        display: block;
+        width: 100%;
+    }
+    /* HAMBURGER LABEL */
+    .icon {
+        display: block;
+        color: white;
+        position: absolute;
+        right: 40px;
+        line-height: 70px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    /* LISTA TARTALOM */
+    .topmenu ul li a {
+        padding: 0 10px;
+        line-height: 25px;
+    }
+    /* BORÍTÓ MAGASSÁGA */
+    .borito {
+        height: 70vh;
+        transition: 1s;
+    }
+    /* SZAUNA CIM */
+    .borito-img>.cim h1 {
+        font-size: 80px;
+    }
+    /* SALUTEM CIM */
+    .borito-img>.cim h2 {
+        font-size: 40px;
+    }
+    /* LISTA MUTATÁSA */
+    .topmenu a,
+    ul {
+        display: none;
+    }
+    /* LISTA MEGJELENÍTÉSE CHECKRE */
+    [id^=btn]:checked+ul {
+        display: block;
+    }
+    /* RIZSA */
+    .szovegresz {
+        padding: 30px;
+    }
+    /* FA ICON GALERIA SLIDER */
+    .post-slider .prev {
+        left: 0px;
+    }
+    .post-slider .next {
+        right: 0px;
+    }
+    /*Cím stílusok*/
+    .title{
+        font-size: 2em;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+    h3{
+        font-size: 0.5em;
+    }
+    .background{
+        padding: 2em;
+    }
+    .labels{
+        font-size: 1em;
+        margin: 0em 1.5em 0em 1.5em;
+    }
+    td{
+        font-size: 1em;
+    }
+}
