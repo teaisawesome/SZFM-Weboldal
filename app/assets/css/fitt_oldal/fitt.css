@@ -769,6 +769,7 @@ footer {
     grid-area: efekt;
     width: 100%;
     position: relative;
+    margin-bottom: 2em;
 }
 
 .social-effect {
@@ -1052,6 +1053,25 @@ footer {
     .background{
         padding: 3em;
     }
+    
+    .rolunk {
+        margin-top: 2em;
+        margin-bottom: 1.5em;
+    }
+    .rolunkszoveg{
+        padding: 0em 2em 0em 2em;
+        text-align: center;
+    }    
+    .contact{
+        margin-top: 1em;
+    }
+    .kuldes{
+        margin-bottom: 2em;
+    }
+    .social-text-container{
+        margin-bottom: 2em;
+    }
+    
 }
 
 
@@ -1140,5 +1160,52 @@ footer {
     }
     td{
         font-size: 1em;
+    }
+}
+
+@media all and (max-width:500px) {
+    h2{
+        display: inline-block;
+    }
+    .info{
+        padding-right: 2em;
+    }
+    .background{
+        width: 80%;
+        padding: 1em;
+    }
+    
+    .btn {
+        padding: 12px 24px;
+        font-size: 12px;
+    
+    }
+    .title{
+        font-size: 25px;
+    }
+    h3{
+        font-size: 12px;
+    }
+    /*PopUp*/
+    .popup {
+        font-size: 12px;
+    }
+    
+    /* The actual popup */
+    .popup .popuptext {
+        top: 120%;
+        right: -50%;
+    }
+    
+    /* Popup arrow */
+    .popup .popuptext::after {
+        left: 50%;
+    }
+    
+    /* Toggle this class - hide and show the popup */
+    .popup .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
     }
 }
