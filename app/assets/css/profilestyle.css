@@ -1,0 +1,34 @@
+.profile-container
+{
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px black;
+}
+.img-section
+{
+    background-color: red!important;
+}
+img
+{
+    display: block;
+    margin: 0 auto;
+    border-radius: 90px;
+}
+body
+{
+    background-image: url("../../resources/images/reception.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+}
+.profilecontainer
+{
+    
+}

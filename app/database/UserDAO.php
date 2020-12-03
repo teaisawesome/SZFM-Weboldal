@@ -81,7 +81,6 @@ class UserDAO
         $user = new User();
         $user->Id($fetched[0][0])->Name($fetched[0][1])->Password($fetched[0][2])->Address($fetched[0][4])->Email($fetched[0][5])->Phone($fetched[0][6])->Rank($fetched[0][7])->IsPremiumMember($fetched[0][8])->Image($fetched[0][9])->Card($fetched[0][3]);
         return $user;
-
     }
 
     public function auth($email, $pwd)
