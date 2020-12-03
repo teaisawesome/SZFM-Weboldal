@@ -756,6 +756,7 @@ footer {
     grid-area: efekt;
     width: 100%;
     position: relative;
+    margin-bottom: 2em;
 }
 
 .social-effect {
@@ -1047,6 +1048,24 @@ footer {
     .topmenu ul li a {
         line-height: 25px;
     }
+    
+    .rolunk {
+        margin-top: 2em;
+        margin-bottom: 1.5em;
+    }
+    .rolunkszoveg{
+        padding: 0em 2em 0em 2em;
+        text-align: center;
+    }    
+    .contact{
+        margin-top: 1em;
+    }
+    .kuldes{
+        margin-bottom: 2em;
+    }
+    .social-text-container{
+        margin-bottom: 2em;
+    }
 }
 
 
@@ -1140,5 +1159,14 @@ footer {
         width: 100%;
         height: 290px;
         border-radius: 5px;
+    }
+}
+
+@media all and (max-width:500px) {
+    h2{
+        display: inline-block;
+    }
+    .info{
+        padding-right: 2em;
     }
 }
