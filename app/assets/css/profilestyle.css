@@ -12,10 +12,22 @@
 }
 .img-section
 {
-    background-color: red!important;
+    border: 1px solid black;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0px 0px 15px black;
+    padding: 15px 0px;
 }
-img
+.row-border
 {
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px black;
+    
+}
+#profile-img
+{
+    border: 2px solid black;
+    box-shadow: 0px 0px 15px black;
     display: block;
     margin: 0 auto;
     border-radius: 90px;
@@ -28,7 +40,22 @@ body
     background-position: center;
     height: 100vh;
 }
-.profilecontainer
+.profile-row
 {
-    
+    background-color: white;
 }
+.profile-info-section
+{
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+    padding: 1.5rem 0rem;
+    margin: 1rem;
+    background-color: whitesmoke;
+}
+
+@media only screen and (max-width: 600px) {
+    .profile-button {
+        margin-bottom: 1rem;
+    }
+  }
