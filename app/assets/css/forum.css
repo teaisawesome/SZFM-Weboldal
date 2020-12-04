@@ -79,3 +79,18 @@ span{
     }
 }
 
+ul{
+    /* width: fit-content !important; */
+    margin: auto !important; 
+    width: 60%;
+
+    /* justify-content: center; */
+}
+
+a {
+    color: black !important;
+}
+
+.icon{
+    color: black !important;
+}
