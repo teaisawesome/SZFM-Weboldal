@@ -36,7 +36,7 @@ if(isset($_SESSION["logged"]) && $_SESSION["logged"])
                     <span id="threestar-' . $commentID . '" class="rate">&#11088;</span>
                     <span id="fourstar-'. $commentID . '" class="rate">&#11088;</span>
 					<span id="fivestar-' .$commentID . '" class="rate">&#11088;</span>
-                    <span id="avg-' . $commentID . '" class="avg"><span id="rating">Értékelés: ' . $avg . '</span></span>
+                    <span id="avg-' . $commentID . '" class="avg"><span id="rating">Értékelések átlaga: ' . $avg . '</span></span>
 				</div>
 				<div class="message">
 				'.
@@ -74,7 +74,7 @@ if(isset($_SESSION["logged"]) && $_SESSION["logged"])
                 
             }
         }
-        header("Location: http://localhost/SZFM-WEBOLDAL/app/view/forum.php");
+        header("Location: http://localhost/SZFM-Weboldal/app/forum");
         
     }
     

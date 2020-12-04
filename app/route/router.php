@@ -116,6 +116,37 @@ class Router
             $request->action = "index";
             $request->params = "data";
         }
+
+        /**
+         *  Forum routing
+         */
+        if($url == $domain . "forum")
+        {
+            $request->controller = "Forum";
+            $request->action = "index";
+            $request->params = "data";
+        }
+
+        if($url == $domain . "api/getforumcomments")
+        {
+            $request->controller = "ForumAjaxGet";
+            $request->action = "index";
+            $request->params = [];
+        }
+
+        if($url == $domain . "api/postforumcomment")
+        {
+            $request->controller = "ForumAjaxPost";
+            $request->action = "index";
+            $request->params = [$_POST["submit"], $_POST["comment"]];
+        }
+        if($url == $domain . "api/postcommentrating")
+        {
+            $request->controller = "CommentRating";
+            $request->action = "index";
+            $request->params = [];
+        }
+        
     }
 }
 ?>

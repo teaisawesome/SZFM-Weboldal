@@ -8,8 +8,8 @@ $(document).ready(() => {
         };
         
         $(`#${id}`).click(() => {
-            $.post("../ajax/forumrating_ajax.php", {"num" : 2 ,"comment_id" : id.split("-")[1], "rating" : mapper[id.split("-")[0]]}, (data) => {
-                // console.log(data);
+            $.post("api/postcommentrating", {"num" : 2 ,"comment_id" : id.split("-")[1], "rating" : mapper[id.split("-")[0]]}, (data) => {
+                //console.log(data);
             });
         });
     }
@@ -24,7 +24,7 @@ $(document).ready(() => {
         }
     }
 
-    $.post("../ajax/forum_ajax.php", {"num" : 5}, (data) => {
+    $.post("api/getforumcomments", {"num" : 5}, (data) => {
         $("#content").html(data);
         loadClickListeners();
     });

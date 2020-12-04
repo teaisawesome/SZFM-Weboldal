@@ -10,7 +10,7 @@
                 </label>
                 <input class="csekk" type="checkbox" id="btn">
                 <ul>
-                    <li><a href="">Fórum</a></li>
+                    <li><a href="forum">Fórum</a></li>
                     <li><a href="contact">Kapcsolat</a></li>
                     <li><a href="services">Szolgáltatások</a></li>
                     <li><a href="about">Rólunk</a></li>
