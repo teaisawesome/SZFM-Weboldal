@@ -2,10 +2,10 @@
 // define('ROOT', str_replace("info/index.php", "", $_SERVER["SCRIPT_FILENAME"]));
 session_start();
 
-require_once "../database/ForumDAO.php";
-require_once "../database/UserDAO.php";
-require_once "../database/ForumRatingDAO.php";
-require_once "../classes/ForumComment.php";
+require_once ROOT . "/database/ForumDAO.php";
+require_once ROOT . "/database/UserDAO.php";
+require_once ROOT . "/database/ForumRatingDAO.php";
+require_once ROOT . "/classes/ForumComment.php";
 
 if(isset($_SESSION["logged"]) && $_SESSION["logged"])
 // if(isset($_POST["num"]))
@@ -15,6 +15,17 @@ if(isset($_SESSION["logged"]) && $_SESSION["logged"])
 
     $forumRatingDAO = new ForumRatingDAO();
     
+    $newCommentForm = '
+    <div id="new-comment-form">
+        <form action="api/postforumcomment" method="post">
+            <span id="greeting">Értékeld az [insert Company Name]-et!</span>
+            <textarea name="comment" id="ta-comment" rows="10" ></textarea>
+            <input type="submit" name="submit" value="Beküld">
+        </form>
+    </div>
+    ';
+    echo $newCommentForm;
+
     foreach($comments as $comment)
     {
         $userDAO = new UserDAO();
@@ -27,6 +38,7 @@ if(isset($_SESSION["logged"]) && $_SESSION["logged"])
         $avg = $forumRatingDAO->getCommentRating($commentID);
         // echo "<script>alert(${avg})</script>";
 
+        
         $forumComment = '
             <div class="comment">
                 <div class="email">'. $user->getEmail() .'</div>
