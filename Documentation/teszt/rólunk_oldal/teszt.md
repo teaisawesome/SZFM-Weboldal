@@ -89,7 +89,7 @@ A tesztek Windows-os környzetben készültek.
 
 
 **A navigációs menüsor alapesetben:**
-![Navbar alap állpota](/Images/Navbar1.png "Navbar alap állpota")
+![Navbar alap állpota](/Documentation/teszt/rólunk_oldal/Images/Navbar1.png "Navbar alap állpota")
 
 
 **A navigációs menüsor aktív kurzor esetén:**
