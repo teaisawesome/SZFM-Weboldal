@@ -93,7 +93,7 @@ A tesztek Windows-os környzetben készültek.
 
 
 **A navigációs menüsor aktív kurzor esetén:**
-![Navbar állpota aktív kurzor esetén](/Images/Navbar2.png "Navbar állpota aktív kurzor esetén")
+![Navbar állpota aktív kurzor esetén](/Documentation/teszt/rólunk_oldal/Images/Navbar2.png "Navbar állpota aktív kurzor esetén")
 
 
 *A fenti két képen jól látszik a különbség. Amíg csak alap esetben van a navigációs sor, addig minden menüpont ugyanúgy jelenik meg, tehát nincs méretbeli és színbeli 
@@ -118,7 +118,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Menüsor reszponzivitása 1920px szélesség esetén:**
 
 
-![Navbar reszponzivitása 1920px](/Images/Navbar3.png "Navbar reszponzivitása 1920px")
+![Navbar reszponzivitása 1920px](/Documentation/teszt/rólunk_oldal/Images/Navbar3.png "Navbar reszponzivitása 1920px")
 
 
 *Láthatjuk, hogy a menüsor teljesen használható, nem csúszik el, nem megy össze. Pontosan a helyén marad.*
@@ -127,10 +127,10 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Menüsor reszponzivitása 960px szélesség esetén:**
 
 
-![Navbar reszponzivitása 960px](/Images/Navbar4.png "Navbar reszponzivitása 960px")
+![Navbar reszponzivitása 960px](/Documentation/teszt/rólunk_oldal/Images/Navbar4.png "Navbar reszponzivitása 960px")
 
 
-![Navbar reszponzivitása 960px](/Images/Navbar5.png "Navbar reszponzivitása 960px")
+![Navbar reszponzivitása 960px](/Documentation/teszt/rólunk_oldal/Images/Navbar5.png "Navbar reszponzivitása 960px")
 
 
 *Láthatjuk, hogy a navigációs sor eltűnt és csak egy gomb van a helyén (első kép). A gomb nyomása esetén bal oldalt felbukkan a menüsor (második kép) csak most már oszlopos alakban, nem pedig sorban. Ezzel a módszerrel könnyen alkalmazkodhatunk különböző kijelzőkhöz is, mint például a mobil kijelzők. Ebben az esetben is érvényesül, hogy a menüsor minden pontja látszik, de ha rávisszük az egyik pontra az egeret, akkor az adott pont kiemelkedik, létrejön az animáció. A többi gomb pedig addig elhalványul.*
@@ -139,7 +139,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Menüsor reszponzivitása mobilon:**
 
 
-![Navbar reszponzivitása mobilon](/Images/Navbar6.png "Navbar reszponzivitása mobilon")
+![Navbar reszponzivitása mobilon](/Documentation/teszt/rólunk_oldal/Images/Navbar6.png "Navbar reszponzivitása mobilon")
 
 
 *Ebben az esetben is látszik, hogy a bal oldalon az oszlopos elrendezésben vannak a menüpontok. Ezt a módszert alkalmaztuk az 1200px vagy attól kisebb szélességű kijelzők esetén.*
@@ -163,19 +163,19 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **A címek reszponzivitása 1920px szélesség esetén:**
 
 
-![A címek reszponzivitása 1920px](/Images/Title1.png "A címek reszponzivitása 1920px")
+![A címek reszponzivitása 1920px](/Documentation/teszt/rólunk_oldal/Images/Title1.png "A címek reszponzivitása 1920px")
 
 
 **A címek reszponzivitása 960px szélesség esetén:**
 
 
-![A címek reszponzivitása 960px](/Images/Title2.png "A címek reszponzivitása 960px")
+![A címek reszponzivitása 960px](/Documentation/teszt/rólunk_oldal/Images/Title2.png "A címek reszponzivitása 960px")
 
 
 **A címek reszponzivitása mobilon:**
 
 
-![A címek reszponzivitása mobilon](/Images/Title3.png "A címek reszponzivitása mobilon")
+![A címek reszponzivitása mobilon](/Documentation/teszt/rólunk_oldal/Images/Title3.png "A címek reszponzivitása mobilon")
 
 
 *A fenti képeken is látható, hogy a címek megfelelően alkalmazkodnak a méretváltozáshoz, így minden méretben jól olvashatóak és nem takarnak bele más képbe vagy szövegbe.*
@@ -189,7 +189,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **A borítókép reszponzivitása 1920px szélesség esetén:**
 
 
-![A borítókép reszponzivitása 1920px](/Images/Bground1.png "A borítókép reszponzivitása 1920px")
+![A borítókép reszponzivitása 1920px](/Documentation/teszt/rólunk_oldal/Images/Bground1.png "A borítókép reszponzivitása 1920px")
 
 
 
@@ -213,13 +213,13 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **A borítókép reszponzivitása 960px szélesség esetén:**
 
 
-![A borítókép reszponzivitása 960px](/Images/Bground2.png "A borítókép reszponzivitása 960px")
+![A borítókép reszponzivitása 960px](/Documentation/teszt/rólunk_oldal/Images/Bground2.png "A borítókép reszponzivitása 960px")
 
 
 **A borítókép reszponzivitása reszponzivitása mobilon:**
 
 
-![A borítókép reszponzivitása mobilon](/Images/Bground3.png "A borítókép reszponzivitása mobilon")
+![A borítókép reszponzivitása mobilon](/Documentation/teszt/rólunk_oldal/Images/Bground3.png "A borítókép reszponzivitása mobilon")
 
 
 *A fenti képeken látszik, hogy a böngésző, a képből mindig egy közelített részletet mutat, ahogy megyünk az egyre kisebb szélességek felé, úgy a kép közepét látjuk, ezt a CSS-ben lehet állítani. Ez persze sokmindentől függ, hogy a készítő, hogyan állítja be a hátteret. Egyik méretben sem tudjuk a képet görgetni vagy csúsztatni bármely irányba, tehát sikerült a reszponzivitás.*
@@ -268,7 +268,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Bal oldali körképek reszponzivitása 1920px szélesség esetén:**
 
 
-![Bal oldali körképek reszponzivitása 1920px](/Images/Left1.png "Bal oldali körképek reszponzivitása 1920px")
+![Bal oldali körképek reszponzivitása 1920px](/Documentation/teszt/rólunk_oldal/Images/Left1.png "Bal oldali körképek reszponzivitása 1920px")
 
 
 *Itt a kép igazodik a nagy mérethez, azért ilyen nagy a mérete.**
@@ -277,7 +277,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Bal oldali körképek reszponzivitása 960px szélesség esetén:**
 
 
-![Bal oldali körképek reszponzivitása 960px](/Images/Left2.png "Bal oldali körképek reszponzivitása 960px")
+![Bal oldali körképek reszponzivitása 960px](/Documentation/teszt/rólunk_oldal/Images/Left2.png "Bal oldali körképek reszponzivitása 960px")
 
 
 *Itt már látszik, hogy arányosan összébmegy a kép, igazodik az adott ablak méretéhez.*
@@ -286,7 +286,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Bal oldali körképek reszponzivitása reszponzivitása mobilon:**
 
 
-![Bal oldali körképek reszponzivitása mobilon](/Images/Left3.png "Bal oldali körképek reszponzivitása mobilon")
+![Bal oldali körképek reszponzivitása mobilon](/Documentation/teszt/rólunk_oldal/Images/Left3.png "Bal oldali körképek reszponzivitása mobilon")
 
 
 *Megvalósul a reszponzivitás, a képek egymás alá kerültek, ez volt a legjobb megoldás, hogy láthatóak is maradjanak, de a szöüveget se tördeljék el.*
@@ -335,7 +335,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Jobb oldali körképek reszponzivitása 1920px szélesség esetén:**
 
 
-![Jobb oldali körképek reszponzivitása 1920px](/Images/Right1.png "Jobb oldali körképek reszponzivitása 1920px")
+![Jobb oldali körképek reszponzivitása 1920px](/Documentation/teszt/rólunk_oldal/Images/Right1.png "Jobb oldali körképek reszponzivitása 1920px")
 
 
 *Itt a kép igazodik a nagy mérethez, azért ilyen nagy a mérete.**
@@ -344,7 +344,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Jobb oldali körképek reszponzivitása 960px szélesség esetén:**
 
 
-![Jobb oldali körképek reszponzivitása 960px](/Images/Right2.png "Jobb oldali körképek reszponzivitása 960px")
+![Jobb oldali körképek reszponzivitása 960px](/Documentation/teszt/rólunk_oldal/Images/Right2.png "Jobb oldali körképek reszponzivitása 960px")
 
 
 *Itt már látszik, hogy arányosan összébmegy a kép, igazodik az adott ablak méretéhez.*
@@ -353,7 +353,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Jobb oldali körképek reszponzivitása reszponzivitása mobilon:**
 
 
-![Jobb oldali körképek reszponzivitása mobilon](/Images/Right3.png "Jobb oldali körképek reszponzivitása mobilon")
+![Jobb oldali körképek reszponzivitása mobilon](/Documentation/teszt/rólunk_oldal/Images/Right3.png "Jobb oldali körképek reszponzivitása mobilon")
 
 
 *Megvalósul a reszponzivitás, a képek egymás alá kerültek, ez volt a legjobb megoldás, hogy láthatóak is maradjanak, de a szöüveget se tördeljék el.*
@@ -368,7 +368,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Bekezdés címek reszponzivitása 1920px szélesség esetén:**
 
 
-![Bekezdés címek reszponzivitása 1920px](/Images/TextT1.png "Bekezdés címek reszponzivitása 1920px")
+![Bekezdés címek reszponzivitása 1920px](/Documentation/teszt/rólunk_oldal/Images/TextT1.png "Bekezdés címek reszponzivitása 1920px")
 
 
 *Jól látható, hogy a címnek bőven van elég hely, könnyen olvasható, Szépen igazodik a kör alakú képekhez, tartja a távolságot tőlük.*
@@ -377,7 +377,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Bekezdés címek reszponzivitása 960px szélesség esetén:**
 
 
-![Bekezdés címek reszponzivitása 960px](/Images/TextT2.png "Bekezdés címek reszponzivitása 960px")
+![Bekezdés címek reszponzivitása 960px](/Documentation/teszt/rólunk_oldal/Images/TextT2.png "Bekezdés címek reszponzivitása 960px")
 
 
 *Itt a cím már közelebb kerül a képekhez. A cím alkalmazkodik a mérethez, nem lóg bele a képekbe vagy a szövegbe.*
@@ -386,7 +386,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Bekezdés címek reszponzivitása reszponzivitása mobilon:**
 
 
-![Bekezdés címek reszponzivitása mobilon](/Images/TextT3.png "Bekezdés címek reszponzivitása mobilon")
+![Bekezdés címek reszponzivitása mobilon](/Documentation/teszt/rólunk_oldal/Images/TextT3.png "Bekezdés címek reszponzivitása mobilon")
 
 
 *A címeket szépen eltördeltük, így olvashatóak, nem lógnak ki a képernyőről, valamint a szöveget illetve a képeket se tolja el.*
@@ -402,7 +402,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Bekezdések reszponzivitása 1920px szélesség esetén:**
 
 
-![Bekezdések reszponzivitása 1920px](/Images/Paragraph1.png "Bekezdések reszponzivitása 1920px")
+![Bekezdések reszponzivitása 1920px](/Documentation/teszt/rólunk_oldal/Images/Paragraph1.png "Bekezdések reszponzivitása 1920px")
 
 
 *A képen is látható, hogy a szüveg szépen eloszlik a képernyőn, azonos távolságot tart a képektől és a bekezdés címektől is.*
@@ -411,7 +411,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Bekezdések reszponzivitása 960px szélesség esetén:**
 
 
-![Bekezdések reszponzivitása 960px](/Images/Paragraph2.png "Bekezdések reszponzivitása 960px")
+![Bekezdések reszponzivitása 960px](/Documentation/teszt/rólunk_oldal/Images/Paragraph2.png "Bekezdések reszponzivitása 960px")
 
 
 *A szöveg már jobban kitölti a teret, mivel az balak mérete csökkent. Így a szöveg szépen a képek alá is kerül, ezzel növelve az olvashatóságot. Itt is megvan a fix távolság a képektől és a címektől iy, valamint az oldal szélétől.*
@@ -420,7 +420,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Bekezdések reszponzivitása reszponzivitása mobilon:**
 
 
-![Bekezdések reszponzivitása mobilon](/Images/Paragraph3.png "Bekezdések reszponzivitása mobilon")
+![Bekezdések reszponzivitása mobilon](/Documentation/teszt/rólunk_oldal/Images/Paragraph3.png "Bekezdések reszponzivitása mobilon")
  
  
 *A szöveg kitölti a teret, mint egy hosszú egybefuggő csíkot képez, de ez a mobiloknál nem meglepő, hiszen így marad olvasható az oldal. Ebben az esetben a képek a szövegek elé kerülnek elhelyezésre, így biztosítják az olvashatóságot.*  
@@ -436,7 +436,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Elválasztó vonal reszponzivitása 1920px szélesség esetén:**
 
 
-![Elválasztó vonal reszponzivitása 1920px](/Images/Line1.png "Elválasztó vonal reszponzivitása 1920px")
+![Elválasztó vonal reszponzivitása 1920px](/Documentation/teszt/rólunk_oldal/Images/Line1.png "Elválasztó vonal reszponzivitása 1920px")
 
 
 *Láthatjuk, hogy a vonal a bal oldaltól a jobb oldalig rat végig. Ez egy összetett vonal a stílusát tekintve, hiszen a felső színt mi adjuk meg, de az alsót azt a CSS alkotja meg. Az eredeti szín egy sötétebb változatát csinálja meg.*
@@ -462,7 +462,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Elválasztó vonal reszponzivitása 960px szélesség esetén:**
 
 
-![Elválasztó vonal reszponzivitása 960px](/Images/Line2.png "Elválasztó vonal reszponzivitása 960px")
+![Elválasztó vonal reszponzivitása 960px](/Documentation/teszt/rólunk_oldal/Images/Line2.png "Elválasztó vonal reszponzivitása 960px")
 
 
 *A vonal itt is szépen végig ér az oldalon. Tartja a távolságot a felette lévő szövegtől és az alatt lécő címtől is.*
@@ -471,7 +471,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Elválasztó vonal reszponzivitása reszponzivitása mobilon:**
 
 
-![Elválasztó vonal reszponzivitása mobilon](/Images/Line3.png "Elválasztó vonal reszponzivitása mobilon")
+![Elválasztó vonal reszponzivitása mobilon](/Documentation/teszt/rólunk_oldal/Images/Line3.png "Elválasztó vonal reszponzivitása mobilon")
 
 
 *A vonal mobil kijelzőn is szépen látható, itt is tartja az ablak szélességet. Az alatta és a felette lévő részek közötti távolság nyilván csökkent, de így is átlátható és kivehető minden információ az oldalról.*
@@ -486,7 +486,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Elérhetőség reszponzivitása 1920px szélesség esetén:**
 
 
-![Elérhetőség reszponzivitása 1920px](/Images/Connect1.png "Elérhetőség reszponzivitása 1920px")
+![Elérhetőség reszponzivitása 1920px](/Documentation/teszt/rólunk_oldal/Images/Connect1.png "Elérhetőség reszponzivitása 1920px")
 
 
 *Az úgynevezett "lábrész" három részből áll, az elérehetőség az első része, azaz a bal oldai. A nagyobb képernyő méreteknél ez a három rész egymás mellett helyezkedik el, de kisebb részeknál már oszlopszerűen láthatjuk, a jobb olvashatóság kedvéért. Fontos, hogy az ikonok mindig a szövegek előtt álljanak, ne csússzanak vagy mozogjanak el.*
@@ -496,7 +496,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Elérhetőség reszponzivitása 960px szélesség esetén:**
 
 
-![Elérhetőség reszponzivitása 960px](/Images/Connect2.png "Elérhetőség reszponzivitása 960px")
+![Elérhetőség reszponzivitása 960px](/Documentation/teszt/rólunk_oldal/Images/Connect2.png "Elérhetőség reszponzivitása 960px")
 
 
 *Itt már életbe lép az oszlopos felállás. Az elérhetőség került legfelülre, hiszen ez volt a legszélső (az első). Ebben a helyzetben szabályosan középre kerül minden infomáció, ami az elérhetőségekben szerepel. Az ikonok is a helyükön maradtak*
@@ -505,7 +505,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Elérhetőség reszponzivitása reszponzivitása mobilon:**
 
 
-![Elérhetőség reszponzivitása mobilon](/Images/Connect3.png "Elérhetőség reszponzivitása mobilon")
+![Elérhetőség reszponzivitása mobilon](/Documentation/teszt/rólunk_oldal/Images/Connect3.png "Elérhetőség reszponzivitása mobilon")
 
 
 *Mobil kijelzőn is remekül lehet olvasni az elérehetőségek részt. Az információ egymás alá került, az ikonok is a helyükön vannak. A szöveg megfelelő távolságot tart a képernyő szélétől és az alatta vagy éppen a fölötte lévő szövegektől is.*
@@ -520,7 +520,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Fedezze fel a szolgáltatásainkat reszponzivitása 1920px szélesség esetén:**
 
 
-![Fedezze fel a szolgáltatásainkat reszponzivitása 1920px](/Images/Services1.png "Fedezze fel a szolgáltatásainkat reszponzivitása 1920px")
+![Fedezze fel a szolgáltatásainkat reszponzivitása 1920px](/Documentation/teszt/rólunk_oldal/Images/Services1.png "Fedezze fel a szolgáltatásainkat reszponzivitása 1920px")
 
 
 *Az úgynevezett "lábrész" három részből áll, a fedezze fel a szolgáltatásainkat a második része, azaz a középső. A nagyobb képernyő méreteknél ez a három rész egymás mellett helyezkedik el, de kisebb részeknál már oszlopszerűen láthatjuk, a jobb olvashatóság kedvéért. Fontos, hogy a középső részben a szöveg olvastó legyen, és ne lógjon túl vagy bele más részekbe, illetve a gomb is a megfelelő oldalra irányítson minket. A gomb animálva van, ha rávisszük az egeret, akkor kicsit összébb megy és egy fehér "keret" (alul és felül egy vonal) jelenik meg rajta.*
@@ -530,7 +530,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Fedezze fel a szolgáltatásainkat reszponzivitása 960px szélesség esetén:**
 
 
-![Fedezze fel a szolgáltatásainkat reszponzivitása 960px](/Images/Services2.png "Fedezze fel a szolgáltatásainkat reszponzivitása 960px")
+![Fedezze fel a szolgáltatásainkat reszponzivitása 960px](/Documentation/teszt/rólunk_oldal/Images/Services2.png "Fedezze fel a szolgáltatásainkat reszponzivitása 960px")
 
 
 *Itt már életbe lép az oszlopos felállás. A fedezze fel a szolgáltatásainkat került középre, hiszen ez volt a középső a sorban. Ebben a helyzetben a cím, a szöveg és a gomb is megfelelő távolságra vannak egymástól és persze a kpernyő szélétől is. Ebben a helyzetben középre vannak helyzve, így stílusosabb az oldal.*
@@ -539,7 +539,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Fedezze fel a szolgáltatásainkat reszponzivitása reszponzivitása mobilon:**
 
 
-![Fedezze fel a szolgáltatásainkat reszponzivitása mobilon](/Images/Services3.png "Fedezze fel a szolgáltatásainkat reszponzivitása mobilon")
+![Fedezze fel a szolgáltatásainkat reszponzivitása mobilon](/Documentation/teszt/rólunk_oldal/Images/Services3.png "Fedezze fel a szolgáltatásainkat reszponzivitása mobilon")
 
 
 *Mobil kijelzőn is remekül lehet olvasni a fedezze fel a szolgáltatásainkat részt. A szöveg megfelelő távolságot tart a gombtól és a címtől. Az oldal ezen része sem takar vagy torzít bele más részekbe, tehát a reszponzivtás itt is sikerült.*
@@ -548,7 +548,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Fedezze fel a szolgáltatásainkat rész gomb animációja:**
 
 
-![Fedezze fel a szolgáltatásainkat gomb animációja](/Images/Services4.png "Fedezze fel a szolgáltatásainkat gomb animációja")
+![Fedezze fel a szolgáltatásainkat gomb animációja](/Documentation/teszt/rólunk_oldal/Images/Services4.png "Fedezze fel a szolgáltatásainkat gomb animációja")
 
 
 > ### **11. Lépjen kapcsolatba velünk tesztelése**
@@ -559,7 +559,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Lépjen kapcsolatba velünk reszponzivitása 1920px szélesség esetén:**
 
 
-![Lépjen kapcsolatba velünk reszponzivitása 1920px](/Images/Email1.png "Lépjen kapcsolatba velünk reszponzivitása 1920px")
+![Lépjen kapcsolatba velünk reszponzivitása 1920px](/Documentation/teszt/rólunk_oldal/Images/Email1.png "Lépjen kapcsolatba velünk reszponzivitása 1920px")
 
 
 *Az úgynevezett "lábrész" három részből áll, a lépjen kapcsolatba velünk a harmadik része, azaz a jobb szélső. A nagyobb képernyő méreteknél ez a három rész egymás mellett helyezkedik el, de kisebb részeknál már oszlopszerűen láthatjuk, a jobb olvashatóság kedvéért. Fontos, hogy a jobb szélső részben az email és az üzenet "boxa" ne lógjon túl vagy bele más részekbe, illetve a gomb is a megfelelően működjön. A gomb animálva van, ha rávisszük az egeret, akkor kicsit összébb megy és egy fehér "keret" (alul és felül egy vonal) jelenik meg rajta.*
@@ -569,7 +569,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Lépjen kapcsolatba velünk reszponzivitása 960px szélesség esetén:**
 
 
-![Lépjen kapcsolatba velünk reszponzivitása 960px](/Images/Email2.png "Lépjen kapcsolatba velünk reszponzivitása 960px")
+![Lépjen kapcsolatba velünk reszponzivitása 960px](/Documentation/teszt/rólunk_oldal/Images/Email2.png "Lépjen kapcsolatba velünk reszponzivitása 960px")
 
 
 *Itt már életbe lép az oszlopos felállás. A lépjen kapcsolatba velünk került alulra, hiszen ez volt a jobb szélső a sorban. Ebben a helyzetben a cím, a két box és a neveik  is megfelelő távolságra vannak egymástól és persze a képernyő szélétől is. Ebben a helyzetben középre vannak helyzve, így stílusosabb az oldal.*
@@ -578,7 +578,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Lépjen kapcsolatba velünk reszponzivitása mobilon:**
 
 
-![Lépjen kapcsolatba velünk reszponzivitása mobilon](/Images/Email3.png "Lépjen kapcsolatba velünk reszponzivitása mobilon")
+![Lépjen kapcsolatba velünk reszponzivitása mobilon](/Documentation/teszt/rólunk_oldal/Images/Email3.png "Lépjen kapcsolatba velünk reszponzivitása mobilon")
 
 
 *Mobil kijelzőn is remekül lehet használni a lépjen kapcsolatba velünk részt. A két box és a neveik is megfelelő távolságot tartanak a gombtól és a címtől. Az oldal ezen része sem takar vagy torzít bele más részekbe.*
@@ -587,7 +587,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Lépjen kapcsolatba velünk gomb animációja és a figyelmeztető szöveg:**
 
 
-![Lépjen kapcsolatba velünk reszponzivitása mobilon](/Images/Email4.png "Lépjen kapcsolatba velünk reszponzivitása mobilon")
+![Lépjen kapcsolatba velünk reszponzivitása mobilon](/Documentation/teszt/rólunk_oldal/Images/Email4.png "Lépjen kapcsolatba velünk reszponzivitása mobilon")
 
 
 *A képen jól látható, hogy a figyelmeztető szöveg elég feltünő, így a felhasználó majd tudni fogja, hogy mit rontott el, és azt is, hogy hogyan tudja majd kijavítani a hibát.*
@@ -601,7 +601,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Social links felirat reszponzivitása 1920px szélesség esetén:**
 
 
-![Social links felirat reszponzivitása 1920px](/Images/SocialL1.png "Social links felirat reszponzivitása 1920px")
+![Social links felirat reszponzivitása 1920px](/Documentation/teszt/rólunk_oldal/Images/SocialL1.png "Social links felirat reszponzivitása 1920px")
 
 
 *Az oldal végén található elválasztó design vonal és szöveg. Egy kicsit megtöri a háttér egyhangú színét, ezzel hívja fel a felhasználó figyelmét az alatta lécő ikonokra. A csík nem megy végig az oldalon azaz nem tart a baloldaltól egészen a jobb oldalig.*
@@ -610,7 +610,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Social links felirat reszponzivitása 960px szélesség esetén:**
 
 
-![Social links felirat reszponzivitása 960px](/Images/SocialL2.png "Social links felirat reszponzivitása 960px")
+![Social links felirat reszponzivitása 960px](/Documentation/teszt/rólunk_oldal/Images/SocialL2.png "Social links felirat reszponzivitása 960px")
 
 
 *Ekkora szélességnél látszi, hogy a vonal és a szöveg kisebb lett, hiszen a képernyő mérete is kisebb lett.*
@@ -619,7 +619,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Social links felirat reszponzivitása mobilon:**
 
 
-![Social links felirat reszponzivitása mobilon](/Images/SocialL3.png "Social links felirat reszponzivitása mobilon")
+![Social links felirat reszponzivitása mobilon](/Documentation/teszt/rólunk_oldal/Images/SocialL3.png "Social links felirat reszponzivitása mobilon")
 
 
 *Ilyen kis méretben erre a csíkra már nincs szükség, a felirat elég, hogy felkeltse a felhasználó figyelmét.*
@@ -633,7 +633,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Social ikonok reszponzivitása 1920px szélesség esetén:**
 
 
-![Social ikonok reszponzivitása 1920px](/Images/SocialI1.png "Social ikonok reszponzivitása 1920px")
+![Social ikonok reszponzivitása 1920px](/Documentation/teszt/rólunk_oldal/Images/SocialI1.png "Social ikonok reszponzivitása 1920px")
 
 
 *Az közösségi médiához vezető gombok az oldal majdnem legalján találhatóak. Ezek a gombok vezteik át a felhasználót az SZFM cég közösségi oldalira. A gombok egy forgás animációt kaptak, ami elég stílusos az ilyen megjelenéshez. A gombok és a bennük lévő ikonok egymáson helyezkednek el és persze az egész gomb sor középen található.*
@@ -642,7 +642,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Social ikonok reszponzivitása 960px szélesség esetén:**
 
 
-![Social ikonok reszponzivitása 960px](/Images/SocialI2.png "Social ikonok reszponzivitása 960px")
+![Social ikonok reszponzivitása 960px](/Documentation/teszt/rólunk_oldal/Images/SocialI2.png "Social ikonok reszponzivitása 960px")
 
 
 *Ahogy a szélesség csökken nyilván a gombok mérete is úgy csökken szabályosan.*
@@ -651,7 +651,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Social ikonok reszponzivitása mobilon:**
 
 
-![Social ikonok reszponzivitása mobilon](/Images/SocialI3.png "Social ikonok reszponzivitása mobilon")
+![Social ikonok reszponzivitása mobilon](/Documentation/teszt/rólunk_oldal/Images/SocialI3.png "Social ikonok reszponzivitása mobilon")
 
 
 *A gombok mobil méretben is használhatóak, az animáció is működik rajtuk minden méretben.*
@@ -660,7 +660,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Social ikonok animációja:**
 
 
-![Social ikonok reszponzivitása mobilon](/Images/SocialI4.png "Social ikonok reszponzivitása mobilon")
+![Social ikonok reszponzivitása mobilon](/Documentation/teszt/rólunk_oldal/Images/SocialI4.png "Social ikonok reszponzivitása mobilon")
 
 
 *Amint a felhasználó rávitte az egeret a gombra, az elkezd pörögni, majd leáll, de a hátterer kicsit megváltozik, ezt láthatjuk is  fneti képen.*
@@ -675,7 +675,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Terms | Privacy reszponzivitása 1920px szélesség esetén:**
 
 
-![Terms | Privacy reszponzivitása 1920px](/Images/TermsP1.png "Terms | Privacy reszponzivitása 1920px")
+![Terms | Privacy reszponzivitása 1920px](/Documentation/teszt/rólunk_oldal/Images/TermsP1.png "Terms | Privacy reszponzivitása 1920px")
 
 
 *Mint minden weboldalnak, nekünk is kellett cisnálnunk egy ilyen menüpontot. A szavak mindvégig a képernyő közepén helyezkednek el, arányosan csökkennek és nőnek az oldal átméretezésével. Ezt bizonyítják az alábbi képek*
@@ -684,7 +684,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Terms | Privacy reszponzivitása 960px szélesség esetén:**
 
 
-![Terms | Privacy reszponzivitása 960px](/Images/TermsP2.png "Terms | Privacy reszponzivitása 960px")
+![Terms | Privacy reszponzivitása 960px](/Documentation/teszt/rólunk_oldal/Images/TermsP2.png "Terms | Privacy reszponzivitása 960px")
 
 
 *A szélességa  felére csökkent így a szavak mérete is, a stílusuk maradt ugyanolyan, nem csúsztak el egymás mellől*
@@ -693,7 +693,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **Terms | Privacy reszponzivitása mobilon:**
 
 
-![Terms | Privacy reszponzivitása mobilon](/Images/TermsP3.png "Terms | Privacy reszponzivitása mobilon")
+![Terms | Privacy reszponzivitása mobilon](/Documentation/teszt/rólunk_oldal/Images/TermsP3.png "Terms | Privacy reszponzivitása mobilon")
 
 
 *A mobil verzión is jól láthatóak a gombok, nem csúsznak el, illetve még mindig középen helyezkednek el.*
