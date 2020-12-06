@@ -35,10 +35,10 @@ A tesztek Windows-os környzetben készültek.
 
 
 **A fejléc alapesetben:**
-![A fejléc alap állpota](/Images/Fejlec1.png "A fejléc alap állpota")
+![A fejléc alap állpota](/Documentation/teszt/fitt_oldal/Images/Fejlec1.png "A fejléc alap állpota")
 
 **A navigációs menüsor aktív kurzor esetén:**
-![A fejléc állpota aktív kurzor esetén](/Images/Fejlec2.png "A fejléc állpota aktív kurzor esetén")
+![A fejléc állpota aktív kurzor esetén](/Documentation/teszt/fitt_oldal/Images/Fejlec2.png "A fejléc állpota aktív kurzor esetén")
 
 
 *A fenti két képen jól látszik a különbség. Amíg csak alap esetben van a navigációs sor, addig minden menüpont ugyanúgy jelenik meg, tehát nincs méretbeli és színbeli 
@@ -63,7 +63,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **A fejléc reszponzivitása 1920px szélesség esetén:**
 
 
-![A fejléc reszponzivitása 1920px](/Images/Fejlec3.png "A fejléc reszponzivitása 1920px")
+![A fejléc reszponzivitása 1920px](/Documentation/teszt/fitt_oldal/Images/Fejlec3.png "A fejléc reszponzivitása 1920px")
 
 
 *Láthatjuk, hogy a fejléc teljesen használható, minden rendezetten megtalálható rajta. A bal felső sarokban a logo, a jobb oldalon felül a navigációs gombok és a háttérkép is, valamint a cím.*
@@ -72,7 +72,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **A fejléc reszponzivitása 960px szélesség esetén:**
 
 
-![A fejléc reszponzivitása 960px](/Images/Fejlec4.png "A fejléc reszponzivitása 960px")
+![A fejléc reszponzivitása 960px](/Documentation/teszt/fitt_oldal/Images/Fejlec4.png "A fejléc reszponzivitása 960px")
 
 
 *Láthatjuk, hogy a navigációs sor eltűnt és csak egy gomb van a helyén (első kép). A gomb nyomása esetén bal oldalt felbukkan a menüsor (második kép) csak most már oszlopos alakban, nem pedig sorban. Ezzel a módszerrel könnyen alkalmazkodhatunk különböző kijelzőkhöz is, mint például a mobil kijelzők. Ebben az esetben is érvényesül, hogy a menüsor minden pontja látszik, de ha rávisszük az egyik pontra az egeret, akkor az adott pont kiemelkedik, létrejön az animáció. A többi gomb pedig addig elhalványul. A háttér és a cím is arányosan kisebb lett.*
@@ -80,20 +80,20 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **A fejléc reszponzivitása mobilon:**
 
 
-![A fejléc reszponzivitása mobilon](/Images/Fejlec5.png "A fejléc reszponzivitása mobilon")
+![A fejléc reszponzivitása mobilon](/Documentation/teszt/fitt_oldal/Images/Fejlec5.png "A fejléc reszponzivitása mobilon")
 
 
 *Ebben az esetben is látszik, hogy a bal oldalon az oszlopos elrendezésben vannak a menüpontok. Ezt a módszert alkalmaztuk az 1200px vagy attól kisebb szélességű kijelzők esetén., a cím is és a háttér is jól látható.*
 
 
 > ### **2. Fő rész tesztelés**
->     * A háttér, illetve a rajta lévő box helyzetének a változása. A gombok, választható opciók működése. A linkek és a felugró ablakok helyzete minden méret esetén. A gombok aktivitása kattintás esetén.
+>    * A háttér, illetve a rajta lévő box helyzetének a változása. A gombok, választható opciók működése. A linkek és a felugró ablakok helyzete minden méret esetén. A gombok aktivitása kattintás esetén.
 
 
 **A fő rész reszponzivitása 1920px szélesség esetén:**
 
 
-![A fő rész reszponzivitása 1920px](/Images/Main1.png "A fő rész reszponzivitása 1920px")
+![A fő rész reszponzivitása 1920px](/Documentation/teszt/fitt_oldal/Images/Main1.png "A fő rész reszponzivitása 1920px")
 
 
 *Láthatjuk, a fő részben helyezkedik el maga a fitt "generátor rész". Itt a háttéren található egy szürke alap és azon vannak a gombok, a választható opciók. A gombokon egyszerű animálást alkalmaztunk. Az oldal elrendezése mindig fix, a tovább és a vissza gomb alul helyezkedik el, a többi gomb és lehetőség, valamint felirat a szükre négyzeten belül. Összesen 14 oldalt tartalmaz a közpéső rész, ezek között a vissza és a tovább gombbal lehet navigálni.*
@@ -102,20 +102,20 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **A fő rész reszponzivitása 960px szélesség esetén:**
 
 
-![A fő rész reszponzivitása 960px](/Images/Main2.png "A fő rész reszponzivitása 960px")
+![A fő rész reszponzivitása 960px](/Documentation/teszt/fitt_oldal/Images/Main2.png "A fő rész reszponzivitása 960px")
 
 
 *A fenti képen látszik, hogy az oldal minden része arányosan lecsökken, így a reszponzivitás sikerül.*
 
 **A fő rész reszponzivitása mobilon:**
 
-![A fő rész reszponzivitása mobilon](/Images/Main3.png "A fő rész reszponzivitása mobilon")
+![A fő rész reszponzivitása mobilon](/Documentation/teszt/fitt_oldal/Images/Main3.png "A fő rész reszponzivitása mobilon")
 
 
 *A mobil verzión is láthatjuk, hogy az oldal aráynosan ment össze, így a háttér, a gombok, a címek is jólláthatóak és értelmezhetőek.* 
 
 **A fő rész aktív kurzor esetén:**
-![A fejléc állpota aktív kurzor esetén](/Images/Main4.png "A fejléc állpota aktív kurzor esetén")
+![A fejléc állpota aktív kurzor esetén](/Documentation/teszt/fitt_oldal/Images/Main4.png "A fejléc állpota aktív kurzor esetén")
 
 
 > ### **3. Lábrész tesztelés**
@@ -125,7 +125,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **A lábrész reszponzivitása 1920px szélesség esetén:**
 
 
-![A lábrész reszponzivitása 1920px](/Images/Labresz1.png "A lábrész reszponzivitása 1920px")
+![A lábrész reszponzivitása 1920px](/Documentation/teszt/fitt_oldal/Images/Labresz1.png "A lábrész reszponzivitása 1920px")
 
 
 *A weboldal alsó része 3 oszolopra van tagolva. Itt található az Elérehetőségek, a Rólunk és a Lépjen velünk kapcsolatba rész, ezek alatt a közösségi médiához összekötő linkek. A szöveges mezők, a gombok, és a közössségi média linkjei is animálva vannak.*
@@ -134,7 +134,7 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **A lábrész reszponzivitása 960px szélesség esetén:**
 
 
-![A lábrész reszponzivitása 960px](/Images/Labresz2.png "A lábrész reszponzivitása 960px")
+![A lábrész reszponzivitása 960px](/Documentation/teszt/fitt_oldal/Images/Labresz2.png "A lábrész reszponzivitása 960px")
 
 
 *Ebben a méretben már láthatjuk, hogy a három oszlopos tagolás eltűnt és a három rész egymás alá kerül, így biztosítjuk az oldal reszponzivitását. A mezők így jól láthatóak, a felhasználó számára könnyen elérehtőek. Nem csúsznak szét, tartják a helyüket.*
@@ -142,13 +142,13 @@ eltérés. De amikor rávisszük az egeret valamelyik menüpontra, akkor az kiem
 **A lábrész reszponzivitása mobilon:**
 
 
-![A lábrész reszponzivitása mobilon](/Images/Labresz3.png "A lábrész reszponzivitása mobilon")
+![A lábrész reszponzivitása mobilon](/Documentation/teszt/fitt_oldal/Images/Labresz3.png "A lábrész reszponzivitása mobilon")
 
 
 *A mobil méretben is megmaradt az egyoszlopos tagolás. A betűméretek, a szövegek, a gombok és a szövegmezők is alkalmazkodtak a kis mérethez, sikerült a reszponzivitást megalkotni.*
 
 **A lábrész aktív kurzor esetén:**
-![A lábrész állpota aktív kurzor esetén](/Images/Labresz4.png "A lábrész állpota aktív kurzor esetén")
+![A lábrész állpota aktív kurzor esetén](/Documentation/teszt/fitt_oldal/Images/Labresz4.png "A lábrész állpota aktív kurzor esetén")
 
 
 ## 3. Eredmények értékelése
