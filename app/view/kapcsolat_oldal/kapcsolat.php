@@ -25,18 +25,28 @@
 <body>
     <nav>
         <div class="topmenu">
-            <div class="logo">Logo</div>
+        <div class="logo">
+                        <img src="datas/pictures/logo.png" alt="" width="80" height="80">
+                    </div>
             <label for="btn" class="icon">
             <span class="fa fa-bars"></span>
         </label>
             <input class="csekk" type="checkbox" id="btn">
             <ul>
-                <li><a href="">Forum</a></li>
-                <li><a href="">Kapcsolat</a></li>
-                <li><a href="services">Szolgaltatasok</a></li>
-                <li><a href="about">Rolunk</a></li>
-                <li><a href="login">Belepes</a></li>
-                <li><a href="registration">Regisztracio</a></li>
+            <li><a href="http://localhost/SZFM-Weboldal/app/contact">Kapcsolat</a></li>
+                        <li><a href="http://localhost/SZFM-Weboldal/app/services">Szolgáltatások</a></li>
+                        <li><a href="http://localhost/SZFM-Weboldal/app/about">Rólunk</a></li>
+                            <?php 
+                                if(isset($_SESSION['logged']))
+                                {
+                                    echo "<li id='nav-email'><a href='http://localhost/SZFM-Weboldal/app/profile'>" . $_SESSION['user'] . "</a></li>";
+                                }
+                                else
+                                {
+                                    echo "<li><a href='http://localhost/SZFM-Weboldal/app/login'>Belépes</a></li>";
+                                    echo "<li><a href='http://localhost/SZFM-Weboldal/app/registration'>Regisztráció</a></li>";
+                                }
+                            ?>
             </ul>
         </div>
     </nav>

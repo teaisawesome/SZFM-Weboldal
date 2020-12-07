@@ -18,7 +18,9 @@
             <div class="row">
                 <div class="col-xl-3">
                     <div class="logo">
-                        <a href="">Logo</a>
+                    <div class="logo">
+                        <img src="datas/pictures/logo.png" alt="" width="80" height="80">
+                    </div>
                         <label for="btn" class="icon">
                             <span class="fa fa-bars"></span>
                         </label>
