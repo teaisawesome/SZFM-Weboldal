@@ -18,7 +18,7 @@ if(isset($_SESSION["logged"]) && $_SESSION["logged"])
     $newCommentForm = '
     <div id="new-comment-form">
         <form action="api/postforumcomment" method="post">
-            <span id="greeting">Értékeld az [insert Company Name]-et!</span>
+            <span id="greeting">Értékeld az SZFM-Wellnesközpontot-et!</span>
             <textarea name="comment" id="ta-comment" rows="10" ></textarea>
             <input type="submit" name="submit" value="Beküld">
         </form>
