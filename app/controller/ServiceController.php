@@ -1,4 +1,5 @@
 <?php 
+session_start();
 
 class ServiceController extends Controller
 {
