@@ -4,7 +4,7 @@ class AboutController extends Controller
 {
     public function index()
     {
-        $this->view("AboutUsPage");
+        $this->view("rounk_oldal/rolunk");
     }
 }
 

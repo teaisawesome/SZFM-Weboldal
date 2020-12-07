@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="../../assets/css/szolgaltatas_oldalak/etterem.css">
+    <link rel="stylesheet" href="../assets/css/szolgaltatas_oldalak/etterem.css">
     <title>SZFM Etterem</title>
 </head>
 
@@ -14,7 +14,7 @@
 
     <div class="video-container">
         <video autoplay loop muted>
-            <source src="../../resources/videos/video.mp4" type="video/mp4">
+            <source src="../resources/videos/video.mp4" type="video/mp4">
         </video>
         <div class="overlay-desc">
             <nav class="navbar">
@@ -325,7 +325,7 @@
                     culpa velit minima?</p>
             </div>
         </div>
-        <img class="cover" src="../../resources/images/szolgaltatas_oldalak_images/etterem.jpg" alt="">
+        <img class="cover" src="../resources/images/szolgaltatas_oldalak_images/etterem.jpg" alt="">
     </div>
     <footer>
         <section class="info-container">
@@ -419,8 +419,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
-    <script src="../../assets/js/anime.min.js"></script>
-    <script src="../../assets/js/szolgaltatas_oldalak_js/etterem.js"></script>
+    <script src="../assets/js/anime.min.js"></script>
+    <script src="../assets/js/szolgaltatas_oldalak_js/etterem.js"></script>
 
 
 </body>

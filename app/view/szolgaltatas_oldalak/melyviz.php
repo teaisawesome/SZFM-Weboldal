@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../assets/css/szolgaltatas_oldalak/melyviz.css">
+    <link rel="stylesheet" href="../assets/css/szolgaltatas_oldalak/melyviz.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <title>Buvar</title>
 </head>
@@ -12,9 +12,35 @@
 <body>
     <header class="borito">
         <div class="borito-img">
-            <?php 
-                require("template/szolgaltatas_navbar.php");
-            ?>
+        <nav>
+                <div class="topmenu">
+                    <div class="logo">
+                        <img src="../datas/pictures/logo.png" alt="" width="80" height="80">
+                    </div>
+                    <label for="btn" class="icon">
+                        <span class="fa fa-bars"></span>
+                    </label>
+                    <input class="csekk" type="checkbox" id="btn">
+                    <ul>
+                        <li><a href="http://localhost/SZFM-Weboldal/app/forum">Fórum</a></li>
+                        <li><a href="http://localhost/SZFM-Weboldal/app/contact">Kapcsolat</a></li>
+                        <li><a href="http://localhost/SZFM-Weboldal/app/services">Szolgáltatások</a></li>
+                        <li><a href="http://localhost/SZFM-Weboldal/app/about">Rólunk</a></li>
+                            <?php 
+                                if(isset($_SESSION['logged']))
+                                {
+                                    echo "<li id='nav-email'><a href='http://localhost/SZFM-Weboldal/app/profile'>" . $_SESSION['user'] . "</a></li>";
+                                }
+                                else
+                                {
+                                    echo "<li><a href='http://localhost/SZFM-Weboldal/app/login'>Belépes</a></li>";
+                                    echo "<li><a href='http://localhost/SZFM-Weboldal/app/registration'>Regisztráció</a></li>";
+                                }
+                            ?>
+                        </ul>
+                    </ul>
+                </div>
+            </nav>
             <div class="cim">
                 <h1>BúvárHuszárok</h1>
                 <h3>Aquam abyssi tribuo</h3>
@@ -24,10 +50,10 @@
     <main>
         <div class="szovegresz">
             <div class="kor kor1">
-                <img src="../../resources/images/szolgaltatas_oldalak_images/buvarbal.jpg" alt="">
+                <img src="../resources/images/szolgaltatas_oldalak_images/buvarbal.jpg" alt="">
             </div>
             <div class="kor kor2">
-                <img src="../../resources/images/szolgaltatas_oldalak_images/buvarjobb.jpg" alt="">
+                <img src="../resources/images/szolgaltatas_oldalak_images/buvarjobb.jpg" alt="">
             </div>
             <div class="tartalom">
                 <h2>Altum natare non perimus</h2>
@@ -54,34 +80,34 @@
                 <div class="post-wrapper">
 
                     <div class="post">
-                        <img src="../../resources/images/szolgaltatas_oldalak_images/buvargaleria.jpg" alt="" class="slider-image">
+                        <img src="../resources/images/szolgaltatas_oldalak_images/buvargaleria.jpg" alt="" class="slider-image">
                     </div>
                     <div class="post">
-                        <img src="../../resources/images/szolgaltatas_oldalak_images/buvargaleria.jpg" alt="" class="slider-image">
+                        <img src="../resources/images/szolgaltatas_oldalak_images/buvargaleria.jpg" alt="" class="slider-image">
 
                     </div>
                     <div class="post">
-                        <img src="../../resources/images/szolgaltatas_oldalak_images/buvargaleria.jpg" alt="" class="slider-image">
+                        <img src="../resources/images/szolgaltatas_oldalak_images/buvargaleria.jpg" alt="" class="slider-image">
 
                     </div>
                     <div class="post">
-                        <img src="../../resources/images/szolgaltatas_oldalak_images/buvargaleria.jpg" alt="" class="slider-image">
+                        <img src="../resources/images/szolgaltatas_oldalak_images/buvargaleria.jpg" alt="" class="slider-image">
 
                     </div>
                     <div class="post">
-                        <img src="../../resources/images/szolgaltatas_oldalak_images/buvargaleria.jpg" alt="" class="slider-image">
+                        <img src="../resources/images/szolgaltatas_oldalak_images/buvargaleria.jpg" alt="" class="slider-image">
 
                     </div>
                     <div class="post">
-                        <img src="../../resources/images/szolgaltatas_oldalak_images/buvargaleria.jpg" alt="" class="slider-image">
+                        <img src="../resources/images/szolgaltatas_oldalak_images/buvargaleria.jpg" alt="" class="slider-image">
 
                     </div>
                     <div class="post">
-                        <img src="../../resources/images/szolgaltatas_oldalak_images/buvargaleria.jpg" alt="" class="slider-image">
+                        <img src="../resources/images/szolgaltatas_oldalak_images/buvargaleria.jpg" alt="" class="slider-image">
 
                     </div>
                     <div class="post">
-                        <img src="../../resources/images/szolgaltatas_oldalak_images/buvargaleria.jpg" alt="" class="slider-image">
+                        <img src="../resources/images/szolgaltatas_oldalak_images/buvargaleria.jpg" alt="" class="slider-image">
 
                     </div>
                 </div>
@@ -175,5 +201,5 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="../../assets/js/szolgaltatas_oldalak_js/melyviz.js"></script>
+    <script src="../assets/js/szolgaltatas_oldalak_js/melyviz.js"></script>
 </body>

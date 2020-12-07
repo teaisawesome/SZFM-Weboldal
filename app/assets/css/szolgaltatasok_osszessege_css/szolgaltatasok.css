@@ -51,6 +51,18 @@
     z-index: 2;
     width: 100%;
 }
+.single-slide-etterem
+{
+    background-image: url(../../../resources/images/szolgaltatas_oldalak_images/etterem.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
 
 .single-slide-uszoda {
     background-image: url(../../../resources/images/szolgaltatasok_osszessege_images/uszoda.jpg);

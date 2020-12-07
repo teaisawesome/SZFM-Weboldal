@@ -22,6 +22,30 @@ class ServiceController extends Controller
     {
         $this->view("szolgaltatas_oldalak/szauna");
     }
+    public function uszoda()
+    {
+        $this->view("szolgaltatas_oldalak/uszoda");
+    }
+    public function teknos()
+    {
+        $this->view("szolgaltatas_oldalak/teknos");
+    }
+    public function melyviz()
+    {
+        $this->view("szolgaltatas_oldalak/melyviz");
+    }
+    public function edzoterem()
+    {
+        $this->view("szolgaltatas_oldalak/edzoterem");
+    }
+    public function etterem()
+    {
+        $this->view("szolgaltatas_oldalak/etterem");
+    }
+    public function calculator()
+    {
+        $this->view("fitt_oldal/fitt");
+    }
 }
 
 ?>

@@ -106,6 +106,42 @@ class Router
             $request->action = "halpedikur";
             $request->params = "data";
         }
+        if($url == $domain . 'services/uszoda')
+        {
+            $request->controller = "Service";
+            $request->action = "uszoda";
+            $request->params = "data";
+        }
+        if($url == $domain . 'services/teknos')
+        {
+            $request->controller = "Service";
+            $request->action = "teknos";
+            $request->params = "data";
+        }
+        if($url == $domain . 'services/melyviz')
+        {
+            $request->controller = "Service";
+            $request->action = "melyviz";
+            $request->params = "data";
+        }
+        if($url == $domain . 'services/edzoterem')
+        {
+            $request->controller = "Service";
+            $request->action = "edzoterem";
+            $request->params = "data";
+        }
+        if($url == $domain . 'services/etterem')
+        {
+            $request->controller = "Service";
+            $request->action = "etterem";
+            $request->params = "data";
+        }
+        if($url == $domain . 'services/calculator')
+        {
+            $request->controller = "Service";
+            $request->action = "calculator";
+            $request->params = "data";
+        }
 
         /**
          *   About routing

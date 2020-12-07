@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/szolgaltatas_oldalak/halpedikur.css">
+    <link rel="stylesheet" href="../assets/css/szolgaltatas_oldalak/teknos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <title>Senor Fish</title>
+    <title>TeknosSimogato</title>
 </head>
 
 <body>
     <header class="borito">
         <div class="borito-img">
-        <nav>
+            <nav>
                 <div class="topmenu">
-                    <div class="logo">
+                <div class="logo">
                         <img src="../datas/pictures/logo.png" alt="" width="80" height="80">
                     </div>
                     <label for="btn" class="icon">
@@ -22,7 +22,7 @@
                     </label>
                     <input class="csekk" type="checkbox" id="btn">
                     <ul>
-                        <li><a href="http://localhost/SZFM-Weboldal/app/forum">Fórum</a></li>
+                    <li><a href="http://localhost/SZFM-Weboldal/app/forum">Fórum</a></li>
                         <li><a href="http://localhost/SZFM-Weboldal/app/contact">Kapcsolat</a></li>
                         <li><a href="http://localhost/SZFM-Weboldal/app/services">Szolgáltatások</a></li>
                         <li><a href="http://localhost/SZFM-Weboldal/app/about">Rólunk</a></li>
@@ -37,26 +37,25 @@
                                     echo "<li><a href='http://localhost/SZFM-Weboldal/app/registration'>Regisztráció</a></li>";
                                 }
                             ?>
-                        </ul>
                     </ul>
                 </div>
             </nav>
             <div class="cim">
-                <h1>Halpedikűr</h1>
-                <h3>Pisces Quoque Pedicure</h3>
+                <h1>Teknős Simogató</h1>
+                <h3>Testudo tractanti</h3>
             </div>
         </div>
     </header>
     <main>
         <div class="szovegresz">
             <div class="kor kor1">
-                <img src="../resources/images/szolgaltatas_oldalak_images/halbal.jpg" alt="">
+                <img src="../resources/images/szolgaltatas_oldalak_images/teknosbal.jpg" alt="">
             </div>
             <div class="kor kor2">
-                <img src="../resources/images/szolgaltatas_oldalak_images/haljobb.jpg" alt="">
+                <img src="../resources/images/szolgaltatas_oldalak_images/teknosjobb.jpg" alt="">
             </div>
             <div class="tartalom">
-                <h2>Frui quantum potes, quandiu</h2>
+                <h2>Imago principaliter turtur</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam odio possimus ipsa officia, est mollitia sapiente quia cupiditate sequi magni. Exercitationem minus, dolor doloremque aspernatur veritatis vel atque eligendi modi. Lorem ipsum
                     dolor sit amet consectetur adipisicing elit. Necessitatibus dignissimos a suscipit eum! Cum quia maiores adipisci non, perspiciatis laboriosam dolore doloribus tenetur nisi aperiam, debitis hic nihil omnis blanditiis. Lorem ipsum dolor
                     sit amet consectetur adipisicing elit. Quae hic officiis repudiandae reiciendis cumque repellat. In praesentium, beatae a ratione nobis odio id iste quis quos est fugit dolorum nemo. Lorem, ipsum dolor sit amet consectetur adipisicing
@@ -80,34 +79,34 @@
                 <div class="post-wrapper">
 
                     <div class="post">
-                        <img src="../resources/images/szolgaltatas_oldalak_images/halslide.jpg" alt="" class="slider-image">
+                        <img src="../resources/images/szolgaltatas_oldalak_images/teknosgaleria.jpg" alt="" class="slider-image">
                     </div>
                     <div class="post">
-                        <img src="../resources/images/szolgaltatas_oldalak_images/halslide.jpg" alt="" class="slider-image">
+                        <img src="../resources/images/szolgaltatas_oldalak_images/teknosgaleria.jpg" alt="" class="slider-image">
 
                     </div>
                     <div class="post">
-                        <img src="../resources/images/szolgaltatas_oldalak_images/halslide.jpg" alt="" class="slider-image">
+                        <img src="../resources/images/szolgaltatas_oldalak_images/teknosgaleria.jpg" alt="" class="slider-image">
 
                     </div>
                     <div class="post">
-                        <img src="../resources/images/szolgaltatas_oldalak_images/halslide.jpg" alt="" class="slider-image">
+                        <img src="../resources/images/szolgaltatas_oldalak_images/teknosgaleria.jpg" alt="" class="slider-image">
 
                     </div>
                     <div class="post">
-                        <img src="../resources/images/szolgaltatas_oldalak_images/halslide.jpg" alt="" class="slider-image">
+                        <img src="../resources/images/szolgaltatas_oldalak_images/teknosgaleria.jpg" alt="" class="slider-image">
 
                     </div>
                     <div class="post">
-                        <img src="../resources/images/szolgaltatas_oldalak_images/halslide.jpg" alt="" class="slider-image">
+                        <img src="../resources/images/szolgaltatas_oldalak_images/teknosgaleria.jpg" alt="" class="slider-image">
 
                     </div>
                     <div class="post">
-                        <img src="../resources/images/szolgaltatas_oldalak_images/halslide.jpg" alt="" class="slider-image">
+                        <img src="../resources/images/szolgaltatas_oldalak_images/teknosgaleria.jpg" alt="" class="slider-image">
 
                     </div>
                     <div class="post">
-                        <img src="../resources/images/szolgaltatas_oldalak_images/halslide.jpg" alt="" class="slider-image">
+                        <img src="../resources/images/szolgaltatas_oldalak_images/teknosgaleria.jpg" alt="" class="slider-image">
 
                     </div>
                 </div>
@@ -201,5 +200,5 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="../assets/js/szolgaltatas_oldalak_js/halpedikur.js"></script>
+    <script src="../assets/js/szolgaltatas_oldalak_js/teknos.js"></script>
 </body>
